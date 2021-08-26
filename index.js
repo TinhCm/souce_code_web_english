@@ -5,9 +5,9 @@ gop.onclick = function()
     temp.classList.add('classNone');
 }
 
-var API = 'http://localhost:3000/list'
-var API2 = 'http://localhost:3000/ngu_phap'
-var API3 = "http://localhost:3000/gop_y"
+var API = 'https://demo-apps-en.herokuapp.com/list'
+var API2 = 'https://demo-apps-en.herokuapp.com/ngu_phap'
+var API3 = "https://demo-apps-en.herokuapp.com/gop_y"
 
 //Phần API từ vựng
 function batDau1()
