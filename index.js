@@ -1,6 +1,13 @@
-alert("Trang web dang bảo trì")
+var gop = document.querySelectorAll('.gop_y--create')
+var temp = document.querySelectorAll('.gop_y')
+gop.onclick = function()
+{
+    temp.classList.add('classNone');
+}
+
 var API = 'http://localhost:3000/list'
 var API2 = 'http://localhost:3000/ngu_phap'
+var API3 = "http://localhost:3000/gop_y"
 
 //Phần API từ vựng
 function batDau1()
@@ -65,9 +72,8 @@ function xuatDuLieu1(list)
         return `<li class = "list-item-${lists.id}" id = list>
                     <h4 class = "lists-tuvung">${lists.tu_vung}</h4>
                     <div class = "lists-nghia"> 
-                        <h5 >=> ${lists.nghia}</h5>
+                        <h4 >=> ${lists.nghia}</h4>
                         <button class = "Poiter" onclick = "xoaDuLieu1(${lists.id})">x</button>
-                        <button class = "save" onclick = "handleChangeCourse(${lists.id})">Sửa</button>
                     </div>
                 </li>`
     })
@@ -75,61 +81,61 @@ function xuatDuLieu1(list)
     document.querySelector('.content_list').innerHTML = htmls.join('');
 }
 
-function handleChangeCourse(id) { // khi an vao nut change: hien khung thay doi va thay doi khi an vao nut save
-    fetch(API)
-    .then(function(response) {
-        return response.json()
-    })
-    .then(function(list) {
-        return lists = list.find(function(lists) {
-            return lists.id = id
-        })
-    })
-    .then(function(lists) {
-        var formChange = document.getElementById('one')
-        div = `
-        <div>
-            <label style="width: 15%;">New Name</label>
-            <input  placeholder="Change: phan tu thu ${lists.id}" type="text" name="tu_vung_moi">
-        </div>
-        <div>
-            <label style="width: 15%;">New Description</label>
-            <input placeholder="Change: phan tu thu ${lists.id}" type="text" name="nghia_moi">
-        </div>
-        <div>
-            <button id="save">Save</button>
-        </div>
-        `
-        formChange.innerHTML = div
+// function handleChangeCourse(id) { // khi an vao nut change: hien khung thay doi va thay doi khi an vao nut save
+//     fetch(API)
+//     .then(function(response) {
+//         return response.json()
+//     })
+//     .then(function(list) {
+//         return lists = list.find(function(lists) {
+//             return lists.id = id
+//         })
+//     })
+//     .then(function(lists) {
+//         var formChange = document.getElementById('one')
+//         div = `
+//         <div>
+//             <label style="width: 15%;">New Name</label>
+//             <input  placeholder="Change: phan tu thu ${lists.id}" type="text" name="tu_vung_moi">
+//         </div>
+//         <div>
+//             <label style="width: 15%;">New Description</label>
+//             <input placeholder="Change: phan tu thu ${lists.id}" type="text" name="nghia_moi">
+//         </div>
+//         <div>
+//             <button id="save">Save</button>
+//         </div>
+//         `
+//         formChange.innerHTML = div
 
-        var saveBtn = document.querySelector('#save')
-        saveBtn.onclick = function() {
-            var tu_vung_moi = document.querySelector('input[name="tu_vung_moi"]').value
-            var nghia_moi = document.querySelector('input[name="nghia_moi"]').value
-            var newFormData = {
-                tu_vung: tu_vung_moi,
-                nghia: nghia_moi
-            }
+//         var saveBtn = document.querySelector('#save')
+//         saveBtn.onclick = function() {
+//             var tu_vung_moi = document.querySelector('input[name="tu_vung_moi"]').value
+//             var nghia_moi = document.querySelector('input[name="nghia_moi"]').value
+//             var newFormData = {
+//                 tu_vung: tu_vung_moi,
+//                 nghia: nghia_moi
+//             }
             
-            var option = {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(newFormData)
-            }
+//             var option = {
+//                 method: 'PUT',
+//                 headers: {
+//                     'Content-Type': 'application/json'
+//                 },
+//                 body: JSON.stringify(newFormData)
+//             }
 
-            fetch(API + '/' + id, option)
-                .then(function(response) {
-                    return response.json()
-                })
-                .then(function() {
-                    layDuLieu1(xuatDuLieu1);
-                })
-                formChange.classList.remove('#one')
-        }
-    })
-}
+//             fetch(API + '/' + id, option)
+//                 .then(function(response) {
+//                     return response.json()
+//                 })
+//                 .then(function() {
+//                     layDuLieu1(xuatDuLieu1);
+//                 })
+//                 formChange.classList.remove('#one')
+//         }
+//     })
+// }
 
 function xuLi1()
 {
@@ -236,6 +242,49 @@ function xuLi()
         taoDuLieu(formData,function()
         {
             layDuLieu(xuatDuLieu);
+        })
+    }
+}
+
+// Phần API góp ý
+function batDau2()
+{
+    xuLi2();
+}
+batDau2();
+
+function taoDuLieu2(data,callback)
+{
+    var opption = {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {  
+            "Content-Type": "application/json",
+           },
+    }
+
+    fetch(API3,opption)
+        .then(function(response)
+        {
+            return response.json();
+        })
+        .then(callback);
+}
+
+function xuLi2()
+{
+    var c = document.querySelector('.gop_y--create')
+    c.onclick = function()
+    {
+        var ten = document.querySelector('.gop_y_tu1').value;
+        var cmt = document.querySelector('.gop_y2_cmt').value;
+        formData = {
+            ten: ten,
+            cmt: cmt
+        }
+        taoDuLieu2(formData,function()
+        {
+            location.reload()
         })
     }
 }

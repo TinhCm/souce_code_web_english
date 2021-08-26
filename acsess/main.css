@@ -214,3 +214,34 @@ header
     color: red;
 }
 
+/* Đóng góp ý kiến */
+.gop_y
+{
+    margin: 20px 20px;
+}
+.gop_y > p
+{
+    
+    font-size: 19px;
+}
+
+.gop_y-input1>label
+{
+    display: block;
+}
+
+.gop_y_tu1
+{
+    width: 300px;
+}
+
+.gop_y2_cmt
+{
+    width: 500px;
+}
+
+.gop_y-input1>input
+{
+    margin: 5px 0;
+    outline: none;
+}
