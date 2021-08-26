@@ -173,6 +173,12 @@ header
     margin: 0 20px;
 }
 
+#footer1
+{
+    display: block;
+    margin: 0 20px;
+}
+
 /*Phần javaScrip*/
 
 .lists-nghia
