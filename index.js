@@ -1,3 +1,4 @@
+alert("Trang web dang bảo trì")
 var API = 'http://localhost:3000/list'
 var API2 = 'http://localhost:3000/ngu_phap'
 
