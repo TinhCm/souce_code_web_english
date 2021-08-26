@@ -1,0 +1,18 @@
+.width
+{
+    width: 1024px;
+    margin: auto;
+    border-color: rgb(214, 214, 218);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.nonePoiter
+{
+    cursor: no-drop;
+}
+
+.Poiter 
+{
+    cursor: pointer;
+}
