@@ -20,7 +20,7 @@
                 <div id="gop_y-input1" class="gop_y-input1">
                     <textarea class="gop_y2_cmt" rows="4" placeholder="Nhập vào đánh giá" name="name"></textarea>
                 </div>
-                <button class="gop_y--create Poiter "><a href="./index.html">Gửi</a></button>
+                <button class="gop_y--create Poiter "><a href="index.html">Gửi</a></button>
                 <script>
                     // Phần API góp ý
                     function batDau2()
@@ -62,7 +62,12 @@
                             {
                                 location.reload();
                             })
+
+                            var danh_gia = document.querySelector('.danhGia');
                             alert("Cảm ơn bạn đã đóng góp ý kiến.");
+                            // setTimeout(() => {
+                            //     danh_gia.classList.add('classNone');
+                            // },1000);
                         }
                     }
                 </script>
