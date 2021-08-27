@@ -242,3 +242,58 @@ function xuLi()
         })
     }
 }
+
+ // Phần API góp ý
+ function batDau2()
+ {
+     xuLi2();
+ }
+ batDau2();
+
+ function taoDuLieu2(data,callback)
+ {
+     var opption = {
+         method: "POST",
+         body: JSON.stringify(data),
+         headers: {  
+             "Content-Type": "application/json",
+         },
+     }
+
+     fetch(API3,opption)
+         .then(function(response)
+         {
+             return response.json();
+         })
+         .then(callback);
+ }
+
+ function xuLi2()
+ {
+     var aa = document.querySelector('.gop_y--create')
+     aa.onclick = function()
+     {
+         var ten = document.querySelector('.gop_y_tu1').value;
+         var cmt = document.querySelector('.gop_y2_cmt').value;
+         formData = {
+             ten: ten,
+             cmt: cmt
+         }
+         taoDuLieu2(formData,function()
+         {
+             location.reload();
+         })
+         alert("Cảm ơn bạn đã đóng góp ý kiến.");
+     }
+ }
+
+
+ //Xử lí
+
+ var xuli_dong_gop = document.querySelector('.header_second--cmt1');
+ var danh_gia = document.querySelector('.danhGia');
+ var tong = document.querySelector('.width');
+ xuli_dong_gop.onclick = function()
+ {
+     danh_gia.classList.add('Display');
+ }

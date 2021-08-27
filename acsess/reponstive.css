@@ -18,7 +18,12 @@
     cursor: pointer;
 }
 
-.classNone
+.Display
+{
+    display: block !important;
+}
+
+.noneDisplay
 {
     display: none;
 }
