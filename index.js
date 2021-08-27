@@ -1,13 +1,10 @@
-var gop = document.querySelectorAll('.gop_y--create')
-var temp = document.querySelectorAll('.gop_y')
-gop.onclick = function()
-{
-    temp.classList.add('classNone');
-}
-
 var API = 'https://demo-apps-en.herokuapp.com/list'
 var API2 = 'https://demo-apps-en.herokuapp.com/ngu_phap'
 var API3 = "https://demo-apps-en.herokuapp.com/gop_y"
+
+// var API = 'http://localhost:3000/list'
+// var API2 = 'http://localhost:3000/ngu_phap'
+// var API3 = "http://localhost:3000/gop_y"
 
 //Phần API từ vựng
 function batDau1()
@@ -242,49 +239,6 @@ function xuLi()
         taoDuLieu(formData,function()
         {
             layDuLieu(xuatDuLieu);
-        })
-    }
-}
-
-// Phần API góp ý
-function batDau2()
-{
-    xuLi2();
-}
-batDau2();
-
-function taoDuLieu2(data,callback)
-{
-    var opption = {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {  
-            "Content-Type": "application/json",
-           },
-    }
-
-    fetch(API3,opption)
-        .then(function(response)
-        {
-            return response.json();
-        })
-        .then(callback);
-}
-
-function xuLi2()
-{
-    var c = document.querySelector('.gop_y--create')
-    c.onclick = function()
-    {
-        var ten = document.querySelector('.gop_y_tu1').value;
-        var cmt = document.querySelector('.gop_y2_cmt').value;
-        formData = {
-            ten: ten,
-            cmt: cmt
-        }
-        taoDuLieu2(formData,function()
-        {
-            location.reload()
         })
     }
 }

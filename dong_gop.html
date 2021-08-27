@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./acsess/main.css">
+    <link rel="stylesheet" href="./acsess/reponstive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="width">
+        <div class="danhGia">
+            <div class="gop_y">
+                <h2>ĐÓNG GÓP Ý KIẾN</h2>
+                <h4>Use form</h4>
+                <div class="gop_y-input1">
+                    <input placeholder="Nhập vào tên" class="gop_y_tu1" type="text" name="name">
+                </div>
+                <div id="gop_y-input1" class="gop_y-input1">
+                    <textarea class="gop_y2_cmt" rows="4" placeholder="Nhập vào đánh giá" name="name"></textarea>
+                </div>
+                <button class="gop_y--create Poiter "><a href="./index.html">Gửi</a></button>
+                <script>
+                    // Phần API góp ý
+                    function batDau2()
+                    {
+                        xuLi2();
+                    }
+                    batDau2();
+
+                    function taoDuLieu2(data,callback)
+                    {
+                        var opption = {
+                            method: "POST",
+                            body: JSON.stringify(data),
+                            headers: {  
+                                "Content-Type": "application/json",
+                            },
+                        }
+
+                        fetch(API3,opption)
+                            .then(function(response)
+                            {
+                                return response.json();
+                            })
+                            .then(callback);
+                    }
+
+                    function xuLi2()
+                    {
+                        var aa = document.querySelector('.gop_y--create')
+                        aa.onclick = function()
+                        {
+                            var ten = document.querySelector('.gop_y_tu1').value;
+                            var cmt = document.querySelector('.gop_y2_cmt').value;
+                            formData = {
+                                ten: ten,
+                                cmt: cmt
+                            }
+                            taoDuLieu2(formData,function()
+                            {
+                                location.reload();
+                            })
+                            alert("Cảm ơn bạn đã đóng góp ý kiến.");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
