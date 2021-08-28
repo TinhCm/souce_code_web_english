@@ -5,10 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./acsess/main.css">
+    <link rel="stylesheet" href="./acsess/reponstive.css">
 </head>
 <body>
-    <H1>xin chào((;
-    </H1>
-    <a href="./index.html">Nhấn</a>
+    <div id="danhGia" class="danhGia">
+        <div class="gop_y">
+            <h2>ĐÓNG GÓP Ý KIẾN</h2>
+            <h4>Use form</h4>
+            <div class="gop_y-input1">
+                <input placeholder="Nhập vào tên" class="gop_y_tu1" type="text" name="name">
+            </div>
+            <div id="gop_y-input1" class="gop_y-input1">
+                <textarea class="gop_y2_cmt" rows="4" placeholder="Nhập vào đánh giá" name="name"></textarea>
+            </div>
+            <a href="./index.html">
+                <button class="gop_y--create">Gửi</a></button>
+            </a>
+            <script>
+                // Phần API góp ý
+                function batDau2()
+                {
+                    xuLi2();
+                }
+                batDau2();
+
+                function taoDuLieu2(data,callback)
+                {
+                    var opption = {
+                        method: "POST",
+                        body: JSON.stringify(data),
+                        headers: {  
+                            "Content-Type": "application/json",
+                        },
+                    }
+
+                    fetch(API3,opption)
+                        .then(function(response)
+                        {
+                            return response.json();
+                        })
+                        .then(callback);
+                }
+
+                function xuLi2()
+                {
+                    var aa = document.querySelector('.gop_y--create')
+                    aa.onclick = function()
+                    {
+                        var ten = document.querySelector('.gop_y_tu1').value;
+                        var cmt = document.querySelector('.gop_y2_cmt').value;
+                        formData = {
+                            ten: ten,
+                            cmt: cmt
+                        }
+                        taoDuLieu2(formData,function()
+                        {
+                            // location.reload();
+                        })
+                        alert("Cảm ơn bạn đã đóng góp ý kiến.");
+                    }
+                }
+
+
+                //Xử lí động
+                var xuli_dong_gop = document.querySelector('.header_second--cmt1');
+                var danh_gia = document.querySelector('.danhGia');
+                var header = document.querySelector('.header');
+                var header2 = document.querySelector('.header_second');
+                var body = document.querySelector('.body_cmt');
+                var footer = document.querySelector('.footer');
+                var heade_gop_y = document.querySelector('.header1-list');
+                var heade_home = document.querySelector('.Header-home');
+                var gop_y_tu = document.querySelector('.gop_y_tu1');
+                var gop_y2_cmt = document.querySelector('.gop_y2_cmt');
+                var aa = document.querySelector('.gop_y--create');
+                aa.disabled = true;
+
+                gop_y_tu.onclick = function()
+                {
+                    gop_y2_cmt.onclick = function(){
+                        if(gop_y_tu.value != "" && gop_y2_cmt != "")  
+                        {
+                            aa.classList.add('Poiter');
+                            aa.disabled = false;
+                        }
+                    }
+                }
+
+                gop_y2_cmt.oninput = function()
+                {
+                    gop_y_tu.oninput = function(){
+                        if(gop_y_tu.value != "" && gop_y2_cmt != "")  
+                        {
+                            aa.classList.add('Poiter');
+                            aa.disabled = false;
+                        }
+                    }
+                }
+
+                // xuli_dong_gop.onclick = function()
+                // {
+                //     danh_gia.classList.add('Display');
+                //     header2.classList.add('noneDisplay')
+                //     body.classList.add('noneDisplay')
+                //     footer.classList.add('noneDisplay')
+                //     heade_gop_y.classList.add('noneDisplay')
+                //     heade_home.classList.add('Display')
+                //     header.onclick = function(){
+                //         location.reload();
+                //     }
+                // }
+            </script>
+            <script src="./index.js"></script>
+        </div>
+    </div>
 </body>
 </html>
