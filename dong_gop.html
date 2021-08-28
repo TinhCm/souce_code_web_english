@@ -19,9 +19,7 @@
             <div id="gop_y-input1" class="gop_y-input1">
                 <textarea class="gop_y2_cmt" rows="4" placeholder="Nhập vào đánh giá" name="name"></textarea>
             </div>
-            <a href="./index.html">
                 <button class="gop_y--create">Gửi</a></button>
-            </a>
             <script>
                 // Phần API góp ý
                 function batDau2()
@@ -61,7 +59,7 @@
                         }
                         taoDuLieu2(formData,function()
                         {
-                            // location.reload();
+                            window.location.href='/index.html';
                         })
                         alert("Cảm ơn bạn đã đóng góp ý kiến.");
                     }
