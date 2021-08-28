@@ -67,7 +67,7 @@
   padding-top: 100px;
   text-align: center;
   height: 490px;
-  background-image: url(https://i.pinimg.com/originals/72/f3/53/72f3539416ad466ce4bc77c4c95015c8.png);
+  background-image: url(./img/header.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -143,6 +143,11 @@
   margin-left: 345px;
 }
 
+.content1_backend{
+  height: 620px;
+  overflow-y: scroll;
+}
+
 /*Phần ngữ pháp*/
 .content2 {
   margin: 20px 20px;
@@ -183,7 +188,7 @@
   margin: 20px 20px;
   height: 200px;
   color: white;
-  background-image: url(https://img2.thuthuatphanmem.vn/uploads/2019/01/20/background-mau-den-don-gian_034513003.png);
+  background-image: url(./img/footer.jpg);
 }
 
 .footer_one{
@@ -212,6 +217,11 @@
 
 .footer2 > button>a{
   text-decoration: none;
+}
+
+.content2_backend{
+  height: 620px;
+  overflow-y:scroll;
 }
 
 /*Phần javaScrip*/
@@ -244,11 +254,10 @@
 
 /* Đóng góp ý kiến */
 .danhGia{
-  height: 570px;
-  background-image: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-qu%E1%BA%A3ng-c%C3%A1o-%C4%91%E1%BA%B9p-cho-d%C3%A2n-v%C4%83n-ph%C3%B2ng.jpg);
+  height: 630px;
+  background-image: url(./img/dong_gop.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  /* display: none; */
 }
 
 .gop_y{
@@ -257,7 +266,7 @@
   width: 400px;
   height: 330px;
   position: relative;
-  top: 200px;
+  top: 230px;
   left: 520px;
   padding: 30px 30px;
   box-sizing: border-box;
