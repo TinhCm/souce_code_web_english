@@ -42,18 +42,38 @@
 
   /* Đánh giá */
   .danhGia {
-    height: 630px;
+    height: 700px;
     background-image: url(./img/dong_gop.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
 
   .gop_y {
-    height: 330px;
+    height: 430px;
     width: 700px;
     position: relative;
     top: 230px;
     left: 20px;
+  }
+
+  .gop_y-input1 > input{
+    width: 550px;
+    height: 50px;
+    margin: 10px 40px;
+    font-size: 20px;
+  }
+
+  #gop_y-input1 > textarea{
+    width: 550px;
+    margin: 10px 40px;
+    font-size: 20px;
+  }
+
+  .gop_y--create{
+    margin-top: 10px;
+    width: 550px;
+    margin: 10px 40px;
+    font-size: 20px;
   }
 
   /* Header */
@@ -70,7 +90,11 @@
 
   .header_second{
     padding-top: 100px;
+    text-align: center;
     height: 350px;
+    background-image: url(./img/header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   /* Footer */
@@ -80,12 +104,12 @@
 
    /*Backend*/
   .content1_backend{
-    height: 1000px;
+    height: 900px;
     overflow-y: scroll;
   }
 
   .content2_backend{
-    height: 1000px;
+    height: 900px;
     overflow-y:scroll;
   }
 }
