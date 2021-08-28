@@ -1,29 +1,66 @@
-.width
-{
-    width: 1024px;
+.width {
+  width: 1024px;
+  margin: auto;
+  border-color: rgb(214, 214, 218);
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(245, 247, 241);
+}
+
+.nonePoiter {
+  cursor: no-drop !important;
+}
+
+.Poiter {
+  cursor: pointer;
+}
+
+.Display {
+  display: block !important;
+}
+
+.noneDisplay {
+  display: none;
+}
+
+/* reponstive */
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+@media (max-width: 739px) {
+  .width {
+    width: 739px;
     margin: auto;
     border-color: rgb(214, 214, 218);
     border-width: 1px;
     border-style: solid;
     background-color: rgb(245, 247, 241);
-}
+  }
 
-.nonePoiter
-{
-    cursor: no-drop !important;
-}
+  .danhGia {
+    height: 630px;
+    background-image: url(./img/dong_gop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-.Poiter 
-{
-    cursor: pointer;
-}
-
-.Display
-{
-    display: block !important;
-}
-
-.noneDisplay
-{
-    display: none;
+  .gop_y {
+    background-color: rgb(117, 206, 228);
+    width: 400px;
+    height: 330px;
+    position: relative;
+    top: 230px;
+    left: 170px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    box-shadow: 30px 30px 10px;
+    -moz-box-shadow: 30px 30px 10px;
+    -webkit-box-shadow: 30px 30px 10px;
+    -o-box-shadow: 30px 30px 10px;
+    -ms-box-shadow: 30px 30px 10px;
+    border-radius: 10px;
+  }
 }
