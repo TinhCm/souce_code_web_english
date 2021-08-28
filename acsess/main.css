@@ -66,7 +66,7 @@
 .header_second{
   padding-top: 100px;
   text-align: center;
-  height: 540px;
+  height: 490px;
   background-image: url(https://i.pinimg.com/originals/72/f3/53/72f3539416ad466ce4bc77c4c95015c8.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -87,7 +87,7 @@
 
 .header_second--cmt{
   position: relative;
-  top: 250px;
+  top: 180px;
   right: 300px;
 }
 
@@ -165,11 +165,13 @@
 .content2-input2 > input {
   width: 400px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .content2-input2 > textarea {
   width: 400px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .content2--create {
@@ -242,7 +244,7 @@
 
 /* Đóng góp ý kiến */
 .danhGia{
-  height: 620px;
+  height: 570px;
   background-image: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-qu%E1%BA%A3ng-c%C3%A1o-%C4%91%E1%BA%B9p-cho-d%C3%A2n-v%C4%83n-ph%C3%B2ng.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -285,6 +287,7 @@
   height: 30px;
   margin: 10px 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 #gop_y-input1 > textarea{
@@ -303,10 +306,23 @@
   width: 350px;
   height: 30px;
   background-color: rgb(17, 116, 245);
+  cursor: no-drop;
 }
 
 .gop_y--create > a{
   text-decoration: none;
   font-size: 16px;
+  color:white;
+}
+
+.Header-home{
+ height: 30px;
+ text-align: center;
+ line-height: 50px;
+ color: white;
+ display: none;
+}
+.Header-home>a{
+  text-decoration: none;
   color:white;
 }

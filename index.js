@@ -288,12 +288,51 @@ function xuLi()
  }
 
 
- //Xử lí
-
+ //Xử lí động
  var xuli_dong_gop = document.querySelector('.header_second--cmt1');
  var danh_gia = document.querySelector('.danhGia');
- var tong = document.querySelector('.width');
+ var header = document.querySelector('.header');
+ var header2 = document.querySelector('.header_second');
+ var body = document.querySelector('.body_cmt');
+ var footer = document.querySelector('.footer');
+ var heade_gop_y = document.querySelector('.header1-list');
+ var heade_home = document.querySelector('.Header-home');
+ var gop_y_tu = document.querySelector('.gop_y_tu1');
+ var gop_y2_cmt = document.querySelector('.gop_y2_cmt');
+ var aa = document.querySelector('.gop_y--create');
+ aa.disabled = true;
+
+ gop_y_tu.onclick = function()
+ {
+    gop_y2_cmt.onclick = function(){
+        if(gop_y_tu.value != "" && gop_y2_cmt != "")  
+        {
+            aa.classList.add('Poiter');
+            aa.disabled = false;
+        }
+    }
+ }
+
+ gop_y2_cmt.oninput = function()
+ {
+    gop_y_tu.oninput = function(){
+        if(gop_y_tu.value != "" && gop_y2_cmt != "")  
+        {
+            aa.classList.add('Poiter');
+            aa.disabled = false;
+        }
+    }
+ }
+
  xuli_dong_gop.onclick = function()
  {
      danh_gia.classList.add('Display');
+     header2.classList.add('noneDisplay')
+     body.classList.add('noneDisplay')
+     footer.classList.add('noneDisplay')
+     heade_gop_y.classList.add('noneDisplay')
+     heade_home.classList.add('Display')
+     header.onclick = function(){
+        location.reload();
+     }
  }

@@ -10,7 +10,7 @@
 
 .nonePoiter
 {
-    cursor: no-drop;
+    cursor: no-drop !important;
 }
 
 .Poiter 
