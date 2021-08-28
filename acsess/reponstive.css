@@ -49,7 +49,7 @@
   }
 
   .gop_y {
-    height: 430px;
+    height: 440px;
     width: 700px;
     position: relative;
     top: 230px;
@@ -72,6 +72,7 @@
   .gop_y--create{
     margin-top: 10px;
     width: 550px;
+    height: 40px;
     margin: 10px 40px;
     font-size: 20px;
   }
