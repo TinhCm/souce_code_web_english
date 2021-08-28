@@ -48,19 +48,24 @@
   }
 
   .gop_y {
-    background-color: rgb(117, 206, 228);
-    width: 400px;
     height: 330px;
     position: relative;
     top: 230px;
     left: 170px;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    box-shadow: 30px 30px 10px;
-    -moz-box-shadow: 30px 30px 10px;
-    -webkit-box-shadow: 30px 30px 10px;
-    -o-box-shadow: 30px 30px 10px;
-    -ms-box-shadow: 30px 30px 10px;
-    border-radius: 10px;
+  }
+
+  .header-lienHe_1{
+      display: flex;
+      margin-left: 70px;
+  }
+
+  .header_second--cmt{
+    position: relative;
+    top: 90px;
+    right: 200px;
+  }
+
+  .footer2 > button{
+    margin-top: 29px;
   }
 }
