@@ -40,6 +40,7 @@
     background-color: rgb(245, 247, 241);
   }
 
+  /* Đánh giá */
   .danhGia {
     height: 630px;
     background-image: url(./img/dong_gop.jpg);
@@ -49,11 +50,13 @@
 
   .gop_y {
     height: 330px;
+    width: 700px;
     position: relative;
     top: 230px;
-    left: 170px;
+    left: 20px;
   }
 
+  /* Header */
   .header-lienHe_1{
       display: flex;
       margin-left: 70px;
@@ -65,7 +68,24 @@
     right: 200px;
   }
 
+  .header_second{
+    padding-top: 100px;
+    height: 350px;
+  }
+
+  /* Footer */
   .footer2 > button{
     margin-top: 29px;
+  }
+
+   /*Backend*/
+  .content1_backend{
+    height: 1000px;
+    overflow-y: scroll;
+  }
+
+  .content2_backend{
+    height: 1000px;
+    overflow-y:scroll;
   }
 }
