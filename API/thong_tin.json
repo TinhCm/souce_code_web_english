@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "ten": "Tinh",
+      "password": "123"
+    },
+    {
+      "ten": "Dương Văn Tính",
+      "password": "123",
+      "id": 2
+    }
+  ]
+}

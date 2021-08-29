@@ -12,7 +12,7 @@
 }
 
 .Poiter {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .Display {
@@ -38,6 +38,13 @@
     border-width: 1px;
     border-style: solid;
     background-color: rgb(245, 247, 241);
+  }
+
+  /*Thông tin */
+  .header-thong_tin_1
+  {
+    margin-left: 50px;
+    font-size: 16px;
   }
 
   /* Đánh giá */
