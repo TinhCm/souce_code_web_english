@@ -85,16 +85,18 @@
       "name": "Tinh",
       "cmt": "Chuc mung",
       "id": 1
-    },
+    }
+  ],
+  "user": [
     {
-      "ten": "s",
-      "cmt": "s",
-      "id": 2
+      "id": 1,
+      "ten": "Tinh",
+      "password": "123"
     },
     {
       "ten": "Dương Văn Tính",
-      "cmt": "ssssssssssssssssssssssssssssssssssssss",
-      "id": 3
+      "password": "123",
+      "id": 2
     }
   ]
 }

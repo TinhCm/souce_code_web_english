@@ -12,133 +12,199 @@
 </head>
 <body>
     <div id="dau" class="width">
-        <header class="header">
-            <div class="header-logo">
-                <a href="">
-                    <i class="fas fa-book"></i>
-                </a>
-            </div>
-            <div class="header1">
-                <ul class="header1-list">
-                    <a href="#one">
-                        <li>Từ vựng</li>
-                    </a>
-                    <a href="#two">
-                        <li>Ngữ Pháp</li>
-                    </a>
-                    <a class="header1-list-ul nonePoiter" href="#">
-                        <li>Ví dụ</li>
-                    </a>
-                </ul>
-                <div class="Header-home">
-                    <i class="fas fa-home"></i>
-                    <a href="#dau">Home</a>
-                </div>
-            </div>
-            <div class="header-thong_tin">
-                <div class="header-thong_tin_1">
-                    <i class="far fa-user-circle"></i>
-                    <a href="./dang_nhap/form_dang_nhap.html">Đăng nhập</a>
-                    <a href="./dang_ky/form_dang_ky.html">Đăng ký</a>
-                </div>
-            </div>
-            
-        </header>
-
-        <div class="header_second">
-            <h1>LERNING ENGLISH</h1>
-            <h3>Nơi lưu trữ kiến thức của bạn</h3>
-            <div class="header_second--cmt">
-                <i class="fas fa-hand-point-right"></i>
-                <button>
-                    <a  class="header_second--cmt1" href="./gop_y/dong_gop.html">Mời bạn đóng góp ý kiến</a>
-                </button>
-            </div>
-        </div>   
-
-        <div class="body_cmt">
-            <div id="one" class="content">
-                <h3 class="content-folder" >Từ vựng đã có: </h3>
-                <div class="content1_backend">
-                    <ol class="content_list">
-                        
-                    </ol>
-                </div>
-                <h3 class="content-folder" >Nhập vào từ vựng mới: </h3>
-                <div class="content_list-input1">
-                    <label class="input-lable">Nhập vào từ: </label>
-                    <input class="input1_tu" type="text" name="name">
-                </div>
-    
-                <div class="content_list-input1">
-                  <label class="input-lable">Nhập vào nghĩa: </label>
-                  <input class="input2_nghia" type="text" name="name">
-                </div>
-    
-                <button class="content--create Poiter ">Tạo</button>
-    
-            </div>
-    
-            <div id="two" class="content2">
-                <h3 class="content-folder">Ngữ pháp đã có: </h3>
-                <div class="content2_backend"> 
-                    <ol class="content_list2">
-    
-                    </ol>
-                </div>
-                <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
-                <div class="content2-input2">
-                    <label >Nhập tên ngữ pháp: </label>
-                    <input class="input1_ten" type="text" name="name">
-                </div>
-    
-                <div class="content2-input2">
-                  <label>Nhập vào cấu trúc ngữ pháp: </label>
-                  <input class="input2-cauTruc" type="text" name="name">
-                </div>
-    
-                <div class="content2-input2">
-                    <label>Nhập vào cách dùng: </label>
-                    <textarea rows = "4" class="input2-cachDung" type="text" name="name"></textarea>
-                </div>
-    
-                <button class="content2--create Poiter ">Tạo</button>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="footer_one">
-                <div class="footer1">
-                    <p>@ Design by Tinh</p>
-                    <p>All rights reserver</p>
-                </div>
-                <div class="footer_icon">
-                    <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://mail.google.com/">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    <a href="https://www.google.com.vn/">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="https://drive.google.com/">
-                        <i class="fab fa-google-drive"></i>
-                    </a>
+        <!-- Page home -->
+            <header class="header">
+                <div class="header-logo">
                     <a href="">
-                        <i class="fab fa-tiktok"></i>
+                        <i class="fas fa-book"></i>
                     </a>
                 </div>
+                <div class="header1">
+                    <ul class="header1-list">
+                        <a href="#one">
+                            <li>Từ vựng</li>
+                        </a>
+                        <a href="#two">
+                            <li>Ngữ Pháp</li>
+                        </a>
+                        <a class="header1-list-ul nonePoiter" href="#">
+                            <li>Ví dụ</li>
+                        </a>
+                    </ul>
+                    <div class="Header-home">
+                        <i class="fas fa-home"></i>
+                        <a href="#dau">Home</a>
+                    </div>
+                </div>
+                <div class="header-thong_tin">
+                    <div class="header-thong_tin_1">
+                        <i class="far fa-user-circle"></i>
+                        <a class="nut_dang_nhap" href="#dang_nhap">Đăng nhập</a>
+                        <a class="nut_dang_ki" href="#dang_ki">Đăng ký</a>
+                    </div>
+
+                    <div class="header-thong_tin_user_1">
+                        <i class="far fa-user-circle"></i>
+                        <p class="thong_tin_user_admin">Dương Văn Tính</p>
+                    </div>
+                </div>
+                
+            </header>
+
+            <div class="header_second">
+                <h1>LERNING ENGLISH</h1>
+                <h3>Nơi lưu trữ kiến thức của bạn</h3>
+                <div class="header_second--cmt">
+                    <i class="fas fa-hand-point-right"></i>
+                    <button>
+                        <a  class="header_second--cmt1" href="#danhGia">Mời bạn đóng góp ý kiến</a>
+                    </button>
+                </div>
+            </div>   
+
+            <div class="body_cmt">
+                <div id="one" class="content">
+                    <h3 class="content-folder" >Từ vựng đã có: </h3>
+                    <div class="content1_backend">
+                        <ol class="content_list">
+                            
+                        </ol>
+                    </div>
+                    <h3 class="content-folder" >Nhập vào từ vựng mới: </h3>
+                    <div class="content_list-input1">
+                        <label class="input-lable">Nhập vào từ: </label>
+                        <input class="input1_tu" type="text" name="name">
+                    </div>
+        
+                    <div class="content_list-input1">
+                    <label class="input-lable">Nhập vào nghĩa: </label>
+                    <input class="input2_nghia" type="text" name="name">
+                    </div>
+        
+                    <button class="content--create Poiter ">Tạo</button>
+        
+                </div>
+        
+                <div id="two" class="content2">
+                    <h3 class="content-folder">Ngữ pháp đã có: </h3>
+                    <div class="content2_backend"> 
+                        <ol class="content_list2">
+        
+                        </ol>
+                    </div>
+                    <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
+                    <div class="content2-input2">
+                        <label >Nhập tên ngữ pháp: </label>
+                        <input class="input1_ten" type="text" name="name">
+                    </div>
+        
+                    <div class="content2-input2">
+                    <label>Nhập vào cấu trúc ngữ pháp: </label>
+                    <input class="input2-cauTruc" type="text" name="name">
+                    </div>
+        
+                    <div class="content2-input2">
+                        <label>Nhập vào cách dùng: </label>
+                        <textarea rows = "4" class="input2-cachDung" type="text" name="name"></textarea>
+                    </div>
+        
+                    <button class="content2--create Poiter ">Tạo</button>
+                </div>
             </div>
-            <div class="footer2">
-                <h3>Hãy đến với chúng tôi</h3>
-                <h2>Nơi bạn tìm được nguồn cảm hứng</h2>
-                <button>
-                    <i class="fas fa-home"></i>
-                    <a href="#dau">Đầu trang</a>
-                </button>
+
+            <footer class="footer">
+                <div class="footer_one">
+                    <div class="footer1">
+                        <p>@ Design by Tinh</p>
+                        <p>All rights reserver</p>
+                    </div>
+                    <div class="footer_icon">
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://mail.google.com/">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="https://www.google.com.vn/">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://drive.google.com/">
+                            <i class="fab fa-google-drive"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <h3>Hãy đến với chúng tôi</h3>
+                    <h2>Nơi bạn tìm được nguồn cảm hứng</h2>
+                    <button>
+                        <i class="fas fa-home"></i>
+                        <a href="#dau">Đầu trang</a>
+                    </button>
+                </div>
+            </footer>
+
+        <!-- Page home -->
+
+        <!-- Page góp ý -->
+            <div id="danhGia" class="danhGia">
+                <button class="danhGia_thoat">X</button>
+                <div class="gop_y">
+                    <h2>ĐÓNG GÓP Ý KIẾN</h2>
+                    <h4>Use form</h4>
+                    <div class="gop_y-input1">
+                        <input placeholder="Nhập vào tên" class="gop_y_tu1" type="text" name="name">
+                    </div>
+                    <div id="gop_y-input1" class="gop_y-input1">
+                        <textarea class="gop_y2_cmt" rows="4" placeholder="Nhập vào đánh giá" name="name"></textarea>
+                    </div>
+                        <button class="gop_y--create">Gửi</a></button>
+                </div>
             </div>
-        </footer>
+         <!-- Page góp ý -->
+
+         <!-- Page đăng nhập -->
+            <div id="dang_nhap" class="dang_nhap">
+                <button class="dang_nhap_thoat">X</button>
+                <div class="dang_nhap_content">
+                    <div class="dang_nhap1">
+                        <h1>Đăng nhập</h1>
+                        <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
+                        <input placeholder="Nhập vào tên" class="dang_nhap1_ten" type="text" name="name">
+                        <input placeholder="Nhập vào mật khẩu" class="dang_nhap1_password" type="text" name="name">
+                        <button class="create_dang_nhap">Đăng nhập</button>
+                        <p class="nosuccses"></p>
+                        <span>Hoặc bạn chưa có tài khoản?</span>
+                        <a href="#dang_ki" class="dang_ki_chuyen">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+         <!-- Page đăng nhập -->
+
+         <!-- Page đăng ki -->
+            <div id="dang_ki" class="dang_ki">
+                <button class="dang_ki_thoat">X</button>
+                <div class="dang_ki_content">
+                    <div class="dang_ki1">
+                        <h1>Đăng ký</h1>
+                        <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
+                        <input placeholder="Nhập vào tên" class="dang_ki1_ten" type="text" name="name">
+                        <input placeholder="Nhập vào mật khẩu" class="dang_ki1_password" type="text" name="name">
+                        <form class="checkbox" action="">
+                            <p>Tôi đồng ý với các điều khoản và điều kiện của Lerning English</p>
+                        </form>
+                        <div >
+                            <p class="checkTen"></p>
+                        </div>
+                        <button class="create_dang_ki">Đăng kí</button>
+                        <span>Hoặc bạn đã có tài khoản?</span>
+                        <a class="dang_nhap_chuyen" href="#dang_nhap">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+         <!-- Page đăng ki -->
     <script src="./index.js"></script>
     </div>
 </body>
