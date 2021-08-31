@@ -6,7 +6,7 @@
       "cach_dung": "Là thì diễn tả một sự việc, một hành động lặp đi lặp lại theo thói quen, phong tục, khả năng hay một sự thật hiển nhiên.",
       "id": 1,
       "date": "10:8:41-31/8/2021",
-      "user": "Dương Văn Tính"
+      "user": "Dươn Tính"
     },
     {
       "ten": "Thì hiện tại tiếp diễn – Present continuous tense",
@@ -55,6 +55,14 @@
       "id": 7,
       "date": "10:8:41-31/8/2021",
       "user": "Dương Văn Tính"
+    },
+    {
+      "ten": "Thì hiện tại đơn – Present simple",
+      "cau_truc": "ss",
+      "cach_dung": "",
+      "date": "17:43:9-31/8/2021",
+      "user": "Dương Văn Tính",
+      "id": 8
     }
   ],
   "list": [
@@ -63,7 +71,7 @@
       "nghia": "môi",
       "id": 1,
       "date": "10:8:41-31/8/2021",
-      "user": "Dương Văn Tính"
+      "user": "Dưăn Tính"
     },
     {
       "tu_vung": "land",
@@ -106,12 +114,22 @@
       "id": 7,
       "date": "10:8:41-31/8/2021",
       "user": "Dương Văn Tính"
+    },
+    {
+      "tu_vung": "parts",
+      "nghia": "",
+      "date": "17:42:57-31/8/2021",
+      "user": "Dương Văn Tính",
+      "id": 8
     }
   ],
-  "gop_y": [
-    
-  ],
+  "gop_y": [],
   "user": [
-    
+    {
+      "ten": "Dương Văn Tính",
+      "password": "123",
+      "date": "16:33:2-31/8/2021",
+      "id": 1
+    }
   ]
 }

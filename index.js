@@ -1,14 +1,14 @@
-var API_tu_vung = 'https://demo-apps-en.herokuapp.com/list'
-var API_ngu_phap = 'https://demo-apps-en.herokuapp.com/ngu_phap'
-var API_gop_y = "https://demo-apps-en.herokuapp.com/gop_y"
-var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
-var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
+// var API_tu_vung = 'https://demo-apps-en.herokuapp.com/list'
+// var API_ngu_phap = 'https://demo-apps-en.herokuapp.com/ngu_phap'
+// var API_gop_y = "https://demo-apps-en.herokuapp.com/gop_y"
+// var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
+// var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
 
-// var API_tu_vung = 'http://localhost:3000/list'
-// var API_ngu_phap = 'http://localhost:3000/ngu_phap'
-// var API_gop_y = "http://localhost:3000/gop_y"
-// var API_dang_nhap ='http://localhost:3000/user'
-// var API_dang_ki ='http://localhost:3000/user'
+var API_tu_vung = 'http://localhost:3000/list'
+var API_ngu_phap = 'http://localhost:3000/ngu_phap'
+var API_gop_y = "http://localhost:3000/gop_y"
+var API_dang_nhap ='http://localhost:3000/user'
+var API_dang_ki ='http://localhost:3000/user'
 
 //Phần API_tu_vung từ vựng
 function batDau_tu_vung()
@@ -105,21 +105,43 @@ function xuLi_tu_vung()
     {
         var tu_vung = document.querySelector('.input1_tu').value;
         var nghia = document.querySelector('.input2_nghia').value;
+        var user_tu_vung_check = document.querySelector('.user_tu_vung_check');
         var today = new Date();
         var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
         today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
         
-        var user = document.cookie;
-        formData = {
-            tu_vung:tu_vung,
-            nghia:nghia,
-            date:date,
-            user:user
-        }
-        taoDuLieu_tu_vung(formData,function()
+        layDuLieu_tu_vung(check_ton_tai_TV);
+        function check_ton_tai_TV(list)
         {
-            layDuLieu_tu_vung(xuatDuLieu_tu_vung);
-        })
+            var loc_user_tu_vung_ton_tai = list.filter(function(lists)
+            {
+                return lists.user === document.cookie;
+            })
+
+            var loc_user_tu_vung_ton_tai2 = loc_user_tu_vung_ton_tai.some(function(listss)
+            {
+                return listss.tu_vung === tu_vung;
+            })
+
+            if(loc_user_tu_vung_ton_tai2 == true)
+            {
+                user_tu_vung_check.innerHTML = "Từ vựng đã tồn tại";    
+            }
+            else
+            {
+                var user = document.cookie;
+                formData = {
+                    tu_vung:tu_vung,
+                    nghia:nghia,
+                    date:date,
+                    user:user
+                }
+                taoDuLieu_tu_vung(formData,function()
+                {
+                    layDuLieu_tu_vung(xuatDuLieu_tu_vung);
+                })
+            }
+        }
     }
 }
 
@@ -217,21 +239,45 @@ function xuLi_ngu_phap()
         var ten = document.querySelector('.input1_ten').value;
         var cau_truc = document.querySelector('.input2-cauTruc').value;
         var cach_dung = document.querySelector('.input2-cachDung').value;
+        var user_ngu_phap_check = document.querySelector('.user_ngu_phap_check');
         var today = new Date();
         var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
         today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
-        var user = document.cookie;
-        formData = {
-            ten: ten,
-            cau_truc: cau_truc,
-            cach_dung: cach_dung,
-            date:date,
-            user:user
-        }
-        taoDuLieu_ngu_phap(formData,function()
+
+
+        layDuLieu_ngu_phap(check_ton_tai_NP);
+        function check_ton_tai_NP(ngu_phap)
         {
-            layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
-        })
+            var loc_user_ngu_phap_ton_tai = ngu_phap.filter(function(ngu_phaps)
+            {
+                return ngu_phaps.user === document.cookie;
+            })
+
+            var loc_user_ngu_phap_ton_tai2 = loc_user_ngu_phap_ton_tai.some(function(ngu_phapss)
+            {
+                return ngu_phapss.ten === ten;
+            })
+
+            if(loc_user_ngu_phap_ton_tai2 == true)
+            {
+                user_ngu_phap_check.innerHTML = "Ngữ pháp đã tồn tại";    
+            }
+            else
+            {
+                var user = document.cookie;
+                formData = {
+                    ten: ten,
+                    cau_truc: cau_truc,
+                    cach_dung: cach_dung,
+                    date:date,
+                    user:user
+                }
+                taoDuLieu_ngu_phap(formData,function()
+                {
+                    layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
+                })
+            }
+        }
     }
 }
 

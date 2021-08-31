@@ -63,6 +63,14 @@
     margin-left: 270px;
   }
 
+  .input-lable {
+    margin: 10px 0;
+  }
+
+  .user_tu_vung_check {
+    margin-left: 235px;
+  }
+
   /* Ngữ pháp */
 
   .check_dang_nhap_user_NP {
@@ -71,6 +79,14 @@
 
   .content2--create {
     margin-left: 270px;
+  }
+
+  .content2-input2 > label {
+    margin: 10px 0;
+  }
+
+  .user_ngu_phap_check {
+    margin-left: 230px;
   }
 
   /* Đánh giá */

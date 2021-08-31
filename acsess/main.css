@@ -171,6 +171,12 @@
   margin-left: 350px;
 }
 
+.user_tu_vung_check {
+  color: red;
+  font-weight: 500;
+  margin-left: 435px;
+}
+
 /*Phần ngữ pháp*/
 .content2 {
   margin: 20px 20px;
@@ -204,7 +210,7 @@
 }
 
 .content2--create {
-  margin-left: 530px;
+  margin-left: 520px;
   cursor: no-drop;
   font-size: 20px;
   width: 50px;
@@ -215,6 +221,12 @@
   color: red;
   font-weight: 500;
   margin-left: 400px;
+}
+
+.user_ngu_phap_check {
+  color: red;
+  font-weight: 500;
+  margin-left: 480px;
 }
 
 .footer {
