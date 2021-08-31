@@ -68,7 +68,12 @@ function xoaDuLieu_tu_vung(id)
 
 function xuatDuLieu_tu_vung(list)
 {
-    var htmls = list.map(function(lists)
+    var loc_user_tu_vung = list.filter(function(lists)
+    {
+        return lists.user === document.cookie;
+    })
+
+    var htmls = loc_user_tu_vung.map(function(lists)
     {
         return `<li class = "list-item-${lists.id}" id = list>
                     <h4 class = "lists-tuvung">${lists.tu_vung}</h4>
@@ -85,13 +90,31 @@ function xuatDuLieu_tu_vung(list)
 function xuLi_tu_vung()
 {
     var xuLi_tu_vung = document.querySelector('.content--create')
+    var check_dang_nhap_user = document.querySelector('.check_dang_nhap_user');
+    
+    if(document.cookie != "")
+    {
+        xuLi_tu_vung.disabled = false;
+        xuLi_tu_vung.classList.add('Poiter');
+    }
+    else{
+        xuLi_tu_vung.disabled = true
+        check_dang_nhap_user.innerHTML="Bạn vui lòng đăng nhập để sử dụng chức năng"
+    }
     xuLi_tu_vung.onclick = function()
     {
         var tu_vung = document.querySelector('.input1_tu').value;
         var nghia = document.querySelector('.input2_nghia').value;
+        var today = new Date();
+        var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
+        today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
+        
+        var user = document.cookie;
         formData = {
             tu_vung:tu_vung,
             nghia:nghia,
+            date:date,
+            user:user
         }
         taoDuLieu_tu_vung(formData,function()
         {
@@ -158,7 +181,12 @@ function xoaDuLieu_ngu_phap(id)
 
 function xuatDuLieu_ngu_phap(ngu_phap)
 {
-    var htmls = ngu_phap.map(function(pramas)
+    var loc_user_ngu_phap = ngu_phap.filter(function(ngu_phaps)
+    {
+        return ngu_phaps.user === document.cookie;
+    })
+
+    var htmls = loc_user_ngu_phap.map(function(pramas)
     {
         return `<li class = "prame_temp">
                     <h4>${pramas.ten}</h4>
@@ -173,16 +201,32 @@ function xuatDuLieu_ngu_phap(ngu_phap)
 
 function xuLi_ngu_phap()
 {
-    var xuLi_ngu_phap = document.querySelector('.content2--create')
+    var xuLi_ngu_phap = document.querySelector('.content2--create');
+    var check_dang_nhap_user_NP = document.querySelector('.check_dang_nhap_user_NP');
+    if(document.cookie != "")
+    {
+        xuLi_ngu_phap.disabled = false;
+        xuLi_ngu_phap.classList.add('Poiter');
+    }
+    else{
+        xuLi_ngu_phap.disabled = true;
+        check_dang_nhap_user_NP.innerHTML="Bạn vui lòng đăng nhập để sử dụng chức năng"
+    }
     xuLi_ngu_phap.onclick = function()
     {
         var ten = document.querySelector('.input1_ten').value;
         var cau_truc = document.querySelector('.input2-cauTruc').value;
         var cach_dung = document.querySelector('.input2-cachDung').value;
+        var today = new Date();
+        var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
+        today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
+        var user = document.cookie;
         formData = {
             ten: ten,
             cau_truc: cau_truc,
             cach_dung: cach_dung,
+            date:date,
+            user:user
         }
         taoDuLieu_ngu_phap(formData,function()
         {
@@ -226,9 +270,13 @@ function xuLi_gop_y()
     {
         var ten = document.cookie;
         var cmt = document.querySelector('.gop_y2_cmt').value;
+        var today = new Date();
+        var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
+        today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
         formData = {
             ten: ten,
-            cmt: cmt
+            cmt: cmt,
+            date:date
         }
         taoDuLieu_gop_y(formData,function()
         {
@@ -242,15 +290,23 @@ function xuLi_gop_y()
 var gop_y_tu = document.querySelector('.gop_y_tu1');
 var gop_y2_cmt = document.querySelector('.gop_y2_cmt');
 var xuLi_gop_y = document.querySelector('.gop_y--create');
+var checkten_user = document.querySelector('.checkten_user');
 xuLi_gop_y.disabled = true;
 
-    gop_y2_cmt.oninput = function(){
-        if(gop_y2_cmt != "")  
-        {
-            xuLi_gop_y.classList.add('Poiter');
-            xuLi_gop_y.disabled = false;
+   if(document.cookie != "")
+   {
+        gop_y2_cmt.oninput = function(){
+            if(gop_y2_cmt != "")  
+            {
+                xuLi_gop_y.classList.add('Poiter');
+                xuLi_gop_y.disabled = false;
+            }
         }
-    }
+   }
+   else
+   {
+    checkten_user.innerHTML = "Bạn vui lòng đăng nhập để đóng góp ý kiến";
+   }
 
 //Phần API đăng nhập
 function batDau_dang_nhap()
@@ -316,26 +372,9 @@ function xuLi_dang_nhap()
                 })
                 if(checkPast.password == dang_nhap_pass.value)
                 {
-                    var headerXL = document.querySelector('.header');
-
-                    var header_secondXL = document.querySelector('.header_second');
-                    var body_cmtXL = document.querySelector('.body_cmt');
-                    var footerXL = document.querySelector('.footer');
-                    var danhGiaXL = document.querySelector('#danhGia');
-                    var dang_nhapXL = document.querySelector('#dang_nhap');
-                    var dang_kiXL = document.querySelector('#dang_ki');
-                    headerXL.classList.remove('noneDisplay');
-                    header_secondXL.classList.remove('noneDisplay');
-                    body_cmtXL.classList.remove('noneDisplay');
-                    footerXL.classList.remove('noneDisplay');
-                    dang_nhapXL.classList.remove('Display')
-
-                    header_thong_tin_user_1DN.classList.add('Display');
-                    header_thong_tin_1DN.classList.add('noneDisplay')
-
+                    location.reload();
                     thong_tin_user_adminDN.innerHTML = checkPast.ten;
                     document.cookie = checkPast.ten;
-                    
                 }
                 else
                 {
@@ -439,20 +478,21 @@ function xuLi_dang_ki()
                 return users.ten === dang_ki_ten.value;
             })
 
-            console.log(checkten);
-
             if(checkten != -1)
             {
-                console.log(checkten)
                 nosucces.innerHTML = "Tên tài khoản đã tồn tại";
             }
             else{
-                nosucces.innerHTML = "Tên đăng nhập đã tồn tại";
                 var ten = document.querySelector('.dang_ki1_ten').value;
                 var password = document.querySelector('.dang_ki1_password').value;
+                var today = new Date();
+                var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
+                today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
+
                 formData = {
                     ten: ten,
-                    password:password
+                    password:password,
+                    date:date
                 }
                 taoDuLieu_dang_ki(formData,function()
                 {
@@ -566,7 +606,6 @@ nut_dang_nhap.onclick = function()
 }
 
 //đăng kí
-
 nut_dang_ki.onclick = function()
 {
     headerXL.classList.add('noneDisplay');
@@ -575,5 +614,3 @@ nut_dang_ki.onclick = function()
     footerXL.classList.add('noneDisplay');
     dang_kiXL.classList.add('Display');
 }
-
-//Phần API user

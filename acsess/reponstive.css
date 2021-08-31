@@ -41,18 +41,36 @@
   }
 
   /*Thông tin */
-  .header-thong_tin_1
-  {
+  .header-thong_tin_1 {
     margin-left: 0px !important;
     font-size: 16px !important;
     text-align: center;
   }
 
-  .header-thong_tin_user_1
-  {
+  .header-thong_tin_user_1 {
     margin-left: 0px !important;
     font-size: 16px !important;
     text-align: center;
+  }
+
+  /* Từ vựng */
+
+  .check_dang_nhap_user {
+    margin-left: 150px;
+  }
+
+  .content--create {
+    margin-left: 270px;
+  }
+
+  /* Ngữ pháp */
+
+  .check_dang_nhap_user_NP {
+    margin-left: 150px;
+  }
+
+  .content2--create {
+    margin-left: 270px;
   }
 
   /* Đánh giá */
@@ -71,20 +89,20 @@
     left: 0px;
   }
 
-  .gop_y-input1 > input{
+  .gop_y-input1 > input {
     width: 550px;
     height: 50px;
     margin: 10px 40px;
     font-size: 20px;
   }
 
-  #gop_y-input1 > textarea{
+  #gop_y-input1 > textarea {
     width: 550px;
     margin: 10px 40px;
     font-size: 20px;
   }
 
-  .gop_y--create{
+  .gop_y--create {
     margin-top: 10px;
     width: 550px;
     height: 40px;
@@ -93,18 +111,18 @@
   }
 
   /* Header */
-  .header-lienHe_1{
-      display: flex;
-      margin-left: 70px;
+  .header-lienHe_1 {
+    display: flex;
+    margin-left: 70px;
   }
 
-  .header_second--cmt{
+  .header_second--cmt {
     position: relative;
     top: 90px;
     right: 200px;
   }
 
-  .header_second{
+  .header_second {
     padding-top: 100px;
     text-align: center;
     height: 350px;
@@ -113,19 +131,24 @@
     background-size: 100%;
   }
 
+  /* Đăng kí */
+  .dang_ki {
+    height: 660px;
+  }
+
   /* Footer */
-  .footer2 > button{
+  .footer2 > button {
     margin-top: 29px;
   }
 
-   /*Backend*/
-  .content1_backend{
+  /*Backend*/
+  .content1_backend {
     height: 900px;
     overflow-y: scroll;
   }
 
-  .content2_backend{
+  .content2_backend {
     height: 900px;
-    overflow-y:scroll;
+    overflow-y: scroll;
   }
 }
