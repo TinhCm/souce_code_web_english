@@ -63,7 +63,7 @@
     height: 30px;
   }
 
-  .check_user_tu_vung{
+  .check_user_tu_vung {
     width: 400px;
   }
 
@@ -99,10 +99,14 @@
   }
 
   /* Ngữ pháp */
-  .check_user_NP{
+  .check_user_NP {
     padding-left: 250px;
     width: 400px;
   }
+
+  /* .check_dang_nhap_user_NP {
+    margin-top: 10px;
+  } */
 
   .content2-input2 > label {
     margin: 10px 0;
