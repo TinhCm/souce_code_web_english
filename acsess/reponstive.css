@@ -110,16 +110,16 @@
   /* Ngữ pháp */
 
   .check_dang_nhap_user_NP {
-    margin-left: 251px;
+    margin-left: 282px;
   }
 
   .content2--create {
-    margin-left: 370px;
+    margin-left: 401px;
   }
 
   .content2-input2 > label {
     margin: 10px 0;
-    min-width: 200px;
+    min-width: 230px;
   }
 
   .content2-input2 > input {
@@ -132,7 +132,7 @@
   }
 
   .user_ngu_phap_check {
-    margin-left: 330px;
+    margin-left: 372px;
   }
 
   .content_ngu_phap1 {
