@@ -75,13 +75,11 @@ function xuatDuLieu_tu_vung(list)
 
     var htmls = loc_user_tu_vung.map(function(lists)
     {
-        return `<li class = "list-item-${lists.id}" id = list>
-                    <h4 class = "lists-tuvung">${lists.tu_vung}</h4>
-                    <div class = "lists-nghia"> 
-                        <h4 >=> ${lists.nghia}</h4>
-                        <button class = "Poiter" onclick = "xoaDuLieu_tu_vung(${lists.id})">x</button>
-                    </div>
-                </li>`
+        return "<li class = 'content_list_backend-li'>" + 
+                "<div class = 'content_list_backend_tu'>" +lists.tu_vung + "</div>" + 
+                "<div class = 'content_list_backend_nghia'>" + lists.nghia + "</div>"+ 
+                "<button class = \"Poiter content_list_backend_nut \" onclick = \"xoaDuLieu_tu_vung("+ lists.id + ")\">" + 
+                "X" + "</button>" +"</li>";
     })
 
     document.querySelector('.content_list').innerHTML = htmls.join('');
@@ -101,6 +99,7 @@ function xuLi_tu_vung()
         xuLi_tu_vung.disabled = true
         check_dang_nhap_user.innerHTML="Bạn vui lòng đăng nhập để sử dụng chức năng"
     }
+    
     xuLi_tu_vung.onclick = function()
     {
         var tu_vung = document.querySelector('.input1_tu').value;
@@ -210,12 +209,12 @@ function xuatDuLieu_ngu_phap(ngu_phap)
 
     var htmls = loc_user_ngu_phap.map(function(pramas)
     {
-        return `<li class = "prame_temp">
-                    <h4>${pramas.ten}</h4>
-                    <h4>Cấu trúc: ${pramas.cau_truc}</h4>
-                    <h4>Cách dùng: ${pramas.cach_dung}</h4>
-                    <button class = "pramas Poiter " onclick = "xoaDuLieu_ngu_phap(${pramas.id})">Xóa</button>
-                </li>`
+        return "<li class = 'content_list2_backend-li'>" + 
+        "<div class = 'content_list2_backend_ten'>" + pramas.ten + "</div>" + 
+        "<div class = 'content_list2_backend_cau_truc'>" + pramas.cau_truc + "</div>" + 
+        "<div class = 'content_list2_backend_cach_dung'>" + pramas.cach_dung + "</div>" +
+        "<button class = \"Poiter pramas \" onclick = \"xoaDuLieu_ngu_phap("+ pramas.id + ")\">" +
+        "X" + "</button>" +"</li>";
     })
 
     document.querySelector('.content_list2').innerHTML = htmls.join('');
@@ -243,7 +242,6 @@ function xuLi_ngu_phap()
         var today = new Date();
         var date = today.getHours() + ':'+ today.getMinutes() +':' + today.getSeconds() +'-' + 
         today.getDate() + '/'+ (today.getMonth()+1) + '/' + today.getFullYear();
-
 
         layDuLieu_ngu_phap(check_ton_tai_NP);
         function check_ton_tai_NP(ngu_phap)
@@ -599,12 +597,11 @@ var dang_ki_thoat = document.querySelector('.dang_ki_thoat');
 var dang_ki_chuyenXL = document.querySelector('.dang_ki_chuyen');
 var dang_nhap_chuyenXL =document.querySelector('.dang_nhap_chuyen');
 
-
-//thoát
+//Thoát
 
 danhGia_thoat.onclick = function()
 {
-    location.reload();
+    location.reload();s
 }
 
 dang_nhap_thoat.onclick = function()
@@ -617,7 +614,7 @@ dang_ki_thoat.onclick = function()
     location.reload();
 }
 
-//chuyển
+//Chuyển
 
 dang_ki_chuyenXL.onclick = function()
 {
@@ -631,7 +628,7 @@ dang_nhap_chuyenXL.onclick = function()
     dang_kiXL.classList.remove('Display')
 }
 
-//đánh giá
+//Đánh giá
 header_second_cmt1.onclick = function()
 {
     headerXL.classList.add('noneDisplay');
@@ -641,7 +638,7 @@ header_second_cmt1.onclick = function()
     danhGiaXL.classList.add('Display');
 }
 
-//đăng nhập
+//Đăng nhập
 nut_dang_nhap.onclick = function()
 {
     headerXL.classList.add('noneDisplay');
@@ -651,7 +648,7 @@ nut_dang_nhap.onclick = function()
     dang_nhapXL.classList.add('Display');
 }
 
-//đăng kí
+//Đăng kí
 nut_dang_ki.onclick = function()
 {
     headerXL.classList.add('noneDisplay');

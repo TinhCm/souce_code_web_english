@@ -158,6 +158,13 @@
   font-size: 20px;
   width: 50px;
   height: 30px;
+  background-color: rgb(74, 158, 236);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #999999;
+  outline: none;
+  border-style: solid;
+  border-width: 0.5px;
 }
 
 .content1_backend {
@@ -175,6 +182,88 @@
   color: red;
   font-weight: 500;
   margin-left: 435px;
+}
+
+.content_tu_vung {
+  display: flex;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  background-color: cyan;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+.content_tu_vung0 {
+  width: 60px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_tu_vung1 {
+  flex: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_tu_vung2 {
+  flex: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_tu_vung3 {
+  flex: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_list_backend_tu {
+  display: inline-block;
+  width: 260px;
+  margin-left: 20px;
+}
+
+.content_list_backend_nghia {
+  margin-left: 40px;
+  display: inline-block;
+  width: 300px;
+}
+
+.content_list_backend_nut {
+  font-weight: 600;
+  margin-left: 125px;
+  background-color: rgb(233, 225, 225);
+  color: red;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px #f1eeee;
+  outline: none;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.content_list_backend-li {
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.content_list_backend-li:hover {
+  color: red;
 }
 
 /*Phần ngữ pháp*/
@@ -215,6 +304,13 @@
   font-size: 20px;
   width: 50px;
   height: 30px;
+  background-color: rgb(74, 158, 236);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #999999;
+  outline: none;
+  border-style: solid;
+  border-width: 0.5px;
 }
 
 .check_dang_nhap_user_NP {
@@ -228,6 +324,111 @@
   font-weight: 500;
   margin-left: 480px;
 }
+
+.content_ngu_phap {
+  display: flex;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  background-color: cyan;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+.content_ngu_phap0 {
+  width: 60px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_ngu_phap1 {
+  width: 230px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_ngu_phap2 {
+  width: 230px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_ngu_phap3 {
+  flex: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_ngu_phap4 {
+  width: 60px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+}
+
+.content_list2_backend_ten {
+  display: inline-block;
+  width: 210px;
+  margin-left: 20px;
+}
+
+.content_list2_backend_cau_truc {
+  margin-left: 20px;
+  display: inline-block;
+  width: 210px;
+}
+
+.content_list2_backend_cach_dung {
+  margin-left: 20px;
+  display: inline-block;
+  width: 350px;
+  word-wrap: break-word;
+}
+
+.pramas {
+  margin-left: 25px;
+  background-color: rgb(233, 225, 225);
+  color: red;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px #f1eeee;
+  outline: none;
+  border-style: solid;
+  border-width: 0.5px;
+  font-weight: 600;
+}
+
+.content_list2_backend-li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.content_list2_backend-li:hover {
+  color: red;
+}
+
+.content2_backend {
+  height: 620px;
+  overflow-y: scroll;
+}
+
+/* Footer */
 
 .footer {
   display: flex;
@@ -265,33 +466,9 @@
   text-decoration: none;
 }
 
-.content2_backend {
-  height: 620px;
-  overflow-y: scroll;
-}
-
-/*Phần javaScrip*/
-
-.lists-nghia {
-  display: flex;
-  width: 500px;
-}
-
-.lists-nghia > h4 {
-  width: 500px;
-  margin: 0;
-}
-
-.lists-nghia > button {
-  margin-left: 300px;
-}
-
+/* Javascrip */
 #list:hover {
   color: red;
-}
-
-.pramas {
-  margin-left: 300px;
 }
 
 .prame_temp:hover {

@@ -23,7 +23,7 @@
   display: none;
 }
 
-/* reponstive */
+/* Reponstive */
 @media (max-width: 1024px) {
 }
 
@@ -60,33 +60,120 @@
   }
 
   .content--create {
-    margin-left: 270px;
+    margin-left: 380px;
   }
 
   .input-lable {
     margin: 10px 0;
   }
 
+  .content_list-input1 > input {
+    width: 400px;
+    height: 30px;
+  }
+
+  .check_dang_nhap_user {
+    margin-left: 255px;
+  }
+
   .user_tu_vung_check {
-    margin-left: 235px;
+    margin-left: 345px;
+  }
+
+  .content_tu_vung1 {
+    box-sizing: border-box;
+  }
+
+  .content_tu_vung2 {
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+
+  .content_tu_vung3 {
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+
+  .content_list_backend_tu {
+    width: 170px;
+  }
+
+  .content_list_backend_nghia {
+    margin-left: 10px;
+    width: 200px;
+  }
+
+  .content_list_backend_nut {
+    margin-left: 115px;
   }
 
   /* Ngữ pháp */
 
   .check_dang_nhap_user_NP {
-    margin-left: 150px;
+    margin-left: 251px;
   }
 
   .content2--create {
-    margin-left: 270px;
+    margin-left: 370px;
   }
 
   .content2-input2 > label {
     margin: 10px 0;
+    min-width: 200px;
+  }
+
+  .content2-input2 > input {
+    width: 400px;
+    height: 30px;
+  }
+
+  .content2-input2 > textarea {
+    width: 400px;
   }
 
   .user_ngu_phap_check {
-    margin-left: 230px;
+    margin-left: 330px;
+  }
+
+  .content_ngu_phap1 {
+    width: 173px;
+  }
+
+  .content_ngu_phap2 {
+    width: 178px;
+  }
+
+  .content_list2_backend_ten {
+    width: 165px;
+    margin-left: 15px;
+  }
+
+  .content_list2_backend_cau_truc {
+    margin-left: 10px;
+    width: 165px;
+  }
+
+  .content_list2_backend_cach_dung {
+    margin-left: 15px;
+    width: 188px;
+  }
+
+  .pramas {
+    margin-left: 20px;
+  }
+
+  .content_list2_backend-li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .content_list2_backend-li:hover {
+    color: red;
+  }
+
+  .content2_backend {
+    height: 620px;
+    overflow-y: scroll;
   }
 
   /* Đánh giá */
