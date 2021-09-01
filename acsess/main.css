@@ -149,11 +149,18 @@
 
 .input-lable {
   display: inline-block;
-  min-width: 200px;
+  width: 200px;
+}
+
+.check_user_tu_vung{
+  padding-left: 200px;
+  width: 600px;
 }
 
 .content--create {
-  margin-left: 470px;
+  display: block;
+  margin: auto;
+  align-items: center;
   cursor: no-drop;
   font-size: 20px;
   width: 50px;
@@ -173,15 +180,17 @@
 }
 
 .check_dang_nhap_user {
+  text-align: center;
   color: red;
   font-weight: 500;
-  margin-left: 350px;
+  margin: auto;
+  padding-top: 10px;
 }
 
 .user_tu_vung_check {
   color: red;
   font-weight: 500;
-  margin-left: 435px;
+  text-align: center;
 }
 
 .content_tu_vung {
@@ -282,7 +291,7 @@
 
 .content2-input2 > label {
   display: inline-block;
-  min-width: 250px;
+  width: 250px;
 }
 
 .content2-input2 > input {
@@ -299,7 +308,8 @@
 }
 
 .content2--create {
-  margin-left: 520px;
+  display: block;
+  margin: auto;
   cursor: no-drop;
   font-size: 20px;
   width: 50px;
@@ -313,16 +323,21 @@
   border-width: 0.5px;
 }
 
+.check_user_NP{
+  padding-left: 250px;
+  width: 600px;
+}
+
 .check_dang_nhap_user_NP {
   color: red;
   font-weight: 500;
-  margin-left: 400px;
+  text-align: center;
 }
 
 .user_ngu_phap_check {
   color: red;
   font-weight: 500;
-  margin-left: 480px;
+  text-align: center;
 }
 
 .content_ngu_phap {

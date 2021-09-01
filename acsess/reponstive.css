@@ -54,15 +54,6 @@
   }
 
   /* Từ vựng */
-
-  .check_dang_nhap_user {
-    margin-left: 150px;
-  }
-
-  .content--create {
-    margin-left: 380px;
-  }
-
   .input-lable {
     margin: 10px 0;
   }
@@ -72,12 +63,12 @@
     height: 30px;
   }
 
-  .check_dang_nhap_user {
-    margin-left: 255px;
+  .check_user_tu_vung{
+    width: 400px;
   }
 
   .user_tu_vung_check {
-    margin-left: 345px;
+    text-align: center;
   }
 
   .content_tu_vung1 {
@@ -108,18 +99,13 @@
   }
 
   /* Ngữ pháp */
-
-  .check_dang_nhap_user_NP {
-    margin-left: 282px;
-  }
-
-  .content2--create {
-    margin-left: 401px;
+  .check_user_NP{
+    padding-left: 250px;
+    width: 400px;
   }
 
   .content2-input2 > label {
     margin: 10px 0;
-    min-width: 230px;
   }
 
   .content2-input2 > input {
@@ -129,10 +115,6 @@
 
   .content2-input2 > textarea {
     width: 400px;
-  }
-
-  .user_ngu_phap_check {
-    margin-left: 372px;
   }
 
   .content_ngu_phap1 {
