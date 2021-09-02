@@ -1,6 +1,7 @@
 .width {
   width: 1024px;
-  margin: auto;
+  margin: 0 auto;
+  max-width: 100%;
   border-color: rgb(214, 214, 218);
   border-width: 1px;
   border-style: solid;
@@ -103,10 +104,6 @@
     padding-left: 250px;
     width: 400px;
   }
-
-  /* .check_dang_nhap_user_NP {
-    margin-top: 10px;
-  } */
 
   .content2-input2 > label {
     margin: 10px 0;

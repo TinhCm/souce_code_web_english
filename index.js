@@ -1,8 +1,14 @@
-var API_tu_vung = 'https://demo-apps-en.herokuapp.com/list'
-var API_ngu_phap = 'https://demo-apps-en.herokuapp.com/ngu_phap'
-var API_gop_y = "https://demo-apps-en.herokuapp.com/gop_y"
-var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
-var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
+// var API_tu_vung = 'https://demo-apps-en.herokuapp.com/list'
+// var API_ngu_phap = 'https://demo-apps-en.herokuapp.com/ngu_phap'
+// var API_gop_y = "https://demo-apps-en.herokuapp.com/gop_y"
+// var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
+// var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
+
+var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
+var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
+var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
+var API_dang_nhap ='https://demo-apps-en.glitch.me/user'
+var API_dang_ki ='https://demo-apps-en.glitch.me/user'
 
 // var API_tu_vung = 'http://localhost:3000/list'
 // var API_ngu_phap = 'http://localhost:3000/ngu_phap'
@@ -138,6 +144,7 @@ function xuLi_tu_vung()
                 taoDuLieu_tu_vung(formData,function()
                 {
                     layDuLieu_tu_vung(xuatDuLieu_tu_vung);
+                    location.reload();
                 })
             }
         }
