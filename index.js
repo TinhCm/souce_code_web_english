@@ -280,6 +280,7 @@ function xuLi_ngu_phap()
                 taoDuLieu_ngu_phap(formData,function()
                 {
                     layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
+                    location.reload();
                 })
             }
         }
