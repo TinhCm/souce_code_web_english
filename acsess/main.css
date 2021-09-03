@@ -825,3 +825,54 @@
 .header_user {
   display: block;
 }
+
+/* Music */
+.music{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+  justify-content:space-between;
+}
+
+.music h2{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.music1{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.music1>h4{
+  align-items: center;
+}
+
+.music2{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.music2>h4{
+  align-items: center;
+}
+
+.music3{
+  width: 50%;
+  text-align: center;
+}
+
+.music3>h4{
+  align-items: center;
+}
+
+.music4{
+  width: 50%;
+  text-align: center;
+}
+
+.music4>h4{
+  align-items: center;
+}
