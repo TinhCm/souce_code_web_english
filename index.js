@@ -593,6 +593,8 @@ var footerXL = document.querySelector('.footer');
 var danhGiaXL = document.querySelector('#danhGia');
 var dang_nhapXL = document.querySelector('#dang_nhap');
 var dang_kiXL = document.querySelector('#dang_ki');
+var video = document.querySelector('.video');
+var music = document.querySelector('.music');
 
 var header_second_cmt1 = document.querySelector('.header_second--cmt1');
 var nut_dang_nhap = document.querySelector('.nut_dang_nhap');
@@ -644,6 +646,8 @@ header_second_cmt1.onclick = function()
     body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     danhGiaXL.classList.add('Display');
+    video.classList.add('noneDisplay')
+    music.classList.add('noneDisplay')
 }
 
 //Đăng nhập
@@ -654,6 +658,8 @@ nut_dang_nhap.onclick = function()
     body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_nhapXL.classList.add('Display');
+    video.classList.add('noneDisplay')
+    music.classList.add('noneDisplay')
 }
 
 //Đăng kí
@@ -664,4 +670,6 @@ nut_dang_ki.onclick = function()
     body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_kiXL.classList.add('Display');
+    video.classList.add('noneDisplay')
+    music.classList.add('noneDisplay')
 }
