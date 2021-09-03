@@ -144,7 +144,6 @@ function xuLi_tu_vung()
                 taoDuLieu_tu_vung(formData,function()
                 {
                     layDuLieu_tu_vung(xuatDuLieu_tu_vung);
-                    location.reload();
                 })
             }
         }
@@ -280,7 +279,6 @@ function xuLi_ngu_phap()
                 taoDuLieu_ngu_phap(formData,function()
                 {
                     layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
-                    location.reload();
                 })
             }
         }
@@ -672,4 +670,41 @@ nut_dang_ki.onclick = function()
     dang_kiXL.classList.add('Display');
     video.classList.add('noneDisplay')
     music.classList.add('noneDisplay')
+}
+
+
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
+
+var giay = 00;
+var phut = 00;
+var dem = 00;
+
+var Lgiay = $("#seconds");
+var Lphut = $("#minute");
+var Ldem = $("#tens");
+var thoiGian = $("#gio");
+var ngay = $("#today");
+var moKhoa = $(".nav");
+var hanhDong = $(".wrapper");
+
+var batDau = $("#button-start")
+var tamDung = $("#button-stop")
+var ketThuc = $("#button-reset")
+var Interval;
+
+function start()
+{
+    setInterval(getGio,1000);
+}
+start();
+
+function getGio()
+{
+    var today = new Date();
+    var gio = today.getHours() + ':' + today.getMinutes() + ':'+ (today.getSeconds());
+    thoiGian.innerHTML = gio;
+    var today2 = new Date();
+    var ngayN = today.getDate() + '/' + (today.getMonth()+1) + '/'+ today.getFullYear()
+    ngay.innerHTML = ngayN;
 }

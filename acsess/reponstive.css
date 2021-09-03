@@ -236,4 +236,9 @@
     height: 900px;
     overflow-y: scroll;
   }
+
+  /* Âm thanh */
+  .music_body{
+    display: none;
+  }
 }
