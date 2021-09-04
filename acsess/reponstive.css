@@ -507,14 +507,14 @@
   
   .dang_ki1_ten {
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin: 10px 0;
     box-sizing: border-box;
   }
   
   .dang_ki1_password {
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin: 10px 0;
     box-sizing: border-box;
   }
@@ -555,7 +555,7 @@
   }
 
   .footer2 h2{
-    font-size: 10px;
+    font-size: 10px !important;
   }
   
   .footer2 > button {
