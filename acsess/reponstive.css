@@ -147,11 +147,17 @@
 
   .content_list_backend_nut {
     margin-left: 10px;
-    /* width: 30px; */
+  }
+
+  .check_dang_nhap_user {
+    font-size: 14px;
+   }
+
+   .user_tu_vung_check {
+    font-size: 14px;
   }
 
   /* Ngữ pháp */
-
   .content_ngu_phap {
     display:none;
   }
@@ -233,6 +239,14 @@
     overflow-y: scroll;
   }
 
+  .check_dang_nhap_user_NP {
+    font-size: 14px;
+   }
+ 
+  .user_ngu_phap_check {
+    font-size: 14px;
+  }
+  
   /* Đánh giá */
   .danhGia {
     height: 740px;
