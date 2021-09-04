@@ -55,43 +55,9 @@
       "id": 7,
       "date": "10:8:41-31/8/2021",
       "user": "Dương Văn Tính"
-    },
-    {
-      "ten": "test",
-      "cau_truc": "server",
-      "cach_dung": "2:28",
-      "date": "15:28:45-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630571325889,
-      "id": 8
-    },
-    {
-      "ten": "Tinh",
-      "cau_truc": "",
-      "cach_dung": "",
-      "date": "17:14:33-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630577675903,
-      "id": 9
-    },
-    {
-      "ten": "Test ",
-      "cau_truc": "17:23",
-      "cach_dung": "Server",
-      "date": "17:23:51-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630578233289,
-      "id": 10
     }
   ],
   "list": [
-    {
-      "tu_vung": "each",
-      "nghia": "môi",
-      "id": 1,
-      "date": "10:8:41-31/8/2021",
-      "user": "Dương Văn Tính"
-    },
     {
       "tu_vung": "land",
       "nghia": "đất",
@@ -128,22 +94,6 @@
       "user": "Dương Văn Tính"
     },
     {
-      "tu_vung": "3.28",
-      "nghia": "",
-      "date": "15:28:28-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630571308603,
-      "id": 7
-    },
-    {
-      "tu_vung": "5h14",
-      "nghia": "",
-      "date": "17:14:46-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630577689186,
-      "id": 8
-    },
-    {
       "tu_vung": "test server",
       "nghia": "7h43",
       "date": "19:43:23-2/9/2021",
@@ -166,22 +116,6 @@
       "user": "Lam",
       "createdAt": 1630588475586,
       "id": 11
-    },
-    {
-      "tu_vung": "Test",
-      "nghia": "23:04",
-      "date": "23:4:14-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630598656729,
-      "id": 12
-    },
-    {
-      "tu_vung": "Check",
-      "nghia": "0:06",
-      "date": "0:7:8-3/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630602430424,
-      "id": 13
     }
   ],
   "gop_y": [

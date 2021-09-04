@@ -50,7 +50,7 @@
   /*Thông tin */
   .header-thong_tin_1 {
     margin-left: 0px !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
     text-align: center;
     position: absolute;
     right: 0;
@@ -63,6 +63,8 @@
   .nut_dang_ki{
     display: block;
     line-height: 15px;
+    position: absolute;
+    right: 0;
   }
 
   .header-thong_tin_user_1 {
@@ -71,22 +73,35 @@
     text-align: center;
   }
 
+  .header-thong_tin_user_1 > p {
+    padding-left: 5px;
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+  }
+
   /* Từ vựng */
   .content {
     margin:0;
+    padding: 10px 20px;
   }
+
+  .content_list{
+    margin: 0;
+  }
+
   .input-lable {
     margin: 10px 0;
   }
 
   .content_list-input1 > input {
-    width: 340px;
+    width: 100%;
     height: 30px;
   }
 
   .check_user_tu_vung {
     padding-left:0px;
-    width: 340px;
+    width: 100%;
   }
 
   .user_tu_vung_check {
@@ -112,22 +127,50 @@
   }
 
   .content_list_backend_tu {
-    width: 170px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 0px;
+    display: block;
+    font-weight: 600;
+  }
+
+  .content_list_backend_SM{
+    display: inline-block;
   }
 
   .content_list_backend_nghia {
     margin-left: 10px;
-    width: 200px;
+    width: 200px !important;
+    display: inline-block;
+    font-size: 16px;
   }
 
   .content_list_backend_nut {
-    margin-left: 115px;
+    margin-left: 10px;
+    /* width: 30px; */
   }
 
   /* Ngữ pháp */
+
+  .content_ngu_phap {
+    display:none;
+  }
+
+  .content_list2_backend_SM{
+    display: inline-block;
+  }
+
+  .content2 {
+    margin: 10px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(6, 89, 245);
+    padding: 10px 20px;
+    background-color: white !important;
+  }
   .check_user_NP {
     padding-left: 0px;
-    width: 300px;
+    width: 100%;
   }
 
   .content2-input2 > label {
@@ -135,12 +178,12 @@
   }
 
   .content2-input2 > input {
-    width: 300px;
+    width: 100%;
     height: 30px;
   }
 
   .content2-input2 > textarea {
-    width: 300px;
+    width: 100%;
   }
 
   .content_ngu_phap1 {
@@ -152,22 +195,27 @@
   }
 
   .content_list2_backend_ten {
-    width: 165px;
-    margin-left: 15px;
+    width: 200px;
+    margin-left: 0px;
+    display: block;
+    font-weight: 600;
   }
 
   .content_list2_backend_cau_truc {
     margin-left: 10px;
-    width: 165px;
+    width: 260px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:red;
   }
 
   .content_list2_backend_cach_dung {
-    margin-left: 15px;
-    width: 188px;
+    margin-left: 10px;
+    width: 200px;
   }
 
   .pramas {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .content_list2_backend-li {
@@ -248,7 +296,7 @@
 
   .header1-list a {
     margin: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 50px;
 
   }
@@ -332,7 +380,7 @@
 .dang_nhap1 {
   width: 350px;
   min-height: 400px;
-  padding: 0px 0px;
+  padding: 10px 10px;
 }
 
 .dang_nhap1 h1 {
@@ -341,7 +389,7 @@
 }
 
 .dang_nhap1 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 50px;
 }
 
@@ -359,14 +407,14 @@
 }
 
 .dang_nhap1_ten {
-  width: 350px;
+  width: 100%;
   height: 40px;
   margin: 0px 0;
   box-sizing: border-box;
 }
 
 .dang_nhap1_password {
-  width: 350px;
+  width: 100%;
   height: 40px;
   margin: 10px 0;
   box-sizing: border-box;
@@ -406,14 +454,8 @@
     background-color: rgb(87, 197, 240);
     width: 350px;
     min-height: 450px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     box-sizing: border-box;
-    box-shadow: 30px 30px 10px;
-    -moz-box-shadow: 30px 30px 10px;
-    -webkit-box-shadow: 30px 30px 10px;
-    -o-box-shadow: 30px 30px 10px;
-    -ms-box-shadow: 30px 30px 10px;
-    border-radius: 10px;
   }
   
   .dang_ki1 h1 {
@@ -464,26 +506,66 @@
   }
   
   .dang_ki1_ten {
-    display: block;
-    outline: none;
-    width: 350px;
+    width: 100%;
     height: 30px;
     margin: 10px 0;
     box-sizing: border-box;
   }
   
   .dang_ki1_password {
-    display: block;
-    outline: none;
-    width: 350px;
+    width: 100%;
     height: 30px;
     margin: 10px 0;
     box-sizing: border-box;
   }
 
   /* Footer */
+  .footer {
+    display: flex;
+    margin: 10px 0px;
+    height: 200px;
+    color: white;
+    background-image: url(./img/footer.jpg);
+  }
+  
+  .footer_one {
+    flex: 1;
+    padding: 0 10px;
+  }
+
+  .footer1 p{
+    font-size: 16px;
+  }
+  
+  .footer_icon {
+    margin-top: 100px;
+  }
+  
+  .footer_icon > a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: white;
+  }
+  
+  .footer2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer2 h3{
+    font-size: 18px;
+  }
+
+  .footer2 h2{
+    font-size: 16px;
+  }
+  
   .footer2 > button {
-    margin-top: 29px;
+    margin-top: 55px;
+  }
+  
+  .footer2 > button > a {
+    text-decoration: none;
   }
 
   /*Backend*/

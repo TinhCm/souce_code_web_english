@@ -82,7 +82,8 @@ function xuatDuLieu_tu_vung(list)
     var htmls = loc_user_tu_vung.map(function(lists)
     {
         return "<li class = 'content_list_backend-li'>" + 
-                "<div class = 'content_list_backend_tu'>" +lists.tu_vung + "</div>" + 
+                "<div class = 'content_list_backend_tu'>" +lists.tu_vung + "</div>" +
+                "<div class = 'content_list_backend_SM'>"+"=>"+"</div>"+ 
                 "<div class = 'content_list_backend_nghia'>" + lists.nghia + "</div>"+ 
                 "<button class = \"Poiter content_list_backend_nut \" onclick = \"xoaDuLieu_tu_vung("+ lists.id + ")\">" + 
                 "X" + "</button>" +"</li>";
@@ -217,7 +218,9 @@ function xuatDuLieu_ngu_phap(ngu_phap)
     {
         return "<li class = 'content_list2_backend-li'>" + 
         "<div class = 'content_list2_backend_ten'>" + pramas.ten + "</div>" + 
+        "<div class = 'content_list2_backend_SM'>"+"=>"+"</div>"+
         "<div class = 'content_list2_backend_cau_truc'>" + pramas.cau_truc + "</div>" + 
+        "<div class = 'content_list2_backend_SM'>"+"=>"+"</div>"+
         "<div class = 'content_list2_backend_cach_dung'>" + pramas.cach_dung + "</div>" +
         "<button class = \"Poiter pramas \" onclick = \"xoaDuLieu_ngu_phap("+ pramas.id + ")\">" +
         "X" + "</button>" +"</li>";
