@@ -59,12 +59,13 @@
   }
 
   .content_list-input1 > input {
-    width: 400px;
-    height: 30px;
+    width: 650px;
+    height: 40px;
   }
 
   .check_user_tu_vung {
-    width: 400px;
+    padding-left:0px;
+    width: 650px;
   }
 
   .user_tu_vung_check {
@@ -100,8 +101,8 @@
 
   /* Ngữ pháp */
   .check_user_NP {
-    padding-left: 250px;
-    width: 400px;
+    padding-left: 0px;
+    width: 650px;
   }
 
   .content2-input2 > label {
@@ -109,12 +110,12 @@
   }
 
   .content2-input2 > input {
-    width: 400px;
-    height: 30px;
+    width: 650px;
+    height: 40px;
   }
 
   .content2-input2 > textarea {
-    width: 400px;
+    width: 650px;
   }
 
   .content_ngu_phap1 {
