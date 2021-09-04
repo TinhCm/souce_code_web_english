@@ -521,11 +521,8 @@
 
   /* Footer */
   .footer {
-    display: flex;
     margin: 10px 0px;
-    height: 200px;
-    color: white;
-    background-image: url(./img/footer.jpg);
+    height: 160px;
   }
   
   .footer_one {
@@ -534,11 +531,12 @@
   }
 
   .footer1 p{
-    font-size: 16px;
+    margin-top: 16px;
+    font-size: 10px;
   }
   
   .footer_icon {
-    margin-top: 100px;
+    margin-top: 75px;
   }
   
   .footer_icon > a {
@@ -553,15 +551,15 @@
   }
 
   .footer2 h3{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .footer2 h2{
-    font-size: 16px;
+    font-size: 10px;
   }
   
   .footer2 > button {
-    margin-top: 55px;
+    bottom: 10px;
   }
   
   .footer2 > button > a {
