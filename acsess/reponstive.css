@@ -589,14 +589,12 @@
 
   /*Backend*/
   .content1_backend {
-    max-height: 900px;
-    height: auto;
+    height: 900px;
     overflow-y: scroll;
   }
 
   .content2_backend {
-    max-height: 900px;
-    height: auto;
+    height: 900px;
     overflow-y: scroll;
   }
 
