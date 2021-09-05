@@ -145,6 +145,7 @@ function xuLi_tu_vung()
                 taoDuLieu_tu_vung(formData,function()
                 {
                     layDuLieu_tu_vung(xuatDuLieu_tu_vung);
+                    location.reload();
                 })
             }
         }
@@ -282,6 +283,7 @@ function xuLi_ngu_phap()
                 taoDuLieu_ngu_phap(formData,function()
                 {
                     layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
+                    location.reload();
                 })
             }
         }

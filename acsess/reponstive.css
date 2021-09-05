@@ -41,10 +41,6 @@
     min-width: 100%!important;
     min-height: 100%!important;
     margin: 0!important;
-    border-color: rgb(214, 214, 218);
-    border-width: 1px;
-    border-style: solid;
-    background-color: rgb(245, 247, 241);
   }
 
   /*Thông tin */
@@ -65,6 +61,7 @@
     line-height: 15px;
     position: absolute;
     right: 0;
+    display: none;
   }
 
   .header-thong_tin_user_1 {
@@ -297,9 +294,7 @@
   body{
     margin: 0 !important;
   }
-  .header{
-    height: 70px;
-  }
+
   .header-lienHe_1 {
     display: flex;
     margin-left: 70px;
@@ -418,7 +413,7 @@
 }
 
 .dang_nhap1 > a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .dang_nhap1_ten {
@@ -516,7 +511,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    font: 18px;
+    font-size: 16px;
     color: blue;
   }
   
@@ -594,18 +589,21 @@
 
   /*Backend*/
   .content1_backend {
-    height: 900px;
+    max-height: 900px;
+    height: auto;
     overflow-y: scroll;
   }
 
   .content2_backend {
-    height: 900px;
+    max-height: 900px;
+    height: auto;
     overflow-y: scroll;
   }
 
   /* Âm thanh */
   .music{
     margin: 0;
+    display: none;
   }
 
   .music h4{
