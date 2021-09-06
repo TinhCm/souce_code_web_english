@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,280 +11,282 @@
     <link rel="stylesheet" href="./acsess/main.css">
     <link rel="stylesheet" href="./acsess/reponstive.css">
 </head>
+
 <body>
     <div id="dau" class="width">
         <!-- Page home -->
-            <header class="header">
-                <div class="header-logo">
-                    <a href="">
-                        <i class="fas fa-book"></i>
+        <header class="header">
+            <div class="header-logo">
+                <a href="">
+                    <i class="fas fa-book"></i>
+                </a>
+            </div>
+            <div class="header1">
+                <ul class="header1-list">
+                    <a href="#one">
+                        <li data-toggle=”tooltip” title="Truy cập tới nơi lưu từ vựng">Từ vựng</li>
                     </a>
+                    <a href="#two">
+                        <li data-toggle=”tooltip” title="Truy cập tới nơi lưu ngữ pháp">Ngữ Pháp</li>
+                    </a>
+                    <a class="header1-list-ul nonePoiter" href="#">
+                        <li data-toggle=”tooltip” title="Bạn có thể ôn lại kiến thức tại đây">Học bài</li>
+                    </a>
+                </ul>
+                <div class="Header-home">
+                    <i class="fas fa-home"></i>
+                    <a href="#dau">Home</a>
                 </div>
-                <div class="header1">
-                    <ul class="header1-list">
-                        <a href="#one">
-                            <li data-toggle=”tooltip” title="Truy cập tới nơi lưu từ vựng">Từ vựng</li>
-                        </a>
-                        <a href="#two">
-                            <li data-toggle=”tooltip” title="Truy cập tới nơi lưu ngữ pháp">Ngữ Pháp</li>
-                        </a>
-                        <a class="header1-list-ul nonePoiter" href="#">
-                            <li data-toggle=”tooltip” title="Bạn có thể ôn lại kiến thức tại đây">Học bài</li>
-                        </a>
-                    </ul>
-                    <div class="Header-home">
-                        <i class="fas fa-home"></i>
-                        <a href="#dau">Home</a>
-                    </div>
-                </div>
-                <div class="header-thong_tin">
-                    <div class="header-thong_tin_1">
-                        <i class="far fa-user-circle"></i>
-                        <a class="nut_dang_nhap" href="#dang_nhap">Đăng nhập</a>
-                        <a class="nut_dang_ki" href="#dang_ki">Đăng ký</a>
-                    </div>
-
-                    <div class="header-thong_tin_user_1">
-                        <i class="far fa-user-circle"></i>
-                        <p class="thong_tin_user_admin"></p>
-                    </div>
-                </div>
-                
-            </header>
-
-            <div class="header_second">
-                <h1>LEARNING ENGLISH</h1>
-                <h3>Nơi lưu trữ kiến thức của bạn</h3>
-                <div class="header_second--cmt">
-                    <i class="fas fa-hand-point-right"></i>
-                    <button>
-                        <a  class="header_second--cmt1" href="#danhGia">Mời bạn đóng góp ý kiến</a>
-                    </button>
-                </div>
-            </div>   
-           <div class="video">
-                <video controls poster="./acsess/img/Ảnh chụp màn hình 2021-09-03 171018.png">
-                    <source src="./acsess/video/HỌC TIẾNG ANH QUA VIDEO TRUYỀN ĐỘNG LỰC.mp4" type="video/mp4">
-                </video>
-           </div>
-           <div class="music">
-               <h2>Bạn có muốn thưởng thức âm nhạc</h2>
-
-                <div class="music_left">
-                    <div class="music1">
-                        <h4>End The Night</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/End Of The Night - Danny Avila.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
-                    <div class="music2" onchange="color:red">
-                        <h4>Faded</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/Faded - Alan Walker.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
-                    <div class="music5" onchange="color:red">
-                        <h4>Sweet but psycho</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/SweetButPsycho-NightcoreAvaMax-6520073.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
+            </div>
+            <div class="header-thong_tin">
+                <div class="header-thong_tin_1">
+                    <i class="far fa-user-circle"></i>
+                    <a class="nut_dang_nhap" href="#dang_nhap">Đăng nhập</a>
+                    <a class="nut_dang_ki" href="#dang_ki">Đăng ký</a>
                 </div>
 
-                <div class="music_body">
-                    <h1> Watch</h1>
-                    <span id="today"></span>
-                    <h3 id="gio">00</h3>
-                </div>
-
-                <div class="music_right">
-                    <div class="music3">
-                        <h4>Reality</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/Reality-Lost-Frequencies-Janieck-Devy.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
-                    <div class="music4">
-                        <h4>Senorita</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/Senorita - Shawn Mendes_ Camila Cabello.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
-                    <div class="music6">
-                        <h4>Send it</h4>
-                        <audio controls loop>
-                            <source src="./acsess/mp3/SendIt-AustinMahoneRichHomieQuan-6651297.mp3" type="audio/mp3">
-                        </audio>
-                    </div>
-                </div>
-           </div>
-            <div class="body_cmt">
-                <div id="one" class="content">
-                    <h3 class="content-folder" >Từ vựng đã có: </h3>
-                    <ul class="content_tu_vung">
-                        <li class="content_tu_vung0">STT</li>
-                        <li class="content_tu_vung1">Từ</li>
-                        <li class="content_tu_vung2">Nghĩa</li>
-                        <li class="content_tu_vung3">Xóa</li>
-                    </ul>
-                    <div class="content1_backend">
-                        <ol class="content_list">
-                            
-                        </ol>
-                    </div>
-                    <h3 class="content-folder" >Nhập vào từ vựng mới: </h3>
-                    <div class="content_list-input1">
-                        <label class="input-lable">Nhập vào từ: </label>
-                        <input class="input1_tu" type="text" name="name">
-                    </div>
-        
-                    <div class="content_list-input1">
-                    <label class="input-lable">Nhập vào nghĩa: </label>
-                    <input class="input2_nghia" type="text" name="name">
-                    </div>
-                    
-                    <div class="check_user_tu_vung">
-                        <h4 class="check_dang_nhap_user"></h4>
-                        <h4 class="user_tu_vung_check"></h4>
-                        <button class="content--create ">Tạo</button>
-                    </div>
-        
-                </div>
-        
-                <div id="two" class="content2">
-                    <h3 class="content-folder">Ngữ pháp đã có: </h3>
-                    <ul class="content_ngu_phap">
-                        <li class="content_ngu_phap0">STT</li>
-                        <li class="content_ngu_phap1">Tên</li>
-                        <li class="content_ngu_phap2">Cấu trúc</li>
-                        <li class="content_ngu_phap3">Cách dùng</li>
-                        <li class="content_ngu_phap4">Xóa</li>
-                    </ul>
-                    <div class="content2_backend"> 
-                        <ol class="content_list2">
-        
-                        </ol>
-                    </div>
-                    <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
-                    <div class="content2-input2">
-                        <label >Nhập tên ngữ pháp: </label>
-                        <input class="input1_ten" type="text" name="name">
-                    </div>
-        
-                    <div class="content2-input2">
-                    <label>Nhập vào cấu trúc ngữ pháp: </label>
-                    <input class="input2-cauTruc" type="text" name="name">
-                    </div>
-        
-                    <div class="content2-input2">
-                        <label>Nhập vào cách dùng: </label>
-                        <textarea rows = "6" class="input2-cachDung" type="text" name="name"></textarea>
-                    </div>
-                    <div class="check_user_NP">
-                        <h4 class="check_dang_nhap_user_NP"></h4>
-                        <h4 class="user_ngu_phap_check"></h4>
-                        <button class="content2--create ">Tạo</button>
-                    </div>
+                <div class="header-thong_tin_user_1">
+                    <i class="far fa-user-circle"></i>
+                    <p class="thong_tin_user_admin"></p>
                 </div>
             </div>
 
-            <footer class="footer">
-                <div class="footer_one">
-                    <div class="footer1">
-                        <p>@ Design by Tinh</p>
-                        <p>All rights reserver</p>
-                    </div>
-                    <div class="footer_icon">
-                        <a href="https://www.facebook.com/profile.php?id=100011339766316">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://mail.google.com/">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                        <a href="https://www.google.com.vn/">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="https://drive.google.com/">
-                            <i class="fab fa-google-drive"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                    </div>
+        </header>
+
+        <div class="header_second">
+            <h1>LEARNING ENGLISH</h1>
+            <h3>Nơi lưu trữ kiến thức của bạn</h3>
+            <div class="header_second--cmt">
+                <i class="fas fa-hand-point-right"></i>
+                <button>
+                        <a  class="header_second--cmt1" href="#danhGia">Mời bạn đóng góp ý kiến</a>
+                    </button>
+            </div>
+        </div>
+        <div class="video">
+            <video controls poster="./acsess/img/Ảnh chụp màn hình 2021-09-03 171018.png">
+                    <source src="./acsess/video/HỌC TIẾNG ANH QUA VIDEO TRUYỀN ĐỘNG LỰC.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="music">
+            <h2>Bạn có muốn thưởng thức âm nhạc</h2>
+
+            <div class="music_left">
+                <div class="music1">
+                    <h4>End The Night</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/End Of The Night - Danny Avila.mp3" type="audio/mp3">
+                        </audio>
                 </div>
-                <div class="footer2">
-                    <div class="footer2-one">
-                        <h3>Hãy đến với chúng tôi</h3>
-                        <h2>Nơi bạn tìm được nguồn cảm hứng</h2>
-                    </div>
-                    <button>
+                <div class="music2" onchange="color:red">
+                    <h4>Faded</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/Faded - Alan Walker.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+                <div class="music5" onchange="color:red">
+                    <h4>Sweet but psycho</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/SweetButPsycho-NightcoreAvaMax-6520073.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+
+            <div class="music_body">
+                <h1> Watch</h1>
+                <span id="today"></span>
+                <h3 id="gio">00</h3>
+            </div>
+
+            <div class="music_right">
+                <div class="music3">
+                    <h4>Reality</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/Reality-Lost-Frequencies-Janieck-Devy.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+                <div class="music4">
+                    <h4>Senorita</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/Senorita - Shawn Mendes_ Camila Cabello.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+                <div class="music6">
+                    <h4>Send it</h4>
+                    <audio controls loop>
+                            <source src="./acsess/mp3/SendIt-AustinMahoneRichHomieQuan-6651297.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+        </div>
+        <div class="body_cmt">
+            <div id="one" class="content">
+                <h3 class="content-folder">Từ vựng đã có: </h3>
+                <ul class="content_tu_vung">
+                    <li class="content_tu_vung0">STT</li>
+                    <li class="content_tu_vung1">Từ</li>
+                    <li class="content_tu_vung2">Nghĩa</li>
+                    <li class="content_tu_vung3">Xóa</li>
+                </ul>
+                <div class="content1_backend">
+                    <ol class="content_list">
+
+                    </ol>
+                </div>
+                <h3 class="content-folder">Nhập vào từ vựng mới: </h3>
+                <div class="content_list-input1">
+                    <label class="input-lable">Nhập vào từ: </label>
+                    <input class="input1_tu" type="text" name="name">
+                </div>
+
+                <div class="content_list-input1">
+                    <label class="input-lable">Nhập vào nghĩa: </label>
+                    <input class="input2_nghia" type="text" name="name">
+                </div>
+
+                <div class="check_user_tu_vung">
+                    <h4 class="check_dang_nhap_user"></h4>
+                    <h4 class="user_tu_vung_check"></h4>
+                    <button class="content--create ">Tạo</button>
+                </div>
+
+            </div>
+
+            <div id="two" class="content2">
+                <h3 class="content-folder">Ngữ pháp đã có: </h3>
+                <ul class="content_ngu_phap">
+                    <li class="content_ngu_phap0">STT</li>
+                    <li class="content_ngu_phap1">Tên</li>
+                    <li class="content_ngu_phap2">Cấu trúc</li>
+                    <li class="content_ngu_phap3">Cách dùng</li>
+                    <li class="content_ngu_phap4">Xóa</li>
+                </ul>
+                <div class="content2_backend">
+                    <ol class="content_list2">
+
+                    </ol>
+                </div>
+                <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
+                <div class="content2-input2">
+                    <label>Nhập tên ngữ pháp: </label>
+                    <input class="input1_ten" type="text" name="name">
+                </div>
+
+                <div class="content2-input2">
+                    <label>Nhập vào cấu trúc ngữ pháp: </label>
+                    <input class="input2-cauTruc" type="text" name="name">
+                </div>
+
+                <div class="content2-input2">
+                    <label>Nhập vào cách dùng: </label>
+                    <textarea rows="6" class="input2-cachDung" type="text" name="name"></textarea>
+                </div>
+                <div class="check_user_NP">
+                    <h4 class="check_dang_nhap_user_NP"></h4>
+                    <h4 class="user_ngu_phap_check"></h4>
+                    <button class="content2--create ">Tạo</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_one">
+                <div class="footer1">
+                    <p>@ Design by Tinh</p>
+                    <p>All rights reserver</p>
+                </div>
+                <div class="footer_icon">
+                    <a href="https://www.facebook.com/profile.php?id=100011339766316">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://mail.google.com/">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://www.google.com.vn/">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://drive.google.com/">
+                        <i class="fab fa-google-drive"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="footer2-one">
+                    <h3>Hãy đến với chúng tôi</h3>
+                    <h2>Nơi bạn tìm được nguồn cảm hứng</h2>
+                </div>
+                <button>
                         <i class="fas fa-home"></i>
                         <a href="#dau">Đầu trang</a>
                     </button>
-                </div>
-            </footer>
+            </div>
+        </footer>
 
         <!-- Page home -->
 
         <!-- Page góp ý -->
-            <div id="danhGia" class="danhGia">
-                <button class="danhGia_thoat">X</button>
-                <div class="gop_y">
-                    <h2>ĐÓNG GÓP Ý KIẾN</h2>
-                    <h4>Use form with name</h4>
-                    <div class="gop_y-input1">
-                        <h4 class="gop_y_tu1"></h4>
-                    </div>
-                    <div id="gop_y-input1" class="gop_y-input1">
-                        <textarea class="gop_y2_cmt" rows="6" placeholder="Nhập vào đánh giá" name="name"></textarea>
-                    </div>
-                        <h4 class="checkten_user"></h4>
-                        <button class="gop_y--create">Gửi</button>
+        <div id="danhGia" class="danhGia">
+            <button class="danhGia_thoat">X</button>
+            <div class="gop_y">
+                <h2>ĐÓNG GÓP Ý KIẾN</h2>
+                <h4>Use form with name</h4>
+                <div class="gop_y-input1">
+                    <h4 class="gop_y_tu1"></h4>
                 </div>
+                <div id="gop_y-input1" class="gop_y-input1">
+                    <textarea class="gop_y2_cmt" rows="6" placeholder="Nhập vào đánh giá" name="name"></textarea>
+                </div>
+                <h4 class="checkten_user"></h4>
+                <button class="gop_y--create">Gửi</button>
             </div>
-         <!-- Page góp ý -->
+        </div>
+        <!-- Page góp ý -->
 
-         <!-- Page đăng nhập -->
-            <div id="dang_nhap" class="dang_nhap">
-                <button class="dang_nhap_thoat">X</button>
-                <div class="dang_nhap_content">
-                    <div class="dang_nhap1">
-                        <h1>Đăng nhập</h1>
-                        <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
-                        <input placeholder="Nhập vào tên" class="dang_nhap1_ten" type="text" name="name">
-                        <input placeholder="Nhập vào mật khẩu" class="dang_nhap1_password" type="text" name="name">
-                        <button class="create_dang_nhap">Đăng nhập</button>
-                        <p class="nosuccses"></p>
-                        <span>Hoặc bạn chưa có tài khoản?</span>
-                        <a href="#dang_ki" class="dang_ki_chuyen">Đăng ký</a>
-                    </div>
+        <!-- Page đăng nhập -->
+        <div id="dang_nhap" class="dang_nhap">
+            <button class="dang_nhap_thoat">X</button>
+            <div class="dang_nhap_content">
+                <div class="dang_nhap1">
+                    <h1>Đăng nhập</h1>
+                    <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
+                    <input placeholder="Nhập vào tên" class="dang_nhap1_ten" type="text" name="name">
+                    <input placeholder="Nhập vào mật khẩu" class="dang_nhap1_password" type="text" name="name">
+                    <button class="create_dang_nhap">Đăng nhập</button>
+                    <p class="nosuccses"></p>
+                    <span>Hoặc bạn chưa có tài khoản?</span>
+                    <a href="#dang_ki" class="dang_ki_chuyen">Đăng ký</a>
                 </div>
             </div>
-         <!-- Page đăng nhập -->
+        </div>
+        <!-- Page đăng nhập -->
 
-         <!-- Page đăng ki -->
-            <div id="dang_ki" class="dang_ki">
-                <button class="dang_ki_thoat">X</button>
-                <div class="dang_ki_content">
-                    <div class="dang_ki1">
-                        <h1>Đăng ký</h1>
-                        <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
-                        <input placeholder="Nhập vào tên" class="dang_ki1_ten" type="text" name="name">
-                        <input placeholder="Nhập vào mật khẩu" class="dang_ki1_password" type="text" name="name">
-                        <form class="checkbox" action="">
-                            <p>Tôi đồng ý với các điều khoản và điều kiện của Learning English</p>
-                        </form>
-                        <div >
-                            <p class="checkTen"></p>
-                        </div>
-                        <button class="create_dang_ki">Đăng kí</button>
-                        <span>Hoặc bạn đã có tài khoản?</span>
-                        <a class="dang_nhap_chuyen" href="#dang_nhap">Đăng nhập</a>
+        <!-- Page đăng ki -->
+        <div id="dang_ki" class="dang_ki">
+            <button class="dang_ki_thoat">X</button>
+            <div class="dang_ki_content">
+                <div class="dang_ki1">
+                    <h1>Đăng ký</h1>
+                    <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
+                    <input placeholder="Nhập vào tên" class="dang_ki1_ten" type="text" name="name">
+                    <input placeholder="Nhập vào mật khẩu" class="dang_ki1_password" type="text" name="name">
+                    <form class="checkbox" action="">
+                        <p>Tôi đồng ý với các điều khoản và điều kiện của Learning English</p>
+                    </form>
+                    <div>
+                        <p class="checkTen"></p>
                     </div>
+                    <button class="create_dang_ki">Đăng kí</button>
+                    <span>Hoặc bạn đã có tài khoản?</span>
+                    <a class="dang_nhap_chuyen" href="#dang_nhap">Đăng nhập</a>
                 </div>
             </div>
-         <!-- Page đăng ki -->
-    <script src="./index.js"></script>
+        </div>
+        <!-- Page đăng ki -->
+        <script src="./index.js"></script>
     </div>
 </body>
+
 </html>
