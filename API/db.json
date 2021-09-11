@@ -55,6 +55,14 @@
       "id": 7,
       "date": "10:8:41-31/8/2021",
       "user": "Dương Văn Tính"
+    },
+    {
+      "ten": "Tương lại đơn",
+      "cau_truc": "S + will + Vo + ...",
+      "cach_dung": "Diễn tả sự vật sự việc sẽ diễn ra trong tương lai gần",
+      "date": "17:28:46-9/9/2021",
+      "user": "Dương Văn Tính",
+      "id": 8
     }
   ],
   "list": [
@@ -94,14 +102,6 @@
       "user": "Dương Văn Tính"
     },
     {
-      "tu_vung": "test server",
-      "nghia": "7h43",
-      "date": "19:43:23-2/9/2021",
-      "user": "Dương Văn Tính",
-      "createdAt": 1630586605332,
-      "id": 9
-    },
-    {
       "tu_vung": "Sunset",
       "nghia": "Hoàng hôn",
       "date": "19:58:46-2/9/2021",
@@ -116,6 +116,13 @@
       "user": "Lam",
       "createdAt": 1630588475586,
       "id": 11
+    },
+    {
+      "tu_vung": "name",
+      "nghia": "tên",
+      "date": "17:22:37-9/9/2021",
+      "user": "Dương Văn Tính",
+      "id": 12
     }
   ],
   "gop_y": [
