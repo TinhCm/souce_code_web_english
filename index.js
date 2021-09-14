@@ -553,15 +553,15 @@ dang_nhap_chuyenXL.onclick = function() {
 }
 
 //Đánh giá
-header_second_cmt1.onclick = function() {
-    headerXL.classList.add('noneDisplay');
-    header_secondXL.classList.add('noneDisplay');
-    body_cmtXL.classList.add('noneDisplay');
-    footerXL.classList.add('noneDisplay');
-    danhGiaXL.classList.add('Display');
-    video.classList.add('noneDisplay')
-    music.classList.add('noneDisplay')
-}
+// header_second_cmt1.onclick = function() {
+//     headerXL.classList.add('noneDisplay');
+//     header_secondXL.classList.add('noneDisplay');
+//     body_cmtXL.classList.add('noneDisplay');
+//     footerXL.classList.add('noneDisplay');
+//     danhGiaXL.classList.add('Display');
+//     video.classList.add('noneDisplay')
+//     music.classList.add('noneDisplay')
+// }
 
 //Đăng nhập
 nut_dang_nhap.onclick = function() {

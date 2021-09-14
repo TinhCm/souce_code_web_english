@@ -544,7 +544,6 @@
 
 .danhGia {
     height: 630px;
-    display: none;
     box-sizing: border-box;
     background-color: rgb(228, 245, 250);
 }
