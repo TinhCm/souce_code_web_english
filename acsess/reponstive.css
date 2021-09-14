@@ -211,7 +211,7 @@
     }
     /* Đánh giá */
     .danhGia {
-        height: 740px;
+        height: 370px;
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -219,8 +219,7 @@
         background-color: rgb(117, 206, 228);
         width: 350px;
         min-height: 320px;
-        position: relative;
-        top: 85px;
+        position: unset;
         margin: auto;
         border-radius: 10px;
         padding: 20px 0px;

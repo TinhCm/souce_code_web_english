@@ -543,7 +543,7 @@
 /* Đóng góp ý kiến */
 
 .danhGia {
-    height: 630px;
+    height: 440px;
     box-sizing: border-box;
     background-color: rgb(228, 245, 250);
 }
@@ -575,8 +575,8 @@
     background-color: rgb(117, 206, 228);
     width: 600px;
     min-height: 420px;
-    position: relative;
-    top: 100px;
+    /* position: relative;
+    top: 100px; */
     margin: auto;
     box-sizing: border-box;
     box-shadow: 30px 30px 10px;
