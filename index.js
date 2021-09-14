@@ -527,11 +527,6 @@ var dang_nhap_chuyenXL = document.querySelector('.dang_nhap_chuyen');
 
 //Thoát
 
-danhGia_thoat.onclick = function() {
-    location.reload();
-    s
-}
-
 dang_nhap_thoat.onclick = function() {
     location.reload();
 }
@@ -572,6 +567,7 @@ nut_dang_nhap.onclick = function() {
     dang_nhapXL.classList.add('Display');
     video.classList.add('noneDisplay')
     music.classList.add('noneDisplay')
+    danhGiaXL.classList.add('noneDisplay');
 }
 
 //Đăng kí
@@ -583,6 +579,7 @@ nut_dang_ki.onclick = function() {
     dang_kiXL.classList.add('Display');
     video.classList.add('noneDisplay')
     music.classList.add('noneDisplay')
+    danhGiaXL.classList.add('noneDisplay');
 }
 
 //Đồng hồ
