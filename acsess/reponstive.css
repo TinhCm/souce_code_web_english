@@ -134,6 +134,12 @@
     .user_tu_vung_check {
         font-size: 14px;
     }
+    .content_list_backend_tu_loai {
+        display: none;
+    }
+    .content_list_backend_phien_am {
+        display: none;
+    }
     /* Ngữ pháp */
     .content_ngu_phap {
         display: none;
@@ -514,6 +520,64 @@
     }
     .music_body {
         display: none;
+    }
+    /* Học bài */
+    .hoc_bai {
+        height: 430px;
+        padding: 10px 0;
+        margin: 20px 0px;
+    }
+    .hoc_bai h1 {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .hoc_bai_content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .hocBai_list-input1 label {
+        font-size: 20px;
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .hocBai_list-input1 input {
+        font-size: 18px;
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        outline: none;
+    }
+    .hocBai_list-input2 label {
+        font-size: 20px;
+        margin-bottom: 5px;
+        width: 100px;
+    }
+    .hocBai_list-input2 h2 {
+        display: inline-block !important;
+        font-size: 20px !important;
+    }
+    .hocBai_bat_dau {
+        margin-left: 10px;
+        width: 100%;
+        display: flex;
+    }
+    .hocBai_bat_dau button {
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .kiem_tra_kq {
+        margin-left: 10px;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+    }
+    .kiem_tra_kq button {
+        font-size: 20px;
+        box-sizing: border-box;
+        margin: auto;
     }
 }
 

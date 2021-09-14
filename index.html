@@ -29,7 +29,7 @@
                     <a href="#two">
                         <li data-toggle=”tooltip” title="Truy cập tới nơi lưu ngữ pháp">Ngữ Pháp</li>
                     </a>
-                    <a class="header1-list-ul nonePoiter" href="#">
+                    <a class="header1-list-ul" href="#hoc_bai">
                         <li data-toggle=”tooltip” title="Bạn có thể ôn lại kiến thức tại đây">Học bài</li>
                     </a>
                 </ul>
@@ -56,12 +56,6 @@
         <div class="header_second">
             <h1>LEARNING ENGLISH</h1>
             <h3>Nơi lưu trữ kiến thức của bạn</h3>
-            <!-- <div class="header_second--cmt">
-                <i class="fas fa-hand-point-right"></i>
-                <button>
-                        <a  class="header_second--cmt1" href="#danhGia">Mời bạn đóng góp ý kiến</a>
-                    </button>
-            </div> -->
         </div>
         <div class="video">
             <video controls poster="./acsess/img/Ảnh chụp màn hình 2021-09-03 171018.png">
@@ -127,6 +121,8 @@
                     <li class="content_tu_vung0">STT</li>
                     <li class="content_tu_vung1">Từ</li>
                     <li class="content_tu_vung2">Nghĩa</li>
+                    <li class="content_tu_vung4">Từ loại</li>
+                    <li class="content_tu_vung5">Phiên âm</li>
                     <li class="content_tu_vung3">Xóa</li>
                 </ul>
                 <div class="content1_backend">
@@ -137,12 +133,22 @@
                 <h3 class="content-folder">Nhập vào từ vựng mới: </h3>
                 <div class="content_list-input1">
                     <label class="input-lable">Nhập vào từ: </label>
-                    <input class="input1_tu" type="text" name="name">
+                    <input class="input1_tu" type="text" name="name" placeholder="Vui lòng nhập">
                 </div>
 
                 <div class="content_list-input1">
                     <label class="input-lable">Nhập vào nghĩa: </label>
-                    <input class="input2_nghia" type="text" name="name">
+                    <input class="input2_nghia" type="text" name="name" placeholder="Vui lòng nhập">
+                </div>
+
+                <div class="content_list-input1">
+                    <label class="input-lable">Nhập từ loại: </label>
+                    <input class="input2_tu_loai" type="text" name="name" placeholder="Có thể nhập hoặc không">
+                </div>
+
+                <div class="content_list-input1">
+                    <label class="input-lable">Nhập phiên âm: </label>
+                    <input class="input2_phien_am" type="text" name="name" placeholder="Có thể nhập hoặc không">
                 </div>
 
                 <div class="check_user_tu_vung">
@@ -169,17 +175,17 @@
                 <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
                 <div class="content2-input2">
                     <label>Nhập tên ngữ pháp: </label>
-                    <input class="input1_ten" type="text" name="name">
+                    <input class="input1_ten" type="text" name="name" placeholder="Vui lòng nhập">
                 </div>
 
                 <div class="content2-input2">
                     <label>Nhập vào cấu trúc ngữ pháp: </label>
-                    <input class="input2-cauTruc" type="text" name="name">
+                    <input class="input2-cauTruc" type="text" name="name" placeholder="Vui lòng nhập">
                 </div>
 
                 <div class="content2-input2">
                     <label>Nhập vào cách dùng: </label>
-                    <textarea rows="6" class="input2-cachDung" type="text" name="name"></textarea>
+                    <textarea rows="6" class="input2-cachDung" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
                 </div>
                 <div class="check_user_NP">
                     <h4 class="check_dang_nhap_user_NP"></h4>
@@ -187,6 +193,38 @@
                     <button class="content2--create ">Tạo</button>
                 </div>
             </div>
+
+            <!-- Page học bài -->
+            <div class="hoc_bai" id="hoc_bai">
+                <h1>CÙNG ÔN LẠI TỪ VỰNG NÀO</h1>
+                <div class="hoc_bai_content">
+
+                    <div class="hocBai_bat_dau">
+                        <button class="hocBai_bat_dau1">Bắt đầu</button>
+                    </div>
+
+                    <div class="hocBai_list-input1">
+                        <label class="input-lable">Nhập vào từ: </label>
+                        <input class="input1_tu_hocBai" type="text" name="name" placeholder="Vui lòng nhập">
+                    </div>
+
+                    <div class="hocBai_list-input1">
+                        <label class="input-lable">Nhập vào nghĩa: </label>
+                        <input class="input2_nghia_hocBai" type="text" name="name" placeholder="Vui lòng nhập">
+                    </div>
+
+                    <div class="hocBai_list-input2">
+                        <label class="input-lable">Kết quả:</label>
+                        <h2 class="hocBai_list-input1_check"></h2>
+                    </div>
+
+                    <div class="kiem_tra_kq">
+                        <button class="hocBai--create ">Kiểm tra</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Page học bài -->
         </div>
 
         <!-- Page góp ý -->

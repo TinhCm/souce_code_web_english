@@ -9,12 +9,14 @@ var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
 var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
 var API_dang_nhap = 'https://demo-apps-en.glitch.me/user'
 var API_dang_ki = 'https://demo-apps-en.glitch.me/user'
+var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
 
 // var API_tu_vung = 'http://localhost:3000/list'
 // var API_ngu_phap = 'http://localhost:3000/ngu_phap'
 // var API_gop_y = "http://localhost:3000/gop_y"
 // var API_dang_nhap = 'http://localhost:3000/user'
 // var API_dang_ki = 'http://localhost:3000/user'
+// var API_hoc_bai = 'http://localhost:3000/list'
 
 //Phần API_tu_vung từ vựng
 function batDau_tu_vung() {
@@ -74,6 +76,8 @@ function xuatDuLieu_tu_vung(list) {
             "<div class = 'content_list_backend_tu'>" + lists.tu_vung + "</div>" +
             "<div class = 'content_list_backend_SM'>" + "=>" + "</div>" +
             "<div class = 'content_list_backend_nghia'>" + lists.nghia + "</div>" +
+            "<div class = 'content_list_backend_tu_loai'>" + lists.tu_loai + "</div>" +
+            "<div class = 'content_list_backend_phien_am'>" + lists.phien_am + "</div>" +
             "<button class = \"Poiter content_list_backend_nut \" onclick = \"xoaDuLieu_tu_vung(" + lists.id + ")\">" +
             "X" + "</button>" + "</li>";
     })
@@ -96,6 +100,8 @@ function xuLi_tu_vung() {
     xuLi_tu_vung.onclick = function() {
         var tu_vung = document.querySelector('.input1_tu').value;
         var nghia = document.querySelector('.input2_nghia').value;
+        var tu_loai = document.querySelector('.input2_tu_loai').value;
+        var phien_am = document.querySelector('.input2_phien_am').value;
         var user_tu_vung_check = document.querySelector('.user_tu_vung_check');
         var today = new Date();
         var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
@@ -116,9 +122,26 @@ function xuLi_tu_vung() {
                 user_tu_vung_check.innerHTML = "Từ vựng đã tồn tại";
             } else {
                 var user = document.cookie;
+                if (tu_vung === "") {
+                    tu_vung = "none";
+                }
+
+                if (nghia === "") {
+                    nghia = "none";
+                }
+                if (tu_loai === "") {
+                    tu_loai = "none";
+                }
+
+                if (phien_am === "") {
+                    phien_am = "none";
+                }
+
                 formData = {
                     tu_vung: tu_vung,
                     nghia: nghia,
+                    tu_loai: tu_loai,
+                    phien_am: phien_am,
                     date: date,
                     user: user
                 }
@@ -232,6 +255,18 @@ function xuLi_ngu_phap() {
                 user_ngu_phap_check.innerHTML = "Ngữ pháp đã tồn tại";
             } else {
                 var user = document.cookie;
+                if (ten === "") {
+                    ten = "none";
+                }
+
+                if (cau_truc === "") {
+                    cau_truc = "none";
+                }
+
+                if (cach_dung === "") {
+                    cach_dung = "none";
+                }
+
                 formData = {
                     ten: ten,
                     cau_truc: cau_truc,
@@ -605,4 +640,76 @@ function getGio() {
     var today2 = new Date();
     var ngayN = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear()
     ngay.innerHTML = ngayN;
+}
+
+//Học bài
+function batDau_hoc_bai() {
+    xuLi_hoc_bai();
+}
+batDau_hoc_bai();
+
+function layDuLieu_hoc_bai(callback) {
+    fetch(API_hoc_bai)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(callback);
+}
+
+function taoDuLieu_hoc_bai(data, callback) {
+    var opption = {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    }
+
+    fetch(API_hoc_bai, opption)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(callback);
+}
+
+function xuLi_hoc_bai() {
+    var xuLi_hoc_bai = document.querySelector('.hocBai--create');
+    xuLi_hoc_bai.onclick = function() {
+        var input1_tu_hocBai = document.querySelector('.input1_tu_hocBai').value;
+        var input2_nghia_hocBai = document.querySelector('.input2_nghia_hocBai').value;
+        var hocBai_list_input1_check = document.querySelector('.hocBai_list-input1_check');
+
+        layDuLieu_hoc_bai(check_ket_qua);
+
+        function check_ket_qua(list) {
+            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
+                return lists.user === document.cookie;
+            })
+
+            var loc_user_hoc_bai_ton_tai2 = loc_user_hoc_bai_ton_tai.some(function(listss) {
+                return listss.tu_vung === input1_tu_hocBai;
+            })
+
+            var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
+                return listss.nghia === input2_nghia_hocBai;
+            })
+
+            if (loc_user_hoc_bai_ton_tai2 == true) {
+                if (loc_user_hoc_bai_ton_tai3 == true) {
+                    hocBai_list_input1_check.innerHTML = "Đúng";
+                } else {
+                    hocBai_list_input1_check.innerHTML = "Sai";
+                }
+            } else {
+                hocBai_list_input1_check.innerHTML = "Từ vựng không tồn tại";
+            }
+        }
+    }
+}
+
+//Xử lí động
+var hocBai_bat_dau = document.querySelector('.hocBai_bat_dau1');
+
+hocBai_bat_dau.onclick = function() {
+    location.reload();
 }

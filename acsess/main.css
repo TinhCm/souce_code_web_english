@@ -151,7 +151,7 @@
 
 .content_list-input1>input {
     outline: none;
-    width: 600px;
+    width: 400px;
     height: 30px;
     box-sizing: border-box;
 }
@@ -163,7 +163,7 @@
 
 .check_user_tu_vung {
     padding-left: 200px;
-    width: 600px;
+    width: 400px;
 }
 
 .content--create {
@@ -176,7 +176,6 @@
     color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
-    outline: none;
     border-style: solid;
     border-width: 0.5px;
     align-items: center;
@@ -244,7 +243,27 @@
 }
 
 .content_tu_vung3 {
-    flex: 1;
+    width: 50px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    border-left: none;
+}
+
+.content_tu_vung4 {
+    width: 120px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    border-left: none;
+}
+
+.content_tu_vung5 {
+    width: 120px;
     font-weight: 600;
     box-sizing: border-box;
     border-width: 1px;
@@ -255,12 +274,13 @@
 
 .content_list_backend_tu {
     display: inline-block;
-    width: 272px;
+    width: 296px;
     margin-left: 18px;
     border-left: 1px solid #ebe8e8;
     border-right: 1px solid #ebe8e8;
     border-bottom: 1px solid #ebe8e8;
     padding: 2px 10px;
+    box-sizing: border-box;
 }
 
 .content_list_backend_SM {
@@ -269,15 +289,36 @@
 
 .content_list_backend_nghia {
     display: inline-block;
-    width: 272px;
+    width: 295px;
     border-right: 1px solid #ebe8e8;
     border-bottom: 1px solid #ebe8e8;
     padding: 2px 10px;
+    box-sizing: border-box;
+}
+
+.content_list_backend_tu_loai {
+    display: inline-block;
+    width: 120px;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    text-align: center;
+    border-right: 1px solid #ebe8e8;
+    border-bottom: 1px solid #ebe8e8;
+}
+
+.content_list_backend_phien_am {
+    display: inline-block;
+    width: 120px;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    border-right: 1px solid #ebe8e8;
+    border-bottom: 1px solid #ebe8e8;
+    text-align: center;
 }
 
 .content_list_backend_nut {
+    margin-left: 5px !important;
     font-weight: 600;
-    margin-left: 135px;
     background-color: rgb(233, 225, 225);
     color: red;
     border-radius: 5px;
@@ -285,6 +326,7 @@
     outline: none;
     border-style: solid;
     border-width: 0.5px;
+    box-sizing: border-box;
 }
 
 .content_list_backend-li {
@@ -344,7 +386,6 @@
     color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
-    outline: none;
     border-style: solid;
     border-width: 0.5px;
 }
@@ -991,4 +1032,80 @@
 
 .music6>h4 {
     align-items: center;
+}
+
+
+/* Học bài */
+
+.hoc_bai {
+    height: 630px;
+    background-color: #b8f1f5;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin: 20px 20px;
+}
+
+.hoc_bai h1 {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hoc_bai_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 250px;
+}
+
+.hocBai_list-input1 label {
+    font-size: 20px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.hocBai_list-input2 label {
+    font-size: 20px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.hocBai_list-input1 input {
+    font-size: 18px;
+    width: 300px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.hocBai_list-input2 h2 {
+    display: inline-block;
+}
+
+.hocBai_bat_dau {
+    margin-left: 200px;
+    width: 300px;
+    display: flex;
+}
+
+.hocBai_bat_dau button {
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.kiem_tra_kq {
+    margin-left: 200px;
+    box-sizing: border-box;
+    display: flex;
+    width: 300px;
+}
+
+.kiem_tra_kq button {
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: auto;
 }
