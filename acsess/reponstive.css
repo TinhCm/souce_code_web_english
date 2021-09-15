@@ -536,7 +536,7 @@
         margin-right: 10px;
     }
     .hocBai_list-input1 label {
-        font-size: 20px;
+        font-size: 18px;
         width: 150px;
         margin-bottom: 5px;
     }
@@ -550,13 +550,13 @@
         outline: none;
     }
     .hocBai_list-input2 label {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 5px;
         width: 100px;
     }
     .hocBai_list-input2 h2 {
         display: inline-block !important;
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
     .hocBai_bat_dau {
         margin-left: 10px;
@@ -564,7 +564,7 @@
         display: flex;
     }
     .hocBai_bat_dau button {
-        font-size: 20px;
+        font-size: 18px;
         margin: auto;
         margin-bottom: 20px;
     }
@@ -575,7 +575,7 @@
         width: 100%;
     }
     .kiem_tra_kq button {
-        font-size: 20px;
+        font-size: 18px;
         box-sizing: border-box;
         margin: auto;
     }
