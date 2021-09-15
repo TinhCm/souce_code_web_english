@@ -717,7 +717,29 @@ function xuLi_hoc_bai() {
             var check_ket_qua_lever2_kq_random = (loc_user_hoc_bai_ton_tai[check_ket_qua_lever2_random].tu_vung);
 
             input1_tu_hocBai2.innerHTML = check_ket_qua_lever2_kq_random;
+        }
 
+        //Random lever3
+        var hocBai_kiem_tra3 = document.querySelector('.hocBai_kiem_tra3');
+        var hocBai_bat_dau3 = document.querySelector('.hocBai_bat_dau3');
+        var input1_tu_hocBai3 = document.querySelector('.input1_tu_hocBai3');
+
+        layDuLieu_hoc_bai(check_ket_qua_lever3);
+
+        function check_ket_qua_lever3(list) {
+            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
+                return lists.user === document.cookie;
+            })
+
+            const check_ket_qua_lever3_length = loc_user_hoc_bai_ton_tai.length;
+            console.log(check_ket_qua_lever3_length);
+
+            var check_ket_qua_lever3_random = (Math.floor(Math.random() * check_ket_qua_lever3_length));
+            console.log(check_ket_qua_lever3_random);
+
+            var check_ket_qua_lever3_kq_random = (loc_user_hoc_bai_ton_tai[check_ket_qua_lever3_random].nghia);
+
+            input1_tu_hocBai3.innerHTML = check_ket_qua_lever3_kq_random;
         }
     }
 
@@ -781,28 +803,6 @@ function xuLi_hoc_bai() {
     //Lever 3
     var hocBai_kiem_tra3 = document.querySelector('.hocBai_kiem_tra3');
     var hocBai_bat_dau3 = document.querySelector('.hocBai_bat_dau3');
-    hocBai_bat_dau3.onclick = function() {
-        var input1_tu_hocBai3 = document.querySelector('.input1_tu_hocBai3');
-
-        layDuLieu_hoc_bai(check_ket_qua_lever3);
-
-        function check_ket_qua_lever3(list) {
-            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
-                return lists.user === document.cookie;
-            })
-
-            const check_ket_qua_lever3_length = loc_user_hoc_bai_ton_tai.length;
-            console.log(check_ket_qua_lever3_length);
-
-            var check_ket_qua_lever3_random = (Math.floor(Math.random() * check_ket_qua_lever3_length));
-            console.log(check_ket_qua_lever3_random);
-
-            var check_ket_qua_lever3_kq_random = (loc_user_hoc_bai_ton_tai[check_ket_qua_lever3_random].nghia);
-
-            input1_tu_hocBai3.innerHTML = check_ket_qua_lever3_kq_random;
-
-        }
-    }
 
     //Xem đáp án
     var input1_tu_hocBai3_DA = document.querySelector('.input1_tu_hocBai3_DA');
@@ -860,4 +860,31 @@ function xuLi_hoc_bai() {
 
         }
     }
+}
+
+//Xu li động học bài
+var hocBai_kiem_tra = document.querySelector('.hocBai_kiem_tra');
+var hocBai_kiem_tra2 = document.querySelector('.hocBai_kiem_tra2');
+var hocBai_kiem_tra3 = document.querySelector('.hocBai_kiem_tra3');
+var hocBai_dap_an2 = document.querySelector('.hocBai_dap_an2');
+var hocBai_dap_an3 = document.querySelector('.hocBai_dap_an3');
+
+hocBai_kiem_tra.disabled = true;
+hocBai_kiem_tra2.disabled = true;
+hocBai_kiem_tra3.disabled = true;
+hocBai_dap_an2.disabled = true;
+hocBai_dap_an3.disabled = true;
+
+if (document.cookie != "") {
+    hocBai_kiem_tra.disabled = false;
+    hocBai_kiem_tra2.disabled = false;
+    hocBai_kiem_tra3.disabled = false;
+    hocBai_dap_an2.disabled = false;
+    hocBai_dap_an3.disabled = false;
+
+    hocBai_kiem_tra.classList.add('Poiter');
+    hocBai_kiem_tra2.classList.add('Poiter');
+    hocBai_kiem_tra3.classList.add('Poiter');
+    hocBai_dap_an2.classList.add('Poiter');
+    hocBai_dap_an3.classList.add('Poiter');
 }

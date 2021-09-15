@@ -537,7 +537,7 @@
     }
     .hocBai_list-input1 label {
         font-size: 20px;
-        width: 200px;
+        width: 150px;
         margin-bottom: 5px;
     }
     .hocBai_list-input1 input {
@@ -578,6 +578,17 @@
         font-size: 20px;
         box-sizing: border-box;
         margin: auto;
+    }
+    /* Lever2 */
+    .hocBai_list-input1 h3 {
+        display: inline-block !important;
+    }
+    .hocBai_dap_an0 {
+        display: inline-block;
+        width: 150px;
+    }
+    .hocBai_dap_an0 button {
+        cursor: pointer;
     }
 }
 
