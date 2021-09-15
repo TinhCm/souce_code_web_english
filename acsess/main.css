@@ -1038,7 +1038,7 @@
 /* Học bài */
 
 .hoc_bai {
-    height: 630px;
+    height: auto;
     background-color: #b8f1f5;
     padding: 10px 0;
     box-sizing: border-box;
@@ -1052,11 +1052,24 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.hoc_bai h2 {
+    text-align: center;
+}
+
+.hoc_bai h3 {
+    text-align: center;
+}
+
 .hoc_bai_content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 250px;
+    display: flex;
+}
+
+.hoc_bai_content_box {
+    margin: auto;
+    display: block;
+    background-color: white;
+    padding: 20px 20px;
+    margin-bottom: 40px;
 }
 
 .hocBai_list-input1 label {
@@ -1086,8 +1099,6 @@
 }
 
 .hocBai_bat_dau {
-    margin-left: 200px;
-    width: 300px;
     display: flex;
 }
 
@@ -1098,14 +1109,23 @@
 }
 
 .kiem_tra_kq {
-    margin-left: 200px;
-    box-sizing: border-box;
     display: flex;
-    width: 300px;
 }
 
 .kiem_tra_kq button {
     font-size: 20px;
     box-sizing: border-box;
     margin: auto;
+}
+
+
+/* Lever2 */
+
+.hocBai_list-input1 h3 {
+    display: inline-block !important;
+}
+
+.hocBai_dap_an0 {
+    display: inline-block;
+    width: 200px;
 }

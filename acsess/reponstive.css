@@ -523,7 +523,7 @@
     }
     /* Học bài */
     .hoc_bai {
-        height: 430px;
+        height: auto;
         padding: 10px 0;
         margin: 20px 0px;
     }
