@@ -21,7 +21,11 @@
 }
 
 .noneDisplay {
-    display: none;
+    display: none !important;
+}
+
+.Display_inline {
+    display: inline-block !important;
 }
 
 
@@ -218,7 +222,8 @@
     }
     /* Đánh giá */
     .danhGia {
-        height: 370px;
+        height: auto;
+        padding: 20px 0;
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -249,10 +254,10 @@
     }
     .gop_y--create {
         margin-top: 10px;
-        width: 300px !important;
         height: 40px;
-        margin: 0px 0px !important;
         font-size: 20px;
+        display: block;
+        margin: auto;
     }
     /* Header */
     body {
@@ -369,6 +374,12 @@
         margin: 10px 0;
         box-sizing: border-box;
     }
+    .dang_nhap1_mat_khau {
+        display: flex;
+        border-radius: 5px !important;
+        box-sizing: border-box;
+        width: 100%;
+    }
     /* Đăng kí */
     .dang_ki {
         display: flex;
@@ -455,6 +466,12 @@
         margin: 10px 0;
         box-sizing: border-box;
     }
+    .dang_ki1_mat_khau {
+        display: flex;
+        border-radius: 5px !important;
+        box-sizing: border-box;
+        width: 100%;
+    }
     /* Footer */
     .footer {
         margin: 10px 0px;
@@ -531,6 +548,14 @@
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    .hoc_bai h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .hoc_bai h3 {
+        text-align: center;
+        font-size: 16px;
+    }
     .hoc_bai_content {
         margin-left: 10px;
         margin-right: 10px;
@@ -538,7 +563,7 @@
     .hocBai_list-input1 label {
         font-size: 18px;
         width: 150px;
-        margin-bottom: 5px;
+        margin: 17px 0;
     }
     .hocBai_list-input1 input {
         font-size: 18px;
@@ -548,10 +573,11 @@
         padding-left: 5px;
         margin-bottom: 5px;
         outline: none;
+        border-width: 0.5px;
     }
     .hocBai_list-input2 label {
         font-size: 18px;
-        margin-bottom: 5px;
+        margin: 15px 0;
         width: 100px;
     }
     .hocBai_list-input2 h2 {
@@ -589,6 +615,11 @@
     }
     .hocBai_dap_an0 button {
         cursor: pointer;
+    }
+    .hocBai_list-input1 h4 {
+        display: none;
+        font-size: 16px;
+        margin: 5px 0;
     }
 }
 

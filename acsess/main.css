@@ -152,9 +152,13 @@
 
 .content_list-input1>input {
     outline: none;
-    width: 400px;
+    width: 500px;
     height: 30px;
     box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    border-width: 0.5px;
+    padding: 0 10px;
 }
 
 .input-lable {
@@ -371,12 +375,19 @@
     height: 30px;
     outline: none;
     box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 40px;
+    padding: 0 10px;
 }
 
 .content2-input2>textarea {
     width: 600px;
     outline: none;
     box-sizing: border-box;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 .content2--create {
@@ -587,7 +598,8 @@
 /* Đóng góp ý kiến */
 
 .danhGia {
-    height: 440px;
+    height: auto;
+    padding: 20px 0;
     box-sizing: border-box;
     background-color: rgb(228, 245, 250);
 }
@@ -642,17 +654,21 @@
     font-size: 18px;
 }
 
-.gop_y-input1 {
-    display: block;
-    margin-top: 50px 0;
+.gop_y-input1_one {
+    display: flex;
 }
 
-.gop_y-input1>input {
-    width: 350px;
-    height: 30px;
-    margin: 10px 0;
-    box-sizing: border-box;
+.gop_y-input1_one input {
+    margin-top: 50px 0;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
     outline: none;
+    height: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
 }
 
 #gop_y-input1>textarea {
@@ -660,14 +676,20 @@
     outline: none;
     box-sizing: border-box;
     font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 
 .gop_y>button {
     outline: none;
     border: none;
-    width: 440px;
+    width: auto;
     font-size: 20px;
     height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    color: white;
 }
 
 .gop_y--create {
@@ -720,12 +742,13 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
     text-align: center;
+    cursor: pointer;
 }
 
 .dang_nhap_content {
     flex: 1;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .dang_nhap1 {
@@ -761,6 +784,12 @@
     display: block;
     font-size: 16px;
     cursor: no-drop;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 .dang_nhap1>span {
@@ -774,7 +803,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: blue;
 }
 
@@ -782,16 +811,25 @@
     display: block;
     outline: none;
     width: 430px;
-    height: 30px;
+    height: 40px;
     margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 
 .dang_nhap1_password {
     display: block;
     outline: none;
     width: 430px;
-    height: 30px;
+    height: 40px;
     margin: 10px 0;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .nosuccses {
@@ -801,8 +839,64 @@
     font-size: 16px !important;
 }
 
+.dang_nhap1_mat_khau {
+    display: flex;
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    width: 430px;
+}
+
+.dang_nhap1_mat_khau button {
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+
+.dang_nhap1_xemMK {
+    border: none;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0;
+}
+
 
 /* Phần xử lí đăng kí */
+
+.dang_ki1_mat_khau {
+    display: flex;
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    width: 430px;
+}
+
+.dang_ki1_mat_khau button {
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+
+.dang_ki1_xemMK {
+    border: none;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0;
+}
 
 .dang_ki {
     display: flex;
@@ -823,12 +917,13 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
     text-align: center;
+    cursor: pointer;
 }
 
 .dang_ki_content {
     flex: 1;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .dang_ki1 {
@@ -877,6 +972,10 @@
     display: block;
     font-size: 16px;
     cursor: no-drop;
+    height: 30px;
+    color: white;
+    background: blue;
+    border-radius: 5px;
 }
 
 .dang_ki1>span {
@@ -890,7 +989,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 16px !important;
+    font-size: 18px !important;
     color: blue;
 }
 
@@ -900,6 +999,11 @@
     width: 430px;
     height: 30px;
     margin: 10px 0;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .dang_ki1_password {
@@ -908,6 +1012,12 @@
     width: 430px;
     height: 30px;
     margin: 10px 0;
+    height: 40px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .checkTen {
@@ -1080,13 +1190,13 @@
 .hocBai_list-input1 label {
     font-size: 20px;
     width: 200px;
-    margin-bottom: 5px;
+    margin: 20px 0;
 }
 
 .hocBai_list-input2 label {
     font-size: 20px;
     width: 200px;
-    margin-bottom: 5px;
+    margin: 25px 0;
 }
 
 .hocBai_list-input1 input {
@@ -1097,6 +1207,9 @@
     padding-left: 5px;
     margin-bottom: 5px;
     outline: none;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0.5px;
 }
 
 .hocBai_list-input2 h2 {
@@ -1143,7 +1256,14 @@
 /* Lever2 */
 
 .hocBai_list-input1 h3 {
-    display: inline-block !important;
+    display: inline-block;
+    /* display: none; */
+}
+
+.hocBai_list-input1 h4 {
+    display: none;
+    font-size: 20px;
+    margin: 5px 0;
 }
 
 .hocBai_dap_an0 {
@@ -1160,4 +1280,5 @@
     border-style: solid;
     border-width: 0.5px;
     height: 25px;
+    margin: 10px 0;
 }

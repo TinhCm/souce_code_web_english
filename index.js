@@ -305,8 +305,8 @@ function taoDuLieu_gop_y(data, callback) {
         .then(callback);
 }
 
-var ten = document.querySelector('.gop_y_tu1');
-ten.innerHTML = document.cookie;
+// var ten = document.querySelector('.gop_y-input1_one_inner').value;
+// ten.innerHTML = document.cookie;
 
 function xuLi_gop_y() {
     var xuLi_gop_y = document.querySelector('.gop_y--create')
@@ -582,17 +582,6 @@ dang_nhap_chuyenXL.onclick = function() {
     dang_kiXL.classList.remove('Display')
 }
 
-//Đánh giá
-// header_second_cmt1.onclick = function() {
-//     headerXL.classList.add('noneDisplay');
-//     header_secondXL.classList.add('noneDisplay');
-//     body_cmtXL.classList.add('noneDisplay');
-//     footerXL.classList.add('noneDisplay');
-//     danhGiaXL.classList.add('Display');
-//     video.classList.add('noneDisplay')
-//     music.classList.add('noneDisplay')
-// }
-
 //Đăng nhập
 nut_dang_nhap.onclick = function() {
     headerXL.classList.add('noneDisplay');
@@ -605,6 +594,19 @@ nut_dang_nhap.onclick = function() {
     danhGiaXL.classList.add('noneDisplay');
 }
 
+const dang_nhap1_password = document.querySelector('.dang_nhap1_password')
+const dang_nhap1_xemMK = document.querySelector('.dang_nhap1_xemMK')
+
+dang_nhap1_xemMK.addEventListener('click', function() {
+
+    const currentType = dang_nhap1_password.getAttribute('type')
+
+    dang_nhap1_password.setAttribute(
+        'type',
+        currentType === 'password' ? 'text' : 'password'
+    )
+})
+
 //Đăng kí
 nut_dang_ki.onclick = function() {
     headerXL.classList.add('noneDisplay');
@@ -616,6 +618,19 @@ nut_dang_ki.onclick = function() {
     music.classList.add('noneDisplay')
     danhGiaXL.classList.add('noneDisplay');
 }
+
+const dang_ki1_password = document.querySelector('.dang_ki1_password')
+const dang_ki1_xemMK = document.querySelector('.dang_ki1_xemMK')
+
+dang_ki1_xemMK.addEventListener('click', function() {
+
+    const currentType = dang_ki1_password.getAttribute('type')
+
+    dang_ki1_password.setAttribute(
+        'type',
+        currentType === 'password' ? 'text' : 'password'
+    )
+})
 
 //Đồng hồ
 var $ = document.querySelector.bind(document);
@@ -642,7 +657,6 @@ function getGio() {
     ngay.innerHTML = ngayN;
 }
 
-//Học bài
 //Học bài
 function batDau_hoc_bai() {
     xuLi_hoc_bai();
@@ -763,6 +777,7 @@ function xuLi_hoc_bai() {
 
             console.log(loc_user_hoc_bai_ton_tai2.nghia);
             input1_tu_hocBai2_DA.innerHTML = loc_user_hoc_bai_ton_tai2.nghia;
+            input1_tu_hocBai2_DA.classList.toggle('Display_inline');
         }
     }
 
@@ -824,6 +839,7 @@ function xuLi_hoc_bai() {
 
             console.log(loc_user_hoc_bai_ton_tai2.tu_vung);
             input1_tu_hocBai3_DA.innerHTML = loc_user_hoc_bai_ton_tai2.tu_vung;
+            input1_tu_hocBai3_DA.classList.toggle('Display_inline');
         }
     }
 

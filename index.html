@@ -245,7 +245,7 @@
                             <div class="hocBai_dap_an0">
                                 <button class="hocBai_dap_an2">Đáp án</button>
                             </div>
-                            <h3 class=" input1_tu_hocBai2_DA "></h3>
+                            <h4 class=" input1_tu_hocBai2_DA "></h4>
                         </div>
 
                         <div class="hocBai_list-input2 ">
@@ -280,7 +280,7 @@
                             <div class="hocBai_dap_an0">
                                 <button class="hocBai_dap_an3">Đáp án</button>
                             </div>
-                            <h3 class=" input1_tu_hocBai3_DA "></h3>
+                            <h4 class="input1_tu_hocBai3_DA "></h4>
                         </div>
 
                         <div class="hocBai_list-input2 ">
@@ -303,8 +303,9 @@
             <div class="gop_y">
                 <h2>ĐÁNH GIÁ</h2>
                 <h4>Use form with name</h4>
-                <div class="gop_y-input1">
-                    <h4 class="gop_y_tu1"></h4>
+                <div class="gop_y-input1_one">
+                    <!-- <h4 class="gop_y_tu1"></h4> -->
+                    <input class="gop_y-input1_one_inner" type="text">
                 </div>
                 <div id="gop_y-input1" class="gop_y-input1">
                     <textarea class="gop_y2_cmt" rows="6" placeholder="Nhập vào đánh giá" name="name"></textarea>
@@ -361,7 +362,10 @@
                     <h1>Đăng nhập</h1>
                     <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
                     <input placeholder="Nhập vào tên" class="dang_nhap1_ten" type="text" name="name">
-                    <input autocomplete="anyrandominvalidvalue" placeholder="Nhập vào mật khẩu" class="dang_nhap1_password" type="text" name="name">
+                    <div class="dang_nhap1_mat_khau">
+                        <input autocomplete="anyrandominvalidvalue" placeholder="Nhập vào mật khẩu" class="dang_nhap1_password" type="password" name="name">
+                        <button class="dang_nhap1_xemMK"><i class="fas fa-eye"></i></button>
+                    </div>
                     <button class="create_dang_nhap">Đăng nhập</button>
                     <p class="nosuccses"></p>
                     <span>Hoặc bạn chưa có tài khoản?</span>
@@ -379,7 +383,10 @@
                     <h1>Đăng ký</h1>
                     <p>Đến với chúng tôi nơi bạn tìm được nguồn cảm hứng</p>
                     <input autocomplete="anyrandominvalidvalue" placeholder="Nhập vào tên" class="dang_ki1_ten" type="text" name="name">
-                    <input autocomplete="anyrandominvalidvalue" placeholder="Nhập vào mật khẩu" class="dang_ki1_password" type="text" name="name">
+                    <div class="dang_ki1_mat_khau">
+                        <input autocomplete="anyrandominvalidvalue" placeholder="Nhập vào mật khẩu" class="dang_ki1_password" type="password" name="name">
+                        <button class="dang_ki1_xemMK"><i class="fas fa-eye"></i></button>
+                    </div>
                     <form class="checkbox" action="">
                         <p>Tôi đồng ý với các điều khoản và điều kiện của Learning English</p>
                     </form>
