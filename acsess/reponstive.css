@@ -621,6 +621,9 @@
         font-size: 16px !important;
         margin: 5px 0 !important;
     }
+    .chuyen_on_bai input {
+        width: 200px;
+    }
 }
 
 .video video {

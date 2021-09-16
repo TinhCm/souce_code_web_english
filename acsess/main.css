@@ -678,6 +678,7 @@
     min-height: 420px;
     /* position: relative;
     top: 100px; */
+    margin-top: 50px !important;
     margin: auto;
     box-sizing: border-box;
     box-shadow: 30px 30px 10px;
