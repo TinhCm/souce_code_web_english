@@ -576,6 +576,10 @@
 
 .footer2>button {
     margin-top: 55px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: white;
 }
 
 .footer2>button>a {

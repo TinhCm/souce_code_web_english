@@ -704,7 +704,7 @@ function xuLi_hoc_bai() {
                     hocBai_list_input1_check.innerHTML = "Sai";
                 }
             } else {
-                hocBai_list_input1_check.innerHTML = "Từ vựng không tồn tại";
+                hocBai_list_input1_check.innerHTML = "Không tồn tại";
             }
         }
     }
