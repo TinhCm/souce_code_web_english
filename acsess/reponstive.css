@@ -222,7 +222,7 @@
     }
     /* Đánh giá */
     .danhGia {
-        height: auto;
+        height: 740px;
         padding: 20px 0;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -541,67 +541,67 @@
     /* Học bài */
     .hoc_bai {
         height: auto;
-        padding: 10px 0;
-        margin: 20px 0px;
+        padding: 10px 0 !important;
+        margin: 20px 0px !important;
     }
     .hoc_bai h1 {
-        font-size: 20px;
+        font-size: 20px !important;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .hoc_bai h2 {
         text-align: center;
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .hoc_bai h3 {
         text-align: center;
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .hoc_bai_content {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
     .hocBai_list-input1 label {
-        font-size: 18px;
-        width: 150px;
-        margin: 17px 0;
+        font-size: 18px !important;
+        width: 150px !important;
+        margin: 17px 0 !important;
     }
     .hocBai_list-input1 input {
-        font-size: 18px;
-        width: 100%;
-        height: 30px;
+        font-size: 18px !important;
+        width: 100% !important;
+        height: 30px !important;
         box-sizing: border-box;
-        padding-left: 5px;
-        margin-bottom: 5px;
+        padding-left: 5px !important;
+        margin-bottom: 5px !important;
         outline: none;
         border-width: 0.5px;
     }
     .hocBai_list-input2 label {
-        font-size: 18px;
-        margin: 15px 0;
-        width: 100px;
+        font-size: 18px !important;
+        margin: 15px 0 !important;
+        width: 100px !important;
     }
     .hocBai_list-input2 h2 {
         display: inline-block !important;
         font-size: 18px !important;
     }
     .hocBai_bat_dau {
-        margin-left: 10px;
-        width: 100%;
+        margin-left: 10px !important;
+        width: 100% !important;
         display: flex;
     }
     .hocBai_bat_dau button {
-        font-size: 18px;
+        font-size: 18px !important;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
     }
     .kiem_tra_kq {
-        margin-left: 10px;
+        margin-left: 10px !important;
         box-sizing: border-box;
         display: flex;
-        width: 100%;
+        width: 100% !important;
     }
     .kiem_tra_kq button {
-        font-size: 18px;
+        font-size: 18px !important;
         box-sizing: border-box;
         margin: auto;
     }
@@ -611,15 +611,15 @@
     }
     .hocBai_dap_an0 {
         display: inline-block;
-        width: 150px;
+        width: 150px !important;
     }
     .hocBai_dap_an0 button {
         cursor: pointer;
     }
     .hocBai_list-input1 h4 {
         display: none;
-        font-size: 16px;
-        margin: 5px 0;
+        font-size: 16px !important;
+        margin: 5px 0 !important;
     }
 }
 

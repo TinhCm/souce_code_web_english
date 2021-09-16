@@ -543,6 +543,47 @@
 }
 
 
+/* Chuyển ôn bài */
+
+.chuyen_on_bai {
+    align-items: center;
+}
+
+.chuyen_on_bai i {
+    color: red;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.chuyen_on_bai li {
+    margin: 10px 0;
+}
+
+.chuyen_on_bai button {
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.chuyen_on_bai button a {
+    text-decoration: none;
+    color: blue;
+}
+
+.chuyen_on_bai input {
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+
 /* Footer */
 
 .footer {
@@ -602,7 +643,7 @@
 /* Đóng góp ý kiến */
 
 .danhGia {
-    height: auto;
+    height: 600px;
     padding: 20px 0;
     box-sizing: border-box;
     background-color: rgb(228, 245, 250);
@@ -656,6 +697,7 @@
 .gop_y h4 {
     text-align: center;
     font-size: 18px;
+    margin: 10px 0;
 }
 
 .gop_y-input1_one {
@@ -721,6 +763,26 @@
 .Header-home>a {
     text-decoration: none;
     color: white;
+}
+
+.gop_y-input1_one_inner {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.dang_gia_thoat {
+    margin: 5px 5px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    outline: none !important;
+    border: none;
+    font-size: 20px !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px #999999;
+    text-align: center;
+    cursor: pointer;
 }
 
 
