@@ -1,5 +1,5 @@
-var API_hoc_bai = 'http://localhost:3000/list'
-    // var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
+var API_hoc_bai = 'https://demo-apps-en.glitch.me/list';
+// var API_hoc_bai = 'http://localhost:3000/list'
 
 //Học bài
 function batDau_hoc_bai() {

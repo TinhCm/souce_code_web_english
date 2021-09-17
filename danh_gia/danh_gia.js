@@ -1,5 +1,5 @@
-var API_gop_y = "http://localhost:3000/gop_y"
-    // var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
+var API_gop_y = "https://demo-apps-en.glitch.me/gop_y";
+// var API_gop_y = "http://localhost:3000/gop_y"
 
 function batDau_gop_y() {
     xuLi_gop_y();
