@@ -4,19 +4,19 @@
 // var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
 // var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
 
-var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
-var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
-var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
-var API_dang_nhap = 'https://demo-apps-en.glitch.me/user'
-var API_dang_ki = 'https://demo-apps-en.glitch.me/user'
-var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
+// var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
+// var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
+// var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
+// var API_dang_nhap = 'https://demo-apps-en.glitch.me/user'
+// var API_dang_ki = 'https://demo-apps-en.glitch.me/user'
+// var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
 
-// var API_tu_vung = 'http://localhost:3000/list'
-// var API_ngu_phap = 'http://localhost:3000/ngu_phap'
-// var API_gop_y = "http://localhost:3000/gop_y"
-// var API_dang_nhap = 'http://localhost:3000/user'
-// var API_dang_ki = 'http://localhost:3000/user'
-// var API_hoc_bai = 'http://localhost:3000/list'
+var API_tu_vung = 'http://localhost:3000/list'
+var API_ngu_phap = 'http://localhost:3000/ngu_phap'
+var API_gop_y = "http://localhost:3000/gop_y"
+var API_dang_nhap = 'http://localhost:3000/user'
+var API_dang_ki = 'http://localhost:3000/user'
+var API_hoc_bai = 'http://localhost:3000/list'
 
 //Phần API_tu_vung từ vựng
 function batDau_tu_vung() {
@@ -68,7 +68,7 @@ function xoaDuLieu_tu_vung(id) {
 
 function xuatDuLieu_tu_vung(list) {
     var loc_user_tu_vung = list.filter(function(lists) {
-        return lists.user === document.cookie;
+        return lists.user === document.cookie.slice(4);
     })
 
     var htmls = loc_user_tu_vung.map(function(lists) {
@@ -86,6 +86,132 @@ function xuatDuLieu_tu_vung(list) {
 }
 
 function xuLi_tu_vung() {
+
+    //Nhấn phím Enter
+    var nghia = document.querySelector('.input2_nghia');
+    nghia.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            console.log("NGon lành");
+            var tu_vung = document.querySelector('.input1_tu').value;
+            var nghia = document.querySelector('.input2_nghia').value;
+            var tu_loai = document.querySelector('.input2_tu_loai').value;
+            var phien_am = document.querySelector('.input2_phien_am').value;
+            var user_tu_vung_check = document.querySelector('.user_tu_vung_check');
+            var today = new Date();
+            var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
+                today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+
+            layDuLieu_tu_vung(check_ton_tai_TV);
+
+            function check_ton_tai_TV(list) {
+                var loc_user_tu_vung_ton_tai = list.filter(function(lists) {
+                    return lists.user === document.cookie.slice(4);
+                })
+
+                var loc_user_tu_vung_ton_tai2 = loc_user_tu_vung_ton_tai.some(function(listss) {
+                    return listss.tu_vung === tu_vung;
+                })
+
+                if (loc_user_tu_vung_ton_tai2 == true) {
+                    user_tu_vung_check.innerHTML = "Từ vựng đã tồn tại";
+                } else {
+                    var user = document.cookie.slice(4);
+                    if (tu_vung === "") {
+                        tu_vung = "none";
+                    }
+
+                    if (nghia === "") {
+                        nghia = "none";
+                    }
+                    if (tu_loai === "") {
+                        tu_loai = "none";
+                    }
+
+                    if (phien_am === "") {
+                        phien_am = "none";
+                    }
+
+                    formData = {
+                        tu_vung: tu_vung,
+                        nghia: nghia,
+                        tu_loai: tu_loai,
+                        phien_am: phien_am,
+                        date: date,
+                        user: user
+                    }
+                    taoDuLieu_tu_vung(formData, function() {
+                        layDuLieu_tu_vung(xuatDuLieu_tu_vung);
+                        location.reload();
+                    })
+                }
+            }
+        }
+    }
+
+    //Nhấn phím Enter
+    var input2_phien_am = document.querySelector('.input2_phien_am');
+    input2_phien_am.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            console.log("NGon lành");
+            var tu_vung = document.querySelector('.input1_tu').value;
+            var nghia = document.querySelector('.input2_nghia').value;
+            var tu_loai = document.querySelector('.input2_tu_loai').value;
+            var phien_am = document.querySelector('.input2_phien_am').value;
+            var user_tu_vung_check = document.querySelector('.user_tu_vung_check');
+            var today = new Date();
+            var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
+                today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+
+            layDuLieu_tu_vung(check_ton_tai_TV);
+
+            function check_ton_tai_TV(list) {
+                var loc_user_tu_vung_ton_tai = list.filter(function(lists) {
+                    return lists.user === document.cookie.slice(4);
+                })
+
+                var loc_user_tu_vung_ton_tai2 = loc_user_tu_vung_ton_tai.some(function(listss) {
+                    return listss.tu_vung === tu_vung;
+                })
+
+                if (loc_user_tu_vung_ton_tai2 == true) {
+                    user_tu_vung_check.innerHTML = "Từ vựng đã tồn tại";
+                } else {
+                    var user = document.cookie.slice(4);
+                    if (tu_vung === "") {
+                        tu_vung = "none";
+                    }
+
+                    if (nghia === "") {
+                        nghia = "none";
+                    }
+                    if (tu_loai === "") {
+                        tu_loai = "none";
+                    }
+
+                    if (phien_am === "") {
+                        phien_am = "none";
+                    }
+
+                    formData = {
+                        tu_vung: tu_vung,
+                        nghia: nghia,
+                        tu_loai: tu_loai,
+                        phien_am: phien_am,
+                        date: date,
+                        user: user
+                    }
+                    taoDuLieu_tu_vung(formData, function() {
+                        layDuLieu_tu_vung(xuatDuLieu_tu_vung);
+                        location.reload();
+                    })
+                }
+            }
+        }
+    }
+
+    //Nhấn phím Tạo
     var xuLi_tu_vung = document.querySelector('.content--create')
     var check_dang_nhap_user = document.querySelector('.check_dang_nhap_user');
 
@@ -111,7 +237,7 @@ function xuLi_tu_vung() {
 
         function check_ton_tai_TV(list) {
             var loc_user_tu_vung_ton_tai = list.filter(function(lists) {
-                return lists.user === document.cookie;
+                return lists.user === document.cookie.slice(4);
             })
 
             var loc_user_tu_vung_ton_tai2 = loc_user_tu_vung_ton_tai.some(function(listss) {
@@ -121,7 +247,7 @@ function xuLi_tu_vung() {
             if (loc_user_tu_vung_ton_tai2 == true) {
                 user_tu_vung_check.innerHTML = "Từ vựng đã tồn tại";
             } else {
-                var user = document.cookie;
+                var user = document.cookie.slice(4);
                 if (tu_vung === "") {
                     tu_vung = "none";
                 }
@@ -204,7 +330,7 @@ function xoaDuLieu_ngu_phap(id) {
 
 function xuatDuLieu_ngu_phap(ngu_phap) {
     var loc_user_ngu_phap = ngu_phap.filter(function(ngu_phaps) {
-        return ngu_phaps.user === document.cookie;
+        return ngu_phaps.user === document.cookie.slice(4);
     })
 
     var htmls = loc_user_ngu_phap.map(function(pramas) {
@@ -231,6 +357,64 @@ function xuLi_ngu_phap() {
         xuLi_ngu_phap.disabled = true;
         check_dang_nhap_user_NP.innerHTML = "Bạn vui lòng đăng nhập để sử dụng chức năng"
     }
+
+    //Nhấn phím Enter
+    var input2_cachDung = document.querySelector('.input2-cachDung');
+    input2_cachDung.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            var ten = document.querySelector('.input1_ten').value;
+            var cau_truc = document.querySelector('.input2-cauTruc').value;
+            var cach_dung = document.querySelector('.input2-cachDung').value;
+            var user_ngu_phap_check = document.querySelector('.user_ngu_phap_check');
+            var today = new Date();
+            var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
+                today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+
+            layDuLieu_ngu_phap(check_ton_tai_NP);
+
+            function check_ton_tai_NP(ngu_phap) {
+                var loc_user_ngu_phap_ton_tai = ngu_phap.filter(function(ngu_phaps) {
+                    return ngu_phaps.user === document.cookie.slice(4);
+                })
+
+                var loc_user_ngu_phap_ton_tai2 = loc_user_ngu_phap_ton_tai.some(function(ngu_phapss) {
+                    return ngu_phapss.ten === ten;
+                })
+
+                if (loc_user_ngu_phap_ton_tai2 == true) {
+                    user_ngu_phap_check.innerHTML = "Ngữ pháp đã tồn tại";
+                } else {
+                    var user = document.cookie.slice(4);
+                    if (ten === "") {
+                        ten = "none";
+                    }
+
+                    if (cau_truc === "") {
+                        cau_truc = "none";
+                    }
+
+                    if (cach_dung === "") {
+                        cach_dung = "none";
+                    }
+
+                    formData = {
+                        ten: ten,
+                        cau_truc: cau_truc,
+                        cach_dung: cach_dung,
+                        date: date,
+                        user: user
+                    }
+                    taoDuLieu_ngu_phap(formData, function() {
+                        layDuLieu_ngu_phap(xuatDuLieu_ngu_phap);
+                        location.reload();
+                    })
+                }
+            }
+        }
+    }
+
+    //Nhấn phím Tạo
     xuLi_ngu_phap.onclick = function() {
         var ten = document.querySelector('.input1_ten').value;
         var cau_truc = document.querySelector('.input2-cauTruc').value;
@@ -244,7 +428,7 @@ function xuLi_ngu_phap() {
 
         function check_ton_tai_NP(ngu_phap) {
             var loc_user_ngu_phap_ton_tai = ngu_phap.filter(function(ngu_phaps) {
-                return ngu_phaps.user === document.cookie;
+                return ngu_phaps.user === document.cookie.slice(4);
             })
 
             var loc_user_ngu_phap_ton_tai2 = loc_user_ngu_phap_ton_tai.some(function(ngu_phapss) {
@@ -254,7 +438,7 @@ function xuLi_ngu_phap() {
             if (loc_user_ngu_phap_ton_tai2 == true) {
                 user_ngu_phap_check.innerHTML = "Ngữ pháp đã tồn tại";
             } else {
-                var user = document.cookie;
+                var user = document.cookie.slice(4);
                 if (ten === "") {
                     ten = "none";
                 }
@@ -314,6 +498,50 @@ function taoDuLieu_dang_nhap(data, callback) {
 }
 
 function xuLi_dang_nhap() {
+    var dang_nhap1_password = document.querySelector('.dang_nhap1_password');
+    dang_nhap1_password.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            var dang_nhap_ten = document.querySelector('.dang_nhap1_ten');
+            var dang_nhap_pass = document.querySelector('.dang_nhap1_password');
+            var nosucces = document.querySelector('.nosuccses');
+            var admin = document.querySelector('.header-thong_tin_1');
+            var header_thong_tin_user_1DN = document.querySelector('.header-thong_tin_user_1');
+            var header_thong_tin_1DN = document.querySelector('.header-thong_tin_1');
+            var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
+
+            layDuLieu_dang_nhap(check)
+
+            function check(user) {
+                var checkten = user.findIndex(function(users) {
+                    return users.ten === dang_nhap_ten.value;
+                })
+
+                if (checkten != -1) {
+                    var checkPast = user.find(function(userss) {
+                        return userss.id === (checkten + 1);
+                    })
+                    if (checkPast.password == dang_nhap_pass.value) {
+                        location.reload();
+                        // window.location.href = '/index.html';
+                        thong_tin_user_adminDN.innerHTML = checkPast.ten;
+
+                        function setCookie(cname, cvalue, exdays) {
+                            const d = new Date();
+                            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                            let expires = "expires=" + d.toUTCString();
+                            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                        }
+                        setCookie("ten", checkPast.ten, );
+                    } else {
+                        nosucces.innerHTML = "Tên đăng nhập hoặc mật khẩu sai";
+                    }
+                } else {
+                    nosucces.innerHTML = "Tên đăng nhập hoặc mật khẩu sai";
+                }
+            }
+        }
+    }
     var dang_nhap = document.querySelector('.create_dang_nhap')
     dang_nhap.onclick = function() {
         var dang_nhap_ten = document.querySelector('.dang_nhap1_ten');
@@ -337,8 +565,16 @@ function xuLi_dang_nhap() {
                 })
                 if (checkPast.password == dang_nhap_pass.value) {
                     location.reload();
+                    // window.location.href = '/index.html';
                     thong_tin_user_adminDN.innerHTML = checkPast.ten;
-                    document.cookie = checkPast.ten;
+
+                    function setCookie(cname, cvalue, exdays) {
+                        const d = new Date();
+                        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                        let expires = "expires=" + d.toUTCString();
+                        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                    }
+                    setCookie("ten", checkPast.ten, );
                 } else {
                     nosucces.innerHTML = "Tên đăng nhập hoặc mật khẩu sai";
                 }
@@ -352,7 +588,9 @@ function xuLi_dang_nhap() {
 var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
 var header_thong_tin_user_1DN = document.querySelector('.header-thong_tin_user_1');
 var header_thong_tin_1DN = document.querySelector('.header-thong_tin_1');
-thong_tin_user_adminDN.innerHTML = document.cookie;
+var cat_chuoi = document.cookie.slice(4);
+
+thong_tin_user_adminDN.innerHTML = cat_chuoi;
 
 if (document.cookie != "") {
     header_thong_tin_user_1DN.classList.add('Display');
@@ -414,6 +652,39 @@ function taoDuLieu_dang_ki(data, callback) {
 }
 
 function xuLi_dang_ki() {
+    var dang_ki1_password = document.querySelector('.dang_ki1_password');
+    dang_ki1_password.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            layDuLieu_dang_ki(check)
+
+            function check(user) {
+                var checkten = user.findIndex(function(users) {
+                    return users.ten === dang_ki_ten.value;
+                })
+
+                if (checkten != -1) {
+                    nosucces.innerHTML = "Tên tài khoản đã tồn tại";
+                } else {
+                    var ten = document.querySelector('.dang_ki1_ten').value;
+                    var password = document.querySelector('.dang_ki1_password').value;
+                    var today = new Date();
+                    var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
+                        today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+
+                    formData = {
+                        ten: ten,
+                        password: password,
+                        date: date
+                    }
+                    taoDuLieu_dang_ki(formData, function() {
+                        location.reload();
+                    })
+                    alert("Bạn đã đăng kí tài khoản thành công")
+                }
+            }
+        }
+    }
     var dang_ki = document.querySelector('.create_dang_ki')
     var dang_ki_ten = document.querySelector('.dang_ki1_ten');
     var dang_ki_pass = document.querySelector('.dang_ki1_password');
@@ -567,6 +838,18 @@ dang_ki1_xemMK.addEventListener('click', function() {
         currentType === 'password' ? 'text' : 'password'
     )
 })
+
+//Đăng xuất
+var dang_xuat = document.querySelector('.fa-sign-out-alt');
+dang_xuat.onclick = function() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+        var equals = cookies[i].indexOf("=");
+        var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+    location.reload()
+}
 
 //Đồng hồ
 var $ = document.querySelector.bind(document);

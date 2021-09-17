@@ -69,6 +69,12 @@
         font-size: 12px !important;
         text-align: center;
     }
+    .fa-sign-out-alt {
+        color: white !important;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
     .header-thong_tin_user_1>p {
         padding-left: 5px;
         display: inline-block;

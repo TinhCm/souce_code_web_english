@@ -1,5 +1,5 @@
-// var API_gop_y = "http://localhost:3000/gop_y"
-var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
+var API_gop_y = "http://localhost:3000/gop_y"
+    // var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
 
 function batDau_gop_y() {
     xuLi_gop_y();
@@ -23,9 +23,34 @@ function taoDuLieu_gop_y(data, callback) {
 }
 
 function xuLi_gop_y() {
+    var gop_y2_cmt = document.querySelector('.gop_y2_cmt');
+
+    //Nhấn phím Enter
+    gop_y2_cmt.onkeypress = function(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+            var ten = document.cookie.slice(4);
+            var cmt = document.querySelector('.gop_y2_cmt').value;
+            var today = new Date();
+            var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
+                today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+            formData = {
+                ten: ten,
+                cmt: cmt,
+                date: date
+            }
+            taoDuLieu_gop_y(formData, function() {
+                location.reload();
+            })
+
+            alert("Cảm ơn bạn đã đóng góp ý kiến.");
+        }
+    }
+
+    //Nhấn phím Gửi
     var xuLi_gop_y = document.querySelector('.gop_y--create')
     xuLi_gop_y.onclick = function() {
-        var ten = document.cookie;
+        var ten = document.cookie.slice(4);
         var cmt = document.querySelector('.gop_y2_cmt').value;
         var today = new Date();
         var date = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds() + '-' +
@@ -62,7 +87,7 @@ if (document.cookie != "") {
 }
 
 var gop_y_input1_one_inner = document.querySelector('.gop_y-input1_one_inner');
-gop_y_input1_one_inner.innerHTML = document.cookie;
+gop_y_input1_one_inner.innerHTML = document.cookie.slice(4);
 
 var dang_gia_thoat = document.querySelector('.dang_gia_thoat');
 dang_gia_thoat.onclick = function() {
