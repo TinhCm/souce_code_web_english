@@ -798,7 +798,6 @@ nut_dang_nhap.onclick = function() {
     dang_nhapXL.classList.add('Display');
     video.classList.add('noneDisplay')
     music.classList.add('noneDisplay')
-    danhGiaXL.classList.add('noneDisplay');
 }
 
 const dang_nhap1_password = document.querySelector('.dang_nhap1_password')
@@ -823,7 +822,6 @@ nut_dang_ki.onclick = function() {
     dang_kiXL.classList.add('Display');
     video.classList.add('noneDisplay')
     music.classList.add('noneDisplay')
-    danhGiaXL.classList.add('noneDisplay');
 }
 
 const dang_ki1_password = document.querySelector('.dang_ki1_password')
