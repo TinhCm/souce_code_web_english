@@ -622,7 +622,16 @@
         margin: 5px 0 !important;
     }
     .chuyen_on_bai input {
-        width: 200px;
+        width: 200px !important;
+    }
+    .header-hoc_bai {
+        flex: 1;
+    }
+    .header-hoc_bai2 {
+        flex: 1;
+    }
+    .header-hoc_bai2 {
+        flex: none !important;
     }
 }
 

@@ -239,10 +239,15 @@ if (document.cookie != "") {
     hocBai_dap_an3.classList.add('Poiter');
 }
 
-var dang_nhap_thoat = document.querySelector('.dang_nhap_thoat');
-dang_nhap_thoat.onclick = function() {
+var hoc_bai_thoat1 = document.querySelector('.hoc_bai_thoat1');
+hoc_bai_thoat1.onclick = function() {
     window.location.href = '/index.html';
 }
 
 var hoc_bai_hello = document.querySelector('.hoc_bai_hello');
 hoc_bai_hello.innerHTML = 'Xin chào ' + document.cookie;
+
+var header_hoc_bai3 = document.querySelector('.header-hoc_bai3');
+header_hoc_bai3.onclick = function() {
+    location.reload();
+}

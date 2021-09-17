@@ -10,16 +10,30 @@
     <title>Học bàì</title>
     <link rel="stylesheet" href="/acsess/reponstive.css">
     <link rel="stylesheet" href="/acsess/main.css">
+    <link rel="stylesheet" href="./hoc_bai.css">
 </head>
 
 <body>
     <div class="width">
-        <button class="dang_nhap_thoat">
-            <i style="color: white;" class="fas fa-chevron-left"></i>
-        </button>
+        <header class="hoc_bai_header">
+            <div class="hoc_bai_thoat">
+                <button class="hoc_bai_thoat1">
+                    <i style="color: white;" class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="header-hoc_bai2">
+                <marquee scrollamount="5" behavior="scroll" direction="left" width="100%">
+                    <h3 class="hoc_bai_hello"></h3>
+                </marquee>
+            </div>
+
+            <div class="header-hoc_bai3">
+                <i class="fas fa-redo-alt"></i>
+            </div>
+        </header>
 
         <div class="hoc_bai" id="hoc_bai">
-            <h2 class="hoc_bai_hello"></h2>
             <h1>CÙNG ÔN LẠI TỪ VỰNG NÀO</h1>
             <!-- Lever1 -->
             <h2>Lever 1</h2>
@@ -118,10 +132,9 @@
                 </div>
             </div>
             <!-- Lever3 -->
-            <ol style="list-style: none;" class="chuyen_on_bai">
+            <ol style="list-style: none; text-align: center;padding-left: 0px;" class="chuyen_on_bai">
                 <li title="Đây không phải là chức năng!">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <input type="text">
+                    <input style="background-color: #cfeff1; text-align: center;" type="text">
                 </li>
             </ol>
         </div>
