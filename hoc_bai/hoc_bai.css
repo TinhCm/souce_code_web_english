@@ -106,6 +106,9 @@
     background-color: black;
     height: 40px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 1024px;
 }
 
 .hoc_bai_thoat1 {
