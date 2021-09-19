@@ -20,6 +20,10 @@
     display: block !important;
 }
 
+.DisplayFlex {
+    display: flex !important;
+}
+
 .noneDisplay {
     display: none !important;
 }
@@ -33,7 +37,30 @@
 
 @media (max-width: 1024px) {}
 
-@media (min-width: 740px) and (max-width: 1023px) {}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-logo {
+        display: none;
+    }
+    .header1 {
+        flex: 1;
+    }
+    .header-thong_tin {
+        flex: 1;
+    }
+    .header {
+        width: 100%;
+    }
+    /* .width {
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 100%!important;
+        width: 100%!important;
+        min-width: 100%!important;
+        min-height: 100%!important;
+        margin: 0!important;
+    } */
+}
 
 @media (max-width: 739px) {
     .width {
@@ -53,12 +80,9 @@
         background-color: black;
         width: 100%;
     }
-    .header-logo {
+    /* .header1 {
         flex: 1;
-        color: white;
-        line-height: 40px;
-        box-sizing: border-box;
-    }
+    } */
     .header-thong_tin {
         flex: 1;
         color: white;
@@ -103,13 +127,10 @@
     }
     .fa-sign-out-alt {
         color: white !important;
-        padding-left: 5px;
-        padding-right: 5px;
         text-align: center;
         font-size: 12px;
     }
     .header-thong_tin_user_1>p {
-        padding-left: 5px;
         display: inline-block;
         margin: 0;
     }

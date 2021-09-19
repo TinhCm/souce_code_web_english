@@ -7,6 +7,7 @@
     position: fixed;
     width: 1024px;
     top: 0;
+    box-sizing: border-box;
 }
 
 .header-logo {
@@ -63,8 +64,6 @@
     margin-left: 100px;
     font-size: 20px;
     box-sizing: border-box !important;
-    /* border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
     border-bottom-left-radius: 5px;
     background-color: #07e8f8;
     color: black;
@@ -82,35 +81,47 @@
 }
 
 .header-thong_tin_user_1 {
-    margin-left: 100px;
     font-size: 20px;
     display: none;
     border-bottom-left-radius: 5px;
     background-color: #07e8f8;
     color: black;
+    display: flex;
+}
+
+#header-thong_tin_user_1 {
+    display: inline-block;
+    flex: 2;
+    padding: 0 10px;
     text-align: center;
+    border-right: white solid 1px;
+    box-sizing: border-box;
 }
 
 .header-thong_tin_user_1 i {
     color: black !important;
 }
 
-.header-thong_tin_user_1>p {
-    padding-left: 5px;
+#header-thong_tin_user_1>p {
     display: inline-block;
     margin: 0;
-    border-right: white solid 1px;
-    padding-right: 5px;
+}
+
+.thong_tin_user_admin {
+    padding-left: 10px;
 }
 
 .thong_tin_user_admin_dang_xuat {
     display: inline-block;
+    flex: 1 !important;
     text-align: center;
-    padding-left: 25px;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .thong_tin_user_admin_dang_xuat i {
-    display: inline-block;
+    margin: auto;
+    width: 100%;
 }
 
 .nut_dang_nhap {

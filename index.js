@@ -593,7 +593,7 @@ var cat_chuoi = document.cookie.slice(4);
 thong_tin_user_adminDN.innerHTML = cat_chuoi;
 
 if (document.cookie != "") {
-    header_thong_tin_user_1DN.classList.add('Display');
+    header_thong_tin_user_1DN.classList.add('DisplayFlex');
     header_thong_tin_1DN.classList.add('noneDisplay')
 }
 
@@ -872,4 +872,24 @@ function getGio() {
     var today2 = new Date();
     var ngayN = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear()
     ngay.innerHTML = ngayN;
+}
+
+//Xử lí css
+console.log(window.screen.width);
+var header1 = document.querySelector('.header1');
+var header_thong_tin_user_1 = document.querySelector('#header-thong_tin_user_1');
+var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
+
+if (window.screen.width > 360) {
+    // console.log('ngon cmnr');
+    Object.assign(header1.style, {
+        flex: "1"
+    })
+} else {
+    thong_tin_user_adminDN.style.padding = 0;
+    header_thong_tin_user_1.style.padding = 0;
+
+    Object.assign(header_thong_tin_user_1.style, {
+        flex: "3"
+    })
 }
