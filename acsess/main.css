@@ -1,5 +1,9 @@
 /* Phần xử lí home */
 
+body {
+    margin: 0;
+}
+
 .header {
     display: flex;
     height: 50px;
