@@ -82,7 +82,7 @@
 
 .header-thong_tin_user_1 {
     font-size: 20px;
-    display: none;
+    display: none !important;
     border-bottom-left-radius: 5px;
     background-color: #07e8f8;
     color: black;
@@ -130,7 +130,7 @@
 }
 
 .header_second {
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
     height: 490px;
     background-image: url(./img/header.png);
