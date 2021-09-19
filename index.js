@@ -849,6 +849,26 @@ dang_xuat.onclick = function() {
     location.reload()
 }
 
+//Xử lí css
+console.log(window.screen.width);
+var header1 = document.querySelector('.header1');
+var header_thong_tin_user_1 = document.querySelector('#header-thong_tin_user_1');
+var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
+
+if (window.screen.width > 360) {
+    // console.log('ngon cmnr');
+    Object.assign(header1.style, {
+        flex: "1"
+    })
+} else {
+    thong_tin_user_adminDN.style.padding = 0;
+    header_thong_tin_user_1.style.padding = 0;
+
+    Object.assign(header_thong_tin_user_1.style, {
+        flex: "3"
+    })
+}
+
 //Đồng hồ
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
@@ -872,24 +892,4 @@ function getGio() {
     var today2 = new Date();
     var ngayN = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear()
     ngay.innerHTML = ngayN;
-}
-
-//Xử lí css
-console.log(window.screen.width);
-var header1 = document.querySelector('.header1');
-var header_thong_tin_user_1 = document.querySelector('#header-thong_tin_user_1');
-var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
-
-if (window.screen.width > 360) {
-    // console.log('ngon cmnr');
-    Object.assign(header1.style, {
-        flex: "1"
-    })
-} else {
-    thong_tin_user_adminDN.style.padding = 0;
-    header_thong_tin_user_1.style.padding = 0;
-
-    Object.assign(header_thong_tin_user_1.style, {
-        flex: "3"
-    })
 }
