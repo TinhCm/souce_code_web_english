@@ -850,13 +850,11 @@ dang_xuat.onclick = function() {
 }
 
 //Xử lí css
-console.log(window.screen.width);
 var header1 = document.querySelector('.header1');
 var header_thong_tin_user_1 = document.querySelector('#header-thong_tin_user_1');
 var thong_tin_user_adminDN = document.querySelector('.thong_tin_user_admin');
 
 if (window.screen.width > 360) {
-    // console.log('ngon cmnr');
     Object.assign(header1.style, {
         flex: "1"
     })
