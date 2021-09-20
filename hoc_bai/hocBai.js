@@ -33,11 +33,11 @@ function xuLi_hoc_bai() {
                 })
 
                 var loc_user_hoc_bai_ton_tai2 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                    return listss.tu_vung === input1_tu_hocBai;
+                    return listss.tu_vung.toLowerCase() === input1_tu_hocBai.toLowerCase();
                 })
 
                 var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                    return listss.nghia === input2_nghia_hocBai;
+                    return listss.nghia.toLowerCase() === input2_nghia_hocBai.toLowerCase();
                 })
 
                 if (loc_user_hoc_bai_ton_tai2 == true) {
@@ -70,11 +70,11 @@ function xuLi_hoc_bai() {
             })
 
             var loc_user_hoc_bai_ton_tai2 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                return listss.tu_vung === input1_tu_hocBai;
+                return listss.tu_vung.toLowerCase() === input1_tu_hocBai.toLowerCase();
             })
 
             var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                return listss.nghia === input2_nghia_hocBai;
+                return listss.nghia.toLowerCase() === input2_nghia_hocBai.toLowerCase();
             })
 
             if (loc_user_hoc_bai_ton_tai2 == true) {
@@ -174,7 +174,7 @@ function xuLi_hoc_bai() {
                 })
 
                 var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                    return listss.nghia === input2_nghia_hocBai2;
+                    return listss.nghia.toLowerCase() === input2_nghia_hocBai2.toLowerCase();
                 })
 
                 if (loc_user_hoc_bai_ton_tai3 == true) {
@@ -207,7 +207,7 @@ function xuLi_hoc_bai() {
             })
 
             var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                return listss.nghia === input2_nghia_hocBai2;
+                return listss.nghia.toLowerCase() === input2_nghia_hocBai2.toLowerCase();
             })
 
             if (loc_user_hoc_bai_ton_tai3 == true) {
@@ -272,7 +272,7 @@ function xuLi_hoc_bai() {
                 })
 
                 var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                    return listss.tu_vung === input2_nghia_hocBai3;
+                    return listss.tu_vung.toLowerCase() === input2_nghia_hocBai3.toLowerCase();
                 })
 
                 if (loc_user_hoc_bai_ton_tai3 == true) {
@@ -305,7 +305,7 @@ function xuLi_hoc_bai() {
             })
 
             var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
-                return listss.tu_vung === input2_nghia_hocBai3;
+                return listss.tu_vung.toLowerCase() === input2_nghia_hocBai3.toLowerCase();
             })
 
             if (loc_user_hoc_bai_ton_tai3 == true) {

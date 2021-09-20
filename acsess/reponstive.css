@@ -50,16 +50,6 @@
     .header {
         width: 100%;
     }
-    /* .width {
-        display: block;
-        overflow: hidden;
-        box-sizing: border-box;
-        height: 100%!important;
-        width: 100%!important;
-        min-width: 100%!important;
-        min-height: 100%!important;
-        margin: 0!important;
-    } */
 }
 
 @media (max-width: 739px) {
@@ -80,9 +70,6 @@
         background-color: black;
         width: 100%;
     }
-    /* .header1 {
-        flex: 1;
-    } */
     .header-thong_tin {
         flex: 1;
         color: white;
