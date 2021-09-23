@@ -532,7 +532,7 @@ function xuLi_dang_nhap() {
                             let expires = "expires=" + d.toUTCString();
                             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                         }
-                        setCookie("ten", checkPast.ten, );
+                        setCookie("ten", checkPast.ten, 365);
                     } else {
                         nosucces.innerHTML = "Tên đăng nhập hoặc mật khẩu sai";
                     }
@@ -574,7 +574,7 @@ function xuLi_dang_nhap() {
                         let expires = "expires=" + d.toUTCString();
                         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                     }
-                    setCookie("ten", checkPast.ten, );
+                    setCookie("ten", checkPast.ten, 365);
                 } else {
                     nosucces.innerHTML = "Tên đăng nhập hoặc mật khẩu sai";
                 }
