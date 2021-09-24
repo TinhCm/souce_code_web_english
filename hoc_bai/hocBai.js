@@ -147,7 +147,6 @@ function xuLi_hoc_bai() {
                 return listss.tu_vung === input1_tu_hocBai2.innerHTML;
             })
 
-            console.log(loc_user_hoc_bai_ton_tai2.nghia);
             input1_tu_hocBai2_DA.innerHTML = loc_user_hoc_bai_ton_tai2.nghia;
             input1_tu_hocBai2_DA.classList.toggle('Display_inline');
         }
@@ -244,7 +243,6 @@ function xuLi_hoc_bai() {
                 return listss.nghia === input1_tu_hocBai3.innerHTML;
             })
 
-            console.log(loc_user_hoc_bai_ton_tai2.tu_vung);
             input1_tu_hocBai3_DA.innerHTML = loc_user_hoc_bai_ton_tai2.tu_vung;
             input1_tu_hocBai3_DA.classList.toggle('Display_inline');
         }
