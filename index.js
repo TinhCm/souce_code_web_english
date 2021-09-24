@@ -1,9 +1,3 @@
-// var API_tu_vung = 'https://demo-apps-en.herokuapp.com/list'
-// var API_ngu_phap = 'https://demo-apps-en.herokuapp.com/ngu_phap'
-// var API_gop_y = "https://demo-apps-en.herokuapp.com/gop_y"
-// var API_dang_nhap ='https://demo-apps-en.herokuapp.com/user'
-// var API_dang_ki ='https://demo-apps-en.herokuapp.com/user'
-
 var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
 var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
 var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
@@ -753,8 +747,6 @@ var footerXL = document.querySelector('.footer');
 var danhGiaXL = document.querySelector('#danhGia');
 var dang_nhapXL = document.querySelector('#dang_nhap');
 var dang_kiXL = document.querySelector('#dang_ki');
-var video = document.querySelector('.video');
-var music = document.querySelector('.music');
 
 var header_second_cmt1 = document.querySelector('.header_second--cmt1');
 var nut_dang_nhap = document.querySelector('.nut_dang_nhap');
@@ -796,8 +788,6 @@ nut_dang_nhap.onclick = function() {
     body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_nhapXL.classList.add('Display');
-    video.classList.add('noneDisplay')
-    music.classList.add('noneDisplay')
 }
 
 const dang_nhap1_password = document.querySelector('.dang_nhap1_password')
@@ -820,8 +810,6 @@ nut_dang_ki.onclick = function() {
     body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_kiXL.classList.add('Display');
-    video.classList.add('noneDisplay')
-    music.classList.add('noneDisplay')
 }
 
 const dang_ki1_password = document.querySelector('.dang_ki1_password')
@@ -865,29 +853,4 @@ if (window.screen.width > 360) {
     Object.assign(header_thong_tin_user_1.style, {
         flex: "3"
     })
-}
-
-//Đồng hồ
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
-
-var Lgiay = $("#seconds");
-var Lphut = $("#minute");
-var Ldem = $("#tens");
-var thoiGian = $("#gio");
-var ngay = $("#today");
-var hanhDong = $(".wrapper");
-
-function start() {
-    setInterval(getGio, 1000);
-}
-start();
-
-function getGio() {
-    var today = new Date();
-    var gio = today.getHours() + ':' + today.getMinutes() + ':' + (today.getSeconds());
-    thoiGian.innerHTML = gio;
-    var today2 = new Date();
-    var ngayN = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear()
-    ngay.innerHTML = ngayN;
 }

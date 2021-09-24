@@ -69,9 +69,6 @@
         height: 40px;
         background-color: black;
         width: 100%;
-        position: fixed !important;
-        bottom: 0 !important;
-        top: auto;
     }
     .header-thong_tin {
         flex: 1;
@@ -533,7 +530,6 @@
     .footer {
         margin: 10px 0px;
         height: 160px;
-        display: none;
     }
     .footer_one {
         flex: 1;
@@ -584,17 +580,6 @@
     .content2_backend {
         height: 900px;
         overflow-y: scroll;
-    }
-    /* Âm thanh */
-    .music {
-        margin: 0;
-        display: none;
-    }
-    .music h4 {
-        margin: 0;
-    }
-    .music_body {
-        display: none;
     }
     /* Học bài */
     .hoc_bai {
@@ -693,9 +678,4 @@
     .header-hoc_bai2 {
         flex: none !important;
     }
-}
-
-.video video {
-    width: 100%;
-    height: auto;
 }
