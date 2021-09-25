@@ -126,6 +126,7 @@ body {
 .thong_tin_user_admin_dang_xuat i {
     margin: auto;
     width: 100%;
+    line-height: 50px;
 }
 
 .nut_dang_nhap {

@@ -79,6 +79,9 @@
     .thong_tin_user_admin_dang_xuat {
         padding-left: 0;
     }
+    .thong_tin_user_admin_dang_xuat i {
+        line-height: 40px !important;
+    }
     .nut_dang_nhap {
         border-right: none;
         padding-right: 0px;
