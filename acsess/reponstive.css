@@ -79,9 +79,6 @@
     .thong_tin_user_admin_dang_xuat {
         padding-left: 0;
     }
-    .thong_tin_user_admin_dang_xuat i {
-        line-height: 40px !important;
-    }
     .nut_dang_nhap {
         border-right: none;
         padding-right: 0px;
@@ -276,42 +273,42 @@
     }
     /* Đánh giá */
     .danhGia {
-        height: 740px !important;
-        padding: 20px 0 !important;
+        height: 740px;
         background-repeat: no-repeat;
         background-size: 100%;
         box-sizing: border-box;
     }
     .gop_y {
         background-color: rgb(117, 206, 228);
-        width: 350px !important;
-        min-height: 320px !important;
+        width: 350px;
+        min-height: 320px;
         position: unset;
-        margin: auto !important;
-        border-radius: 10px !important;
-        padding: 20px 0px !important;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px 0px;
         text-align: center;
         box-sizing: border-box;
+        margin-top: 60px !important;
     }
     .gop_y h2 {
         text-align: center;
-        font-size: 20px !important;
+        font-size: 20px;
     }
     .gop_y-input1>input {
-        width: 300px !important;
-        height: 50px !important;
-        margin: 0px 0px !important;
+        width: 300px;
+        height: 50px;
+        margin: 0px 0px;
         font-size: 20px;
     }
     #gop_y-input1>textarea {
-        width: 300px !important;
+        width: 300px;
         margin: 0px 0px;
         font-size: 16px;
     }
     .gop_y--create {
-        margin-top: 10px !important;
-        height: 40px !important;
-        font-size: 20px !important;
+        margin-top: 10px;
+        height: 40px;
+        font-size: 20px;
         display: block;
         margin: auto;
     }
