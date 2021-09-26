@@ -1024,146 +1024,45 @@ body {
 }
 
 
-/* Đóng góp ý kiến */
+/* Đánh giá */
 
 .danhGia {
-    height: 630px;
-    box-sizing: border-box;
-    background-color: rgb(228, 245, 250);
-    display: none;
+    padding: 20px 20px;
 }
 
-.danhGia_thoat {
-    margin: 5px 5px;
-    height: 30px;
-    width: 30px;
-    color: white;
-    background-color: rgb(255, 0, 0);
-    outline: none !important;
-    border: none;
-    font-size: 20px !important;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
-    text-align: center;
-}
-
-.checkten_user {
-    color: red;
-    margin: 0px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    font-size: 14px !important;
-    font-weight: 500;
-}
-
-.gop_y {
-    background-color: rgb(117, 206, 228);
-    width: 600px;
-    min-height: 420px;
-    margin-top: 50px !important;
-    margin: auto;
-    box-sizing: border-box;
-    box-shadow: 30px 30px 10px;
-    -moz-box-shadow: 30px 30px 10px;
-    -webkit-box-shadow: 30px 30px 10px;
-    -o-box-shadow: 30px 30px 10px;
-    -ms-box-shadow: 30px 30px 10px;
-    border-radius: 10px;
-    padding: 20px 80px;
-}
-
-.gop_y h2 {
-    text-align: center;
-    font-size: 35px;
-}
-
-.gop_y h4 {
-    text-align: center;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.gop_y-input1_one {
+.danhGia_button {
+    width: 350px;
     display: flex;
 }
 
-.gop_y-input1_one input {
-    margin-top: 50px 0;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
+.gop_y2_cmt {
+    width: 350px;
     outline: none;
-    height: 25px;
-    font-weight: 600;
     border-radius: 5px;
-    border: none;
-}
-
-#gop_y-input1>textarea {
-    width: 440px;
-    outline: none;
+    padding: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    border-radius: 5px;
-    padding: 10px 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.gop_y>button {
-    outline: none;
-    border: none;
-    width: auto;
-    font-size: 20px;
-    height: 30px;
-    border-radius: 5px;
-    margin: auto;
-    display: block;
-    color: white;
+.gop_y h2 {
+    margin-top: 0;
 }
 
 .gop_y--create {
-    margin-top: 10px;
-    width: 350px;
-    height: 30px;
-    background-color: rgb(17, 116, 245);
-    cursor: no-drop;
-}
-
-.gop_y--create>a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-}
-
-.Header-home {
-    height: 30px;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    display: none;
-}
-
-.Header-home>a {
-    text-decoration: none;
-    color: white;
-}
-
-.gop_y-input1_one_inner {
     margin: auto;
-    margin-bottom: 20px;
-}
-
-.dang_gia_thoat {
-    margin: 5px 5px;
-    height: 30px;
-    width: 30px;
+    cursor: no-drop;
+    background-color: rgb(74, 158, 236);
     color: white;
-    background-color: rgb(255, 0, 0);
-    outline: none !important;
-    border: none;
-    font-size: 20px !important;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
-    text-align: center;
-    cursor: pointer;
+    border-style: solid;
+    border-width: 0.5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.fa-edit {
+    color: blue;
+    font-size: 22px;
 }
