@@ -272,10 +272,14 @@
         font-size: 14px;
     }
     /* Đánh giá */
+    .gop_y h2 {
+        font-size: 20px;
+    }
     .gop_y2_cmt {
         width: 100%;
         padding: 10 20px;
         box-sizing: border-box;
+        font-size: 16px !important;
     }
     .danhGia_button {
         width: 100%;
