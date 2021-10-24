@@ -965,6 +965,8 @@ body {
     color: white;
     background: blue;
     border-radius: 5px;
+    outline: none;
+    border: none;
 }
 
 .dang_ki1>span {
