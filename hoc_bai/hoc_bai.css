@@ -52,7 +52,7 @@
 .input1_tu_hocBai,
 .input2_nghia_hocBai3,
 .input2_nghia_hocBai2 {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 10px;
     width: 300px;
     box-sizing: border-box;
@@ -61,6 +61,7 @@
     border-radius: 5px;
     border-width: 0.5px;
     font-family: 'Times New Roman', Times, serif;
+    overflow-y: hidden;
 }
 
 .hocBai_list-input2 h2 {
