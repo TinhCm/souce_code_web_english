@@ -593,6 +593,7 @@ if (document.cookie != "") {
 var dang_nhap = $('.create_dang_nhap');
 var dang_nhap_ten = $('.dang_nhap1_ten');
 var dang_nhap_pass = $('.dang_nhap1_password');
+dang_nhap.disabled = true;
 
 dang_nhap_ten.oninput = function() {
     dang_nhap_pass.oninput = function() {
