@@ -325,7 +325,6 @@ dang_nhap_chuyenXL.onclick = function() {
 nut_dang_nhap.onclick = function() {
     headerXL.classList.add('noneDisplay');
     header_secondXL.classList.add('noneDisplay');
-    body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_nhapXL.classList.add('Display');
     danhGiaXL.classList.add('noneDisplay')
@@ -348,7 +347,6 @@ dang_nhap1_xemMK.addEventListener('click', function() {
 nut_dang_ki.onclick = function() {
     headerXL.classList.add('noneDisplay');
     header_secondXL.classList.add('noneDisplay');
-    body_cmtXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_kiXL.classList.add('Display');
     danhGiaXL.classList.add('noneDisplay')
