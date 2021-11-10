@@ -272,6 +272,9 @@
         font-size: 14px;
     }
     /* Đánh giá */
+    .danhGia {
+        margin-top: 100px;
+    }
     .gop_y h2 {
         font-size: 20px;
     }
