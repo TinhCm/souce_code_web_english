@@ -255,6 +255,7 @@ body {
 .content1_backend {
     height: 620px;
     overflow-y: scroll;
+    border-bottom: #07e8f8 2px solid;
 }
 
 .check_dang_nhap_user {
