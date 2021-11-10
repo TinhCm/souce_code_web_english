@@ -5,13 +5,6 @@ var API_dang_nhap = 'https://demo-apps-en.glitch.me/user'
 var API_dang_ki = 'https://demo-apps-en.glitch.me/user'
 var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
 
-// var API_tu_vung = 'http://localhost:3000/list'
-// var API_ngu_phap = 'http://localhost:3000/ngu_phap'
-// var API_gop_y = "http://localhost:3000/gop_y"
-// var API_dang_nhap = 'http://localhost:3000/user'
-// var API_dang_ki = 'http://localhost:3000/user'
-// var API_hoc_bai = 'http://localhost:3000/list'
-
 const $ = document.querySelector.bind(document);
 
 //Phần API_tu_vung từ vựng
@@ -942,6 +935,7 @@ var header_second = $('.header_second');
 var content = $('.content'); //Từ vưng
 var content2 = $('.content2'); //Ngữ pháp
 var danhGiaXL = $('#danhGia'); //đánh giá
+var header1_list_a4 = $('.header1-list_a4');
 var footerXL = $('.footer');
 var app1 = $('.app1');
 var app2 = $('.app2');
@@ -962,4 +956,8 @@ app2.onclick = function() {
     content.classList.add('noneDisplay');
     content2.classList.remove('noneDisplay');
     footerXL.classList.add('noneDisplay');
+}
+
+header1_list_a4.onclick = function() {
+    location.reload();
 }
