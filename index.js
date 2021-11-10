@@ -930,12 +930,11 @@ if (document.cookie != "") {
     }
 }
 
-
+//Giao diện Apps
 var header_second = $('.header_second');
-var content = $('.content'); //Từ vưng
-var content2 = $('.content2'); //Ngữ pháp
-var danhGiaXL = $('#danhGia'); //đánh giá
-var header1_list_a4 = $('.header1-list_a4');
+var content = $('.content');
+var content2 = $('.content2');
+var danhGiaXL = $('#danhGia');
 var footerXL = $('.footer');
 var app1 = $('.app1');
 var app2 = $('.app2');
@@ -956,8 +955,4 @@ app2.onclick = function() {
     content.classList.add('noneDisplay');
     content2.classList.remove('noneDisplay');
     footerXL.classList.add('noneDisplay');
-}
-
-header1_list_a4.onclick = function() {
-    location.reload();
 }
