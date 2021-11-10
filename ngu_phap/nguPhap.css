@@ -1,0 +1,131 @@
+.hoc_bai_header {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    height: 40px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 1024px;
+}
+
+.hoc_bai_thoat1 {
+    margin: auto;
+}
+
+.hoc_bai_thoat {
+    flex: 1;
+    display: flex;
+}
+
+.hoc_bai_thoat button {
+    background-color: black;
+    border: none;
+}
+
+.header-hoc_bai2 {
+    flex: 2;
+}
+
+.header-hoc_bai2 h3 {
+    color: white;
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-hoc_bai3 {
+    flex: 1;
+    display: flex;
+}
+
+.header-hoc_bai3 i {
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/* Lever2 */
+
+.hocBai_list-input1 h3 {
+    display: inline-block;
+}
+
+.hocBai_list-input1 h4 {
+    display: none;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.hocBai_dap_an0 {
+    display: inline-block;
+    width: 200px;
+}
+
+.hocBai_dap_an0 button {
+    cursor: no-drop;
+    background-color: rgb(74, 158, 236);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px #999999;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 25px;
+    margin: 10px 0;
+}
+
+.hoc_bai_thoat1 i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+@media (max-width: 739px) {
+    .footer {
+        margin: 10px 0px !important;
+        height: 160px;
+    }
+    .footer_one {
+        flex: 1;
+        padding: 0 10px;
+    }
+    .footer1 p {
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .footer_icon {
+        margin-top: 0px;
+    }
+    .footer_icon>a {
+        text-decoration: none;
+        margin: 0 5px;
+        color: white;
+    }
+    .footer2 {
+        flex: 1;
+        text-align: center;
+    }
+    .footer1 {
+        height: 100px !important;
+    }
+    .footer2-one {
+        height: 100px !important;
+        box-sizing: border-box;
+    }
+    .footer2 h3 {
+        font-size: 15px;
+    }
+    .footer2 h2 {
+        font-size: 12px !important;
+    }
+    .footer2>button {
+        bottom: 10px;
+        margin-top: 0px;
+    }
+    .footer2>button>a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+}

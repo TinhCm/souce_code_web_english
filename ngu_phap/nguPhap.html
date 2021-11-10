@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/acsess/img/Icon.png" type="image/x-icon" />
+    <title>Ngữ pháp</title>
+    <link rel="stylesheet" href="/acsess/main.css">
+    <link rel="stylesheet" href="/acsess/reponstive.css">
+    <link rel="stylesheet" href="./nguPhap.css">
+</head>
+
+<body>
+    <div class="width">
+        <header class="hoc_bai_header">
+            <div class="hoc_bai_thoat">
+                <button class="hoc_bai_thoat1">
+                    <i style="color: white;" class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="header-hoc_bai2">
+                <marquee scrollamount="5" behavior="scroll" direction="left" width="100%">
+                    <h3 class="hoc_bai_hello"></h3>
+                </marquee>
+            </div>
+
+            <div class="header-hoc_bai3">
+                <i class="fas fa-redo-alt"></i>
+            </div>
+        </header>
+        <div id="two" class="content2">
+            <h3 class="content-folder">Ngữ pháp đã có: </h3>
+            <ul class="content_ngu_phap">
+                <li class="content_ngu_phap0">STT</li>
+                <li class="content_ngu_phap1">Tên</li>
+                <li class="content_ngu_phap2">Cấu trúc</li>
+                <li class="content_ngu_phap3">Cách dùng</li>
+                <li class="content_ngu_phap4">Xóa</li>
+            </ul>
+            <div class="content2_backend">
+                <ol class="content_list2">
+
+                </ol>
+            </div>
+            <h3 class="content-folder">Nhập vào ngữ pháp mới: </h3>
+            <div class="content2-input2">
+                <label>Nhập tên ngữ pháp: </label>
+                <textarea rows="1" class="input1_ten" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
+            </div>
+
+            <div class="content2-input2">
+                <label>Nhập vào cấu trúc ngữ pháp: </label>
+                <textarea rows="1" class="input2-cauTruc" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
+            </div>
+
+            <div class="content2-input2">
+                <label>Nhập vào cách dùng: </label>
+                <textarea rows="6" class="input2-cachDung" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
+            </div>
+            <div class="check_user_NP">
+                <h4 class="check_dang_nhap_user_NP"></h4>
+                <h4 class="user_ngu_phap_check"></h4>
+                <button class="content2--create ">Tạo</button>
+            </div>
+        </div>
+    </div>
+    <script src="./nguPhap.js"></script>
+</body>
+
+</html>
