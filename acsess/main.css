@@ -180,6 +180,7 @@ body {
 /*Phần từ vựng*/
 
 .content {
+    padding-top: 30px !important;
     margin: 20px 20px;
     border-style: solid;
     border-width: 1px;
@@ -187,6 +188,7 @@ body {
     padding: 10px 20px;
     background-color: white !important;
     border-radius: 5px;
+    display: none;
 }
 
 .temp1 {
@@ -413,13 +415,15 @@ body {
 /*Phần ngữ pháp*/
 
 .content2 {
+    padding-top: 30px !important;
     margin: 20px 20px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(6, 89, 245);
     padding: 10px 20px;
     background-color: white !important;
-    border-radius: 5px
+    border-radius: 5px;
+    display: none;
 }
 
 .content_list2_backend_SM {

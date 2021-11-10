@@ -123,8 +123,8 @@
     }
     /* Từ vựng */
     .content {
-        margin: 0;
         padding: 10px 20px;
+        margin: 10px 0px;
     }
     .content_list {
         margin: 0;
