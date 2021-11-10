@@ -943,8 +943,6 @@ var content = $('.content'); //Từ vưng
 var content2 = $('.content2'); //Ngữ pháp
 var danhGiaXL = $('#danhGia'); //đánh giá
 var footerXL = $('.footer');
-var dang_nhap = $('.dang_nhap');
-var dang_ki = $('.dang_ki');
 var app1 = $('.app1');
 var app2 = $('.app2');
 
