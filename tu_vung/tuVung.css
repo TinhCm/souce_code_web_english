@@ -9,6 +9,7 @@
     position: fixed;
     top: 0;
     width: 1024px;
+    max-width: 100%;
 }
 
 .hoc_bai_thoat1 {

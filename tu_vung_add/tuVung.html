@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/acsess/img/Icon.png" type="image/x-icon" />
+    <title>Nhập từ vựng</title>
+    <link rel="stylesheet" href="/acsess/main.css">
+    <link rel="stylesheet" href="./tuVung.css">
+    <link rel="stylesheet" href="/acsess/reponstive.css">
+</head>
+
+<body>
+    <div class="width">
+        <header class="hoc_bai_header">
+            <div class="hoc_bai_thoat">
+                <button class="hoc_bai_thoat1">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="header-hoc_bai2">
+                <marquee scrollamount="3" behavior="scroll" direction="left" width="100%">
+                    <h3 class="hoc_bai_hello"></h3>
+                </marquee>
+            </div>
+
+            <div class="header-hoc_bai3">
+                <a class="header-hoc_bai3_home1" href="#add1">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+        </header>
+        <div id="one" class="content">
+            <h2 id="add1" class="content-folder">Nhập vào từ vựng mới: </h2>
+            <h3 class="content-folder_success">Từ vựng của bạn sau khi tạo sẽ được lưu vào hệ thống.</h3>
+            <div class="content_list-input1">
+                <label class="input-lable">Nhập vào từ: </label>
+                <textarea rows="1" class="input1_tu" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
+            </div>
+
+            <div class="content_list-input1">
+                <label class="input-lable">Nhập vào nghĩa: </label>
+                <textarea rows="1" class="input2_nghia" type="text" name="name" placeholder="Vui lòng nhập"></textarea>
+            </div>
+
+            <div class="content_list-input1">
+                <label class="input-lable">Nhập từ loại: </label>
+                <textarea rows="1" class="input2_tu_loai" type="text" name="name" placeholder="Có thể nhập hoặc không"></textarea>
+            </div>
+
+            <div class="content_list-input1">
+                <label class="input-lable">Nhập phiên âm: </label>
+                <textarea rows="1" class="input2_phien_am" type="text" name="name" placeholder="Có thể nhập hoặc không"></textarea>
+            </div>
+
+            <div class="check_user_tu_vung">
+                <h4 class="check_dang_nhap_user"></h4>
+                <h4 class="user_tu_vung_check"></h4>
+                <button class="content--create ">Tạo</button>
+            </div>
+        </div>
+    </div>
+    <script src="./tuVung.js"></script>
+</body>
+
+</html>

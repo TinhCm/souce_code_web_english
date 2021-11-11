@@ -232,6 +232,7 @@ body {
     padding: 10px 20px;
     background-color: white !important;
     border-radius: 5px;
+    min-height: 100px;
 }
 
 .temp1 {
@@ -254,6 +255,11 @@ body {
 .content-folder {
     color: blue;
     text-align: center;
+}
+
+.content-folder_success {
+    text-align: center;
+    padding-bottom: 150px;
 }
 
 .content_list-input1>.input1_tu,
@@ -297,6 +303,7 @@ body {
     border-style: solid;
     border-width: 0.5px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .content--create:hover {
@@ -304,8 +311,7 @@ body {
 }
 
 .content1_backend {
-    border-bottom: cyan 2px solid;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .check_dang_nhap_user {
@@ -665,8 +671,7 @@ body {
 }
 
 .content2_backend {
-    border-bottom: cyan 2px solid;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 
