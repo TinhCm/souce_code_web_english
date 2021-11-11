@@ -125,15 +125,19 @@
     .content_update li {
         font-size: 16px;
     }
+    .content_update1 h2 {
+        font-size: 20px;
+    }
     /* Từ vựng */
     .content {
-        padding: 10px 20px;
+        padding: 30px 20px !important;
         margin: 0px 0px;
         border: none;
     }
     .content_list {
         margin: 0;
         padding-bottom: 5px;
+        border-right: none;
     }
     .input-lable {
         margin: 10px 0;
@@ -203,12 +207,15 @@
     .content_ngu_phap {
         display: none;
     }
+    .content_list2 {
+        border-right: none;
+    }
     .content_list2_backend_SM {
         display: inline-block;
     }
     .content2 {
-        margin: 00px 0px;
-        padding: 10px 20px;
+        margin: 0px 0px;
+        padding: 30px 20px !important;
         background-color: white !important;
         border: none;
     }
@@ -263,10 +270,6 @@
     }
     .content_list2_backend-li:hover {
         color: red;
-    }
-    .content2_backend {
-        height: 620px;
-        overflow-y: scroll;
     }
     .check_dang_nhap_user_NP {
         font-size: 14px;
@@ -548,15 +551,6 @@
     .footer2>button>a {
         text-decoration: none;
         font-size: 15px;
-    }
-    /*Backend*/
-    .content1_backend {
-        height: 900px;
-        overflow-y: scroll;
-    }
-    .content2_backend {
-        height: 900px;
-        overflow-y: scroll;
     }
     /* Học bài */
     .hoc_bai {

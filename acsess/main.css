@@ -176,6 +176,18 @@ body {
     font-size: 40px;
 }
 
+.header-hoc_bai2 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.header-hoc_bai2 button {
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
 
 /* Phần content_update */
 
@@ -204,7 +216,7 @@ body {
 /*Phần từ vựng*/
 
 .content {
-    padding-top: 30px !important;
+    padding-top: 20px !important;
     margin: 20px 20px;
     border-style: solid;
     border-width: 1px;
@@ -227,12 +239,12 @@ body {
     margin: 0;
     border: 1px solid #999999;
     border-top: none;
-    border-right: none;
     box-sizing: border-box;
 }
 
 .content-folder {
     color: blue;
+    text-align: center;
 }
 
 .content_list-input1>.input1_tu,
@@ -249,6 +261,7 @@ body {
     padding: 10px 10px;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 
 .input-lable {
@@ -277,8 +290,6 @@ body {
 }
 
 .content1_backend {
-    height: 620px;
-    overflow-y: scroll;
     border-bottom: #07e8f8 2px solid;
     padding-bottom: 20px;
 }
@@ -414,7 +425,7 @@ body {
 }
 
 .content_list_backend_nut {
-    margin-left: 5px !important;
+    margin-left: 10px !important;
     font-weight: 600;
     background-color: rgb(233, 225, 225);
     color: red;
@@ -440,7 +451,7 @@ body {
 /*Phần ngữ pháp*/
 
 .content2 {
-    padding-top: 30px !important;
+    padding-top: 20px !important;
     margin: 20px 20px;
     border-style: solid;
     border-width: 1px;
@@ -485,6 +496,7 @@ body {
     font-size: 16px;
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
+    overflow-y: hidden;
 }
 
 .content2--create {
@@ -606,7 +618,7 @@ body {
 }
 
 .pramas {
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: rgb(233, 225, 225);
     color: red;
     border-radius: 5px;
@@ -635,8 +647,6 @@ body {
 }
 
 .content2_backend {
-    height: 620px;
-    overflow-y: scroll;
     border-bottom: #07e8f8 2px solid;
     padding-bottom: 20px;
 }

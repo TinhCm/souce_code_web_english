@@ -195,8 +195,3 @@ hoc_bai_thoat1.onclick = function() {
 var hoc_bai_hello = $('.hoc_bai_hello');
 var cat_chuoi = document.cookie.slice(4);
 hoc_bai_hello.innerHTML = 'Xin chào ' + cat_chuoi;
-
-var header_hoc_bai3 = $('.header-hoc_bai3');
-header_hoc_bai3.onclick = function() {
-    location.reload();
-}
