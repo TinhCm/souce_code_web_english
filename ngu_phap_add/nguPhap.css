@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 739px) {
-    .content--create {
-        margin-bottom: 60px !important;
+    .content2--create {
+        margin-bottom: 10px !important;
     }
 }

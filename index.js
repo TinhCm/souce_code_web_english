@@ -283,6 +283,7 @@ dang_ki_pass.oninput = function() {
 //Xử lí chung
 var headerXL = $('.header');
 var header_secondXL = $('.header_second');
+var content_update = $('.content_update');
 var body_cmtXL = $('.body_cmt');
 var footerXL = $('.footer');
 var danhGiaXL = $('#danhGia');
@@ -328,6 +329,7 @@ nut_dang_nhap.onclick = function() {
     footerXL.classList.add('noneDisplay');
     dang_nhapXL.classList.add('Display');
     danhGiaXL.classList.add('noneDisplay')
+    content_update.classList.add('noneDisplay');
 }
 
 const dang_nhap1_password = $('.dang_nhap1_password')
@@ -349,7 +351,8 @@ nut_dang_ki.onclick = function() {
     header_secondXL.classList.add('noneDisplay');
     footerXL.classList.add('noneDisplay');
     dang_kiXL.classList.add('Display');
-    danhGiaXL.classList.add('noneDisplay')
+    danhGiaXL.classList.add('noneDisplay');
+    content_update.classList.add('noneDisplay');
 }
 
 const dang_ki1_password = $('.dang_ki1_password')

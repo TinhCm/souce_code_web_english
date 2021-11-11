@@ -73,7 +73,7 @@ body {
     font-size: 20px;
     box-sizing: border-box !important;
     border-bottom-left-radius: 5px;
-    background-color: #07e8f8;
+    background-color: rgb(69, 202, 255);
     color: black;
     text-align: center;
 }
