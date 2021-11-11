@@ -55,3 +55,9 @@
     margin: auto;
     text-decoration: none;
 }
+
+@media (max-width: 739px) {
+    .content--create {
+        margin-bottom: 60px !important;
+    }
+}

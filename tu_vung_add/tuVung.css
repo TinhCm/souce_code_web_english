@@ -56,6 +56,8 @@
     text-decoration: none;
 }
 
-.content--create {
-    margin-bottom: 30px !important;
+@media (max-width: 739px) {
+    .content--create {
+        margin-bottom: 20px !important;
+    }
 }
