@@ -142,12 +142,16 @@
     .input-lable {
         margin: 10px 0;
     }
+    .content_list-input1 {
+        font-size: 18px;
+    }
     .content_list-input1>.input1_tu,
     .input2_nghia,
     .input2_tu_loai,
     .input2_phien_am {
         width: 100% !important;
         height: 40px;
+        font-size: 16px;
     }
     .check_user_tu_vung {
         padding-left: 0px;
@@ -225,6 +229,7 @@
     }
     .content2-input2>label {
         margin: 10px 0;
+        font-size: 18px;
     }
     .input2-cauTruc,
     .input1_ten {
@@ -233,6 +238,7 @@
     }
     .content2-input2>textarea {
         width: 100%;
+        font-size: 16px;
     }
     .content_ngu_phap1 {
         width: 173px;

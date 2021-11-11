@@ -233,6 +233,7 @@ body {
 
 .content_list-input1 {
     margin: 5px 0;
+    font-size: 20px;
 }
 
 .content_list {
@@ -262,6 +263,7 @@ body {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
+    font-size: 18px;
 }
 
 .input-lable {
@@ -467,6 +469,7 @@ body {
 
 .content2-input2 {
     margin: 5px 0;
+    font-size: 20px;
 }
 
 .content2-input2>label {
@@ -493,7 +496,7 @@ body {
     outline: none;
     box-sizing: border-box;
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
     overflow-y: hidden;
@@ -638,7 +641,6 @@ body {
     margin: 0;
     border: 1px solid #999999;
     border-top: none;
-    border-right: none;
     box-sizing: border-box;
 }
 
