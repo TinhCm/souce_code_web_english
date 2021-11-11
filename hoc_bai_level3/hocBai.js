@@ -21,6 +21,25 @@ function xuLi_hoc_bai() {
     //Lever 3
     var hocBai_kiem_tra3 = $('.hocBai_kiem_tra3');
     var hocBai_bat_dau3 = $('.hocBai_bat_dau3');
+    window.onload = function() {
+        //Random lever3
+        var hocBai_kiem_tra3 = $('.hocBai_kiem_tra3');
+        var hocBai_bat_dau3 = $('.hocBai_bat_dau3');
+        var input1_tu_hocBai3 = $('.input1_tu_hocBai3');
+
+        layDuLieu_hoc_bai(check_ket_qua_lever3);
+
+        function check_ket_qua_lever3(list) {
+            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
+                return lists.user === document.cookie.slice(4);
+            })
+
+            const check_ket_qua_lever3_length = loc_user_hoc_bai_ton_tai.length;
+            var check_ket_qua_lever3_random = (Math.floor(Math.random() * check_ket_qua_lever3_length));
+            var check_ket_qua_lever3_kq_random = (loc_user_hoc_bai_ton_tai[check_ket_qua_lever3_random].nghia);
+            input1_tu_hocBai3.innerHTML = check_ket_qua_lever3_kq_random;
+        }
+    }
 
     //Xem đáp án
     var input1_tu_hocBai3_DA = $('.input1_tu_hocBai3_DA');
