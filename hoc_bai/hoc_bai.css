@@ -89,6 +89,10 @@
     display: flex;
 }
 
+.kiem_tra_kq button:hover {
+    color: blue;
+}
+
 .kiem_tra_kq button {
     font-size: 20px;
     box-sizing: border-box;
@@ -106,7 +110,7 @@
 .hoc_bai_header {
     display: flex;
     text-align: center;
-    background-color: black;
+    background-color: rgb(69, 202, 255);
     height: 40px;
     justify-content: space-between;
     position: fixed;
@@ -124,8 +128,9 @@
 }
 
 .hoc_bai_thoat button {
-    background-color: black;
+    color: black;
     border: none;
+    background-color: rgb(69, 202, 255);
 }
 
 .header-hoc_bai2 {
@@ -133,7 +138,7 @@
 }
 
 .header-hoc_bai2 h3 {
-    color: white;
+    color: black;
     line-height: 40px;
     margin: 0;
 }
@@ -144,7 +149,7 @@
 }
 
 .header-hoc_bai3 i {
-    color: white;
+    color: black;
     margin: auto;
     cursor: pointer;
 }

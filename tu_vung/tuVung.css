@@ -3,7 +3,7 @@
 .hoc_bai_header {
     display: flex;
     text-align: center;
-    background-color: black;
+    background-color: rgb(69, 202, 255);
     height: 40px;
     justify-content: space-between;
     position: fixed;
@@ -21,8 +21,9 @@
 }
 
 .hoc_bai_thoat button {
-    background-color: black;
+    color: black;
     border: none;
+    background-color: rgb(69, 202, 255);
 }
 
 .header-hoc_bai2 {
@@ -30,7 +31,7 @@
 }
 
 .header-hoc_bai2 h3 {
-    color: white;
+    color: black;
     line-height: 40px;
     margin: 0;
 }
@@ -47,7 +48,7 @@
 }
 
 .header-hoc_bai3 a i {
-    color: white;
+    color: black;
     cursor: pointer;
     line-height: 40px;
     margin: auto;

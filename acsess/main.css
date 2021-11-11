@@ -7,7 +7,7 @@ body {
 .header {
     display: flex;
     height: 50px;
-    background-color: black;
+    background-color: rgb(69, 202, 255);
     position: fixed;
     width: 1024px;
     top: 0;
@@ -31,12 +31,12 @@ body {
 .header-logo h2 {
     margin: 0;
     padding-left: 10px;
-    color: white;
+    color: black;
 }
 
 .header-logo i {
     margin-left: 100px;
-    color: white;
+    color: black;
     line-height: 50px;
 }
 
@@ -54,7 +54,11 @@ body {
     margin: 0 10px;
     font-size: 20px;
     line-height: 50px;
-    color: rgb(255, 255, 255);
+    color: black;
+}
+
+.header1-list a:hover {
+    color: blue;
 }
 
 .header-thong_tin {
@@ -121,6 +125,10 @@ body {
     text-align: center;
     align-items: center;
     box-sizing: border-box;
+}
+
+.thong_tin_user_admin_dang_xuat>i:hover {
+    color: red !important;
 }
 
 .thong_tin_user_admin_dang_xuat i {
@@ -289,6 +297,10 @@ body {
     border-style: solid;
     border-width: 0.5px;
     align-items: center;
+}
+
+.content--create:hover {
+    color: blue;
 }
 
 .content1_backend {
@@ -515,6 +527,10 @@ body {
     border-width: 0.5px;
 }
 
+.content2--create:hover {
+    color: blue;
+}
+
 .check_user_NP {
     padding-left: 250px;
     width: 600px;
@@ -715,6 +731,11 @@ body {
     margin-top: 100px;
 }
 
+.footer_icon a:hover,
+i:hover {
+    color: blue !important;
+}
+
 .footer_icon>a {
     text-decoration: none;
     margin: 0 5px;
@@ -734,9 +755,14 @@ body {
     background-color: white;
 }
 
+.footer2>button a:hover {
+    color: blue !important;
+}
+
 .footer2>button>a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 
 
@@ -774,6 +800,10 @@ body {
     box-shadow: 0px 0px 5px 5px #999999;
     text-align: center;
     cursor: pointer;
+}
+
+.dang_nhap_thoat:hover {
+    color: blue;
 }
 
 .dang_nhap_content {
@@ -823,6 +853,11 @@ body {
     border-radius: 5px;
 }
 
+.dang_nhap1>button:hover {
+    color: blue;
+    background-color: white;
+}
+
 .dang_nhap1>span {
     margin: 20px 0;
     display: block;
@@ -836,6 +871,10 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: blue;
+}
+
+.dang_nhap1>a:hover {
+    color: darkblue;
 }
 
 .dang_nhap1_ten {
@@ -951,6 +990,10 @@ body {
     cursor: pointer;
 }
 
+.dang_ki_thoat:hover {
+    color: blue;
+}
+
 .dang_ki_content {
     flex: 1;
     align-items: center;
@@ -1011,6 +1054,11 @@ body {
     border: none;
 }
 
+.dang_ki1 button:hover {
+    color: blue !important;
+    background-color: white;
+}
+
 .dang_ki1>span {
     margin: 20px 0;
     display: block;
@@ -1024,6 +1072,10 @@ body {
     text-decoration: none;
     font-size: 18px !important;
     color: blue;
+}
+
+.dang_ki1>a:hover {
+    color: darkblue;
 }
 
 .dang_ki1_ten {
@@ -1105,6 +1157,10 @@ body {
     border-width: 0.5px;
     font-size: 20px;
     margin-top: 10px;
+}
+
+.gop_y--create:hover {
+    color: blue;
 }
 
 .fa-edit {
