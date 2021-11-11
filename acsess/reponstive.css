@@ -562,6 +562,7 @@
     }
     /* Học bài */
     .hoc_bai {
+        height: 740px !important;
         height: auto;
         padding: 10px 0 !important;
         margin: 0px 0px !important;
@@ -581,6 +582,7 @@
     .hoc_bai h3 {
         text-align: center;
         font-size: 16px !important;
+        padding-bottom: 50px;
     }
     .hoc_bai_content {
         margin-left: 10px !important;
