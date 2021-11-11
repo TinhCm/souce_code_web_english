@@ -55,3 +55,7 @@
     margin: auto;
     text-decoration: none;
 }
+
+.content--create {
+    margin-bottom: 30px !important;
+}
