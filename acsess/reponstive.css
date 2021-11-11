@@ -121,6 +121,10 @@
         display: inline-block;
         margin: 0;
     }
+    /* Content_update */
+    .content_update li {
+        font-size: 16px;
+    }
     /* Từ vựng */
     .content {
         padding: 10px 20px;
@@ -271,9 +275,6 @@
         font-size: 14px;
     }
     /* Đánh giá */
-    .danhGia {
-        margin-top: 100px;
-    }
     .gop_y h2 {
         font-size: 20px;
     }
@@ -561,7 +562,7 @@
     .hoc_bai {
         height: auto;
         padding: 10px 0 !important;
-        margin: 20px 0px !important;
+        margin: 0px 0px !important;
     }
     .hoc_bai_header {
         width: 100% !important;
