@@ -742,6 +742,7 @@ body {
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
     overflow-y: hidden;
+    border-width: 0.5px;
 }
 
 .content2--create,
