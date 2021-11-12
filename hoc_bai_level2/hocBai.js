@@ -61,6 +61,25 @@ function xuLi_hoc_bai() {
         }
     }
 
+    //Nhấp phím hỏi
+    var header_hoc_bai4 = $(".header-hoc_bai4");
+    header_hoc_bai4.onclick = function() {
+        layDuLieu_hoc_bai(check_ket_qua_lever2);
+
+        function check_ket_qua_lever2(list) {
+            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
+                return lists.user === document.cookie.slice(4);
+            })
+
+            var loc_user_hoc_bai_ton_tai2 = loc_user_hoc_bai_ton_tai.find(function(listss) {
+                return listss.tu_vung === input1_tu_hocBai2.innerHTML;
+            })
+
+            input1_tu_hocBai2_DA.innerHTML = loc_user_hoc_bai_ton_tai2.nghia;
+            input1_tu_hocBai2_DA.classList.toggle('Display_inline');
+        }
+    }
+
     //Nhấn phím Enter
     var input2_nghia_hocBai2 = $('.input2_nghia_hocBai2');
     input2_nghia_hocBai2.onkeypress = function(e) {

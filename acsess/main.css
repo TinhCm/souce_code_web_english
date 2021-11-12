@@ -379,6 +379,25 @@ body {
     margin: auto;
     cursor: pointer;
     text-align: center;
+    line-height: 40px;
+}
+
+.header-hoc_bai4 {
+    flex: 1;
+    display: flex;
+}
+
+.header-hoc_bai4 a {
+    line-height: 40px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header-hoc_bai4 i {
+    color: black;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
 }
 
 
