@@ -231,9 +231,8 @@ body {
     background-image: linear-gradient(90deg, #C9D6FF, #E2E2E2);
     padding: 10px 0;
     box-sizing: border-box;
-    margin: 20px 20px;
-    border-radius: 5px;
-    height: 590px;
+    margin-top: 20px;
+    height: 625px;
 }
 
 .hoc_bai h1 {
@@ -457,14 +456,11 @@ body {
 
 .content {
     padding-top: 20px !important;
-    margin: 20px 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(6, 89, 245);
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: white !important;
     border-radius: 5px;
-    min-height: 100px;
+    min-height: 590px;
 }
 
 .temp1 {
@@ -491,7 +487,7 @@ body {
 
 .content-folder_success {
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 180px;
 }
 
 .content_list-input1>.input1_tu,
@@ -635,11 +631,10 @@ body {
 
 .content_list_backend_tu {
     display: inline-block;
-    width: 296px;
+    width: 317px;
     margin-left: 18px;
     border-left: 1px solid #ebe8e8;
     border-right: 1px solid #ebe8e8;
-    border-bottom: 1px solid #ebe8e8;
     padding: 2px 10px;
     box-sizing: border-box;
 }
@@ -650,9 +645,8 @@ body {
 
 .content_list_backend_nghia {
     display: inline-block;
-    width: 295px;
+    width: 316px;
     border-right: 1px solid #ebe8e8;
-    border-bottom: 1px solid #ebe8e8;
     padding: 2px 10px;
     box-sizing: border-box;
 }
@@ -664,7 +658,6 @@ body {
     padding: 2px 5px;
     text-align: center;
     border-right: 1px solid #ebe8e8;
-    border-bottom: 1px solid #ebe8e8;
 }
 
 .content_list_backend_phien_am {
@@ -673,12 +666,11 @@ body {
     box-sizing: border-box;
     padding: 2px 5px;
     border-right: 1px solid #ebe8e8;
-    border-bottom: 1px solid #ebe8e8;
     text-align: center;
 }
 
 .content_list_backend_nut {
-    margin-left: 10px !important;
+    margin-left: 13px !important;
     font-weight: 600;
     background-color: rgb(233, 225, 225);
     color: red;
@@ -694,6 +686,7 @@ body {
     padding: 0px 0;
     font-size: 18px;
     box-sizing: border-box;
+    border-bottom: 1px solid #ebe8e8;
 }
 
 .content_list_backend-li:hover {
@@ -705,13 +698,11 @@ body {
 
 .content2 {
     padding-top: 20px !important;
-    margin: 20px 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(6, 89, 245);
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: white !important;
     border-radius: 5px;
+    min-height: 590px;
 }
 
 .content_list2_backend_SM {
@@ -809,6 +800,7 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: #999999;
+    border-bottom: none;
 }
 
 .content_ngu_phap1 {
@@ -819,6 +811,7 @@ body {
     border-style: solid;
     border-color: #999999;
     border-left: none;
+    border-bottom: none;
 }
 
 .content_ngu_phap2 {
@@ -829,6 +822,7 @@ body {
     border-style: solid;
     border-color: #999999;
     border-left: none;
+    border-bottom: none;
 }
 
 .content_ngu_phap3 {
@@ -839,6 +833,7 @@ body {
     border-style: solid;
     border-color: #999999;
     border-left: none;
+    border-bottom: none;
 }
 
 .content_ngu_phap4 {
@@ -849,13 +844,13 @@ body {
     border-style: solid;
     border-color: #999999;
     border-left: none;
+    border-bottom: none;
 }
 
 .content_list2_backend_ten {
     display: inline-block;
     width: 230px;
     margin-left: 20px;
-    border-bottom: 1px solid #ebe8e8;
     box-sizing: border-box;
     padding: 5px 10px;
 }
@@ -864,20 +859,19 @@ body {
     padding: 5px 10px;
     display: inline-block;
     width: 230px;
-    border-bottom: 1px solid #ebe8e8;
     box-sizing: border-box;
 }
 
 .content_list2_backend_cach_dung {
     padding: 5px 10px;
     display: inline-block;
-    width: 340px;
+    width: 380px;
     word-wrap: break-word;
-    border-bottom: 1px solid #ebe8e8;
+    border-right: 1px solid #ebe8e8;
 }
 
 .pramas {
-    margin-left: 20px;
+    margin-left: 18px;
     background-color: rgb(233, 225, 225);
     color: red;
     border-radius: 5px;
@@ -891,6 +885,7 @@ body {
 
 .content_list2_backend-li {
     font-size: 18px;
+    border-bottom: 1px solid #ebe8e8;
 }
 
 .content_list2 {
@@ -953,11 +948,9 @@ body {
 
 .footer {
     display: flex;
-    margin: 20px 20px;
     height: 200px;
     color: white;
     background-image: url(./img/footer.jpg);
-    border-radius: 5px;
 }
 
 .footer_one {
@@ -1020,7 +1013,7 @@ i:hover {
 .dang_nhap {
     display: flex;
     background-color: rgb(228, 245, 250);
-    height: 630px;
+    height: 645px;
     display: none;
     box-sizing: border-box;
 }
@@ -1209,7 +1202,7 @@ i:hover {
 .dang_ki {
     display: flex;
     background-color: rgb(228, 245, 250);
-    height: 630px;
+    height: 645px;
     display: none;
 }
 
