@@ -64,7 +64,8 @@
 }
 
 @media (max-width: 739px) {
-    .content--create {
+    .content--create,
+    .content--create_app {
         margin-bottom: 15px !important;
     }
 }
