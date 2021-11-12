@@ -303,7 +303,7 @@ body {
     border-style: solid;
     border-width: 0.5px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 
 .content--create:hover {

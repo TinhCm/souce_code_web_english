@@ -127,15 +127,16 @@
     }
     /* Từ vựng */
     .content {
-        padding-top: 30px !important;
+        padding-top: 10px !important;
         padding: 10px 20px;
         margin: 0px 0px;
         border: none;
+        padding-bottom: 50px !important;
     }
     .content_list {
         margin: 0;
         padding-bottom: 5px;
-        border-right: none;
+        border: none;
     }
     .input-lable {
         margin: 10px 0;
@@ -221,6 +222,7 @@
         padding: 10px 20px;
         background-color: white !important;
         border: none;
+        padding-bottom: 50px !important;
     }
     .check_user_NP {
         padding-left: 0px;
@@ -568,7 +570,15 @@
         margin: 0px 0px !important;
     }
     .hoc_bai_header {
-        width: 100% !important;
+        display: flex;
+        text-align: center;
+        background-color: rgb(69, 202, 255);
+        height: 40px;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0 !important;
+        width: 1024px;
+        max-width: 100%;
     }
     .hoc_bai h1 {
         margin-top: 40px;
@@ -657,8 +667,5 @@
     }
     .header-hoc_bai2 {
         flex: 1;
-    }
-    .header-hoc_bai2 {
-        flex: none !important;
     }
 }

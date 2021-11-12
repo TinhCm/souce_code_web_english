@@ -7,7 +7,6 @@
     height: 40px;
     justify-content: space-between;
     position: fixed;
-    bottom: 0;
     width: 1024px;
     max-width: 100%;
 }
@@ -28,7 +27,7 @@
 }
 
 .header-hoc_bai2 {
-    flex: 2;
+    flex: 1;
 }
 
 .header-hoc_bai2 h3 {
@@ -54,6 +53,12 @@
     line-height: 40px;
     margin: auto;
     text-decoration: none;
+}
+
+.content--create {
+    background-color: rgb(69, 202, 255) !important;
+    box-shadow: none !important;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 739px) {

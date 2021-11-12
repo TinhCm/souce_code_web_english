@@ -7,7 +7,6 @@
     height: 40px;
     justify-content: space-between;
     position: fixed;
-    bottom: 0;
     width: 1024px;
     max-width: 100%;
 }
@@ -54,4 +53,10 @@
     line-height: 40px;
     margin: auto;
     text-decoration: none;
+}
+
+@media (max-width: 739px) {
+    .content--create {
+        margin-bottom: 15px !important;
+    }
 }
