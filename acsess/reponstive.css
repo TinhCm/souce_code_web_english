@@ -132,7 +132,7 @@
     }
     .content {
         padding-top: 10px !important;
-        padding: 10px 20px;
+        padding: 10px 0px;
         margin: 0px 0px;
         border: none;
         padding-bottom: 30px !important;
@@ -155,6 +155,9 @@
         width: 100% !important;
         height: 40px;
         font-size: 16px;
+    }
+    .content_list_backend-li {
+        padding-bottom: 10px;
     }
     .check_user_tu_vung {
         padding-left: 0px;
@@ -190,7 +193,7 @@
     }
     .content_list_backend_nghia {
         margin-left: 10px;
-        width: 190px !important;
+        width: 230px !important;
         display: inline-block;
         font-size: 16px;
         border: none;
@@ -223,7 +226,7 @@
     .content2 {
         margin: 0px 0px;
         padding-top: 10px !important;
-        padding: 10px 20px;
+        padding: 10px 0px;
         background-color: white !important;
         border: none;
         padding-bottom: 50px !important;
@@ -260,7 +263,7 @@
     }
     .content_list2_backend_cau_truc {
         margin-left: 10px;
-        width: 240px;
+        width: 275px;
         box-sizing: border-box;
         margin-bottom: 5px;
         margin-top: 5px;
@@ -269,7 +272,7 @@
     }
     .content_list2_backend_cach_dung {
         margin-left: 10px;
-        width: 190px;
+        width: 217px;
         border: none;
     }
     .pramas {
@@ -278,6 +281,7 @@
     .content_list2_backend-li {
         margin: 10px 0;
         font-size: 16px;
+        padding-bottom: 5px;
     }
     .content_list2_backend-li:hover {
         color: red;
