@@ -211,7 +211,7 @@
         display: none;
     }
     .content_list2 {
-        border-right: none;
+        border: none;
     }
     .content_list2_backend_SM {
         display: inline-block;
