@@ -398,6 +398,7 @@
     }
     .dang_nhap1>button {
         font-size: 16px;
+        margin-top: 10px;
     }
     .dang_nhap1>span {
         margin: 20px 0;
@@ -495,7 +496,7 @@
         display: block;
         text-align: center;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 16px !important;
         color: blue;
     }
     .dang_ki1_ten {
