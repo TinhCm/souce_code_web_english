@@ -237,6 +237,7 @@ body {
 }
 
 .hoc_bai h1 {
+    color: blue;
     text-align: center;
     display: block;
     font-size: 40px;
@@ -244,6 +245,7 @@ body {
 }
 
 .hoc_bai h2 {
+    color: blue;
     text-align: center;
 }
 
@@ -329,7 +331,7 @@ body {
     margin: auto;
     cursor: no-drop;
     background-color: rgb(74, 158, 236);
-    color: white;
+    color: black;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 5px #999999;
     border-style: solid;
@@ -400,14 +402,18 @@ body {
 
 .hocBai_dap_an0 button {
     cursor: no-drop;
-    background-color: rgb(74, 158, 236);
-    color: white;
+    background-color: rgb(69, 202, 255);
+    color: black;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     border-style: solid;
     border-width: 0.5px;
     height: 25px;
     margin: 10px 0;
+    font-weight: 600;
+}
+
+.hocBai_dap_an0 button:hover {
+    color: blue;
 }
 
 .hoc_bai_thoat1 i {
@@ -524,9 +530,8 @@ body {
     cursor: no-drop;
     font-size: 20px;
     background-color: rgb(69, 202, 255);
-    color: white;
+    color: black;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     border-style: solid;
     border-width: 0.5px;
     align-items: center;
@@ -755,9 +760,8 @@ body {
     cursor: no-drop;
     font-size: 20px;
     background-color: rgb(69, 202, 255);
-    color: white;
+    color: black;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     border-style: solid;
     border-width: 0.5px;
 }
@@ -1032,7 +1036,6 @@ i:hover {
     border: none;
     font-size: 20px !important;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     text-align: center;
     cursor: pointer;
 }
@@ -1078,7 +1081,7 @@ i:hover {
 .dang_nhap1>button {
     margin: auto;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     cursor: no-drop;
     height: 30px;
     color: white;
@@ -1220,7 +1223,6 @@ i:hover {
     border: none;
     font-size: 20px !important;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     text-align: center;
     cursor: pointer;
 }
@@ -1279,7 +1281,7 @@ i:hover {
 .dang_ki1>button {
     margin: auto;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     cursor: no-drop;
     height: 30px;
     color: white;
@@ -1385,13 +1387,13 @@ i:hover {
     margin: auto;
     cursor: no-drop;
     background-color: rgb(69, 202, 255);
-    color: white;
+    color: black;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 5px #999999;
     border-style: solid;
     border-width: 0.5px;
     font-size: 20px;
     margin-top: 10px;
+    /* border: none; */
 }
 
 .gop_y--create:hover {
