@@ -7,6 +7,8 @@
     height: 40px;
     justify-content: space-between;
     position: fixed;
+    top: 0px;
+    bottom: unset;
     width: 1024px;
     max-width: 100%;
 }
@@ -58,5 +60,17 @@
 @media (max-width: 739px) {
     .content--create {
         margin-bottom: 15px !important;
+    }
+    .hoc_bai_header {
+        display: flex;
+        text-align: center;
+        background-color: rgb(69, 202, 255);
+        height: 40px;
+        justify-content: space-between;
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        width: 1024px;
+        max-width: 100%;
     }
 }
