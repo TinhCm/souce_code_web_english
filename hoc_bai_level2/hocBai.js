@@ -20,6 +20,7 @@ function layDuLieu_hoc_bai(callback) {
 function xuLi_hoc_bai() {
     //Lever2
     var hocBai_kiem_tra2 = $('.hocBai_kiem_tra2');
+    var hocBai_kiem_tra2_app = $('.hocBai_kiem_tra2_app');
     window.onload = function() {
         var input1_tu_hocBai2 = $('.input1_tu_hocBai2');
 
@@ -60,7 +61,7 @@ function xuLi_hoc_bai() {
         }
     }
 
-    //Check đáp án
+    //Nhấn phím Enter
     var input2_nghia_hocBai2 = $('.input2_nghia_hocBai2');
     input2_nghia_hocBai2.onkeypress = function(e) {
         var key = e.keyCode || e.which;
@@ -97,7 +98,41 @@ function xuLi_hoc_bai() {
         }
     }
 
+    //Nhấn phím Sent
     hocBai_kiem_tra2.onclick = function() {
+        var input1_tu_hocBai2 = $('.input1_tu_hocBai2');
+        var input2_nghia_hocBai2 = $('.input2_nghia_hocBai2').value;
+        var hocBai_list_input1_check2 = $('.hocBai_list-input1_check2');
+
+        layDuLieu_hoc_bai(check_ket_qua_lever2);
+
+        function check_ket_qua_lever2(list) {
+            var loc_user_hoc_bai_ton_tai = list.filter(function(lists) {
+                return lists.user === document.cookie.slice(4);
+            })
+
+            var loc_user_hoc_bai_ton_tai2 = loc_user_hoc_bai_ton_tai.some(function(listss) {
+                return listss.tu_vung === input1_tu_hocBai2.innerHTML;
+            })
+
+            var loc_user_hoc_bai_ton_tai3 = loc_user_hoc_bai_ton_tai.some(function(listss) {
+                return listss.nghia.toLowerCase() === input2_nghia_hocBai2.toLowerCase();
+            })
+
+            if (loc_user_hoc_bai_ton_tai3 == true) {
+                hocBai_list_input1_check2.innerHTML = "Đúng";
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
+
+            } else {
+                hocBai_list_input1_check2.innerHTML = "Sai";
+            }
+        }
+    }
+
+    //Nhấn phím Kiểm tra
+    hocBai_kiem_tra2_app.onclick = function() {
         var input1_tu_hocBai2 = $('.input1_tu_hocBai2');
         var input2_nghia_hocBai2 = $('.input2_nghia_hocBai2').value;
         var hocBai_list_input1_check2 = $('.hocBai_list-input1_check2');
@@ -134,15 +169,19 @@ function xuLi_hoc_bai() {
 //Xu li động học bài
 var hocBai_kiem_tra2 = $('.hocBai_kiem_tra2');
 var hocBai_dap_an2 = $('.hocBai_dap_an2');
+var hocBai_kiem_tra2_app = $('.hocBai_kiem_tra2_app');
 
 hocBai_kiem_tra2.disabled = true;
+hocBai_kiem_tra2_app.disabled = true;
 hocBai_dap_an2.disabled = true;
 
 if (document.cookie != "") {
     hocBai_kiem_tra2.disabled = false;
+    hocBai_kiem_tra2_app.disabled = false;
     hocBai_dap_an2.disabled = false;
 
     hocBai_kiem_tra2.classList.add('Poiter');
+    hocBai_kiem_tra2_app.classList.add('Poiter');
     hocBai_dap_an2.classList.add('Poiter');
 }
 

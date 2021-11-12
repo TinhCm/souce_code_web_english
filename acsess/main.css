@@ -187,13 +187,15 @@ body {
 
 /* Học bài */
 
-.hocBai_kiem_tra2 {
+.hocBai_kiem_tra2,
+.hocBai_kiem_tra2_app {
     background-color: rgb(69, 202, 255) !important;
     box-shadow: none !important;
     margin-bottom: 0px;
 }
 
-.hocBai_kiem_tra3 {
+.hocBai_kiem_tra3,
+.hocBai_kiem_tra3_app {
     background-color: rgb(69, 202, 255) !important;
     box-shadow: none !important;
     margin-bottom: 0px;
@@ -413,7 +415,8 @@ body {
     cursor: pointer;
 }
 
-.hocBai_kiem_tra {
+.hocBai_kiem_tra,
+.hocBai_kiem_tra_app {
     background-color: rgb(69, 202, 255) !important;
     box-shadow: none !important;
     margin-bottom: 0px;
@@ -513,7 +516,8 @@ body {
     width: 500px;
 }
 
-.content--create {
+.content--create,
+.content--create_app {
     display: block;
     margin: auto;
     align-items: center;
@@ -529,7 +533,8 @@ body {
     margin-bottom: 50px !important;
 }
 
-.content--create:hover {
+.content--create:hover,
+.content--create_app:hover {
     color: blue;
 }
 
@@ -743,7 +748,8 @@ body {
     overflow-y: hidden;
 }
 
-.content2--create {
+.content2--create,
+.content2--create_app {
     display: block;
     margin: auto;
     cursor: no-drop;
@@ -756,7 +762,8 @@ body {
     border-width: 0.5px;
 }
 
-.content2--create:hover {
+.content2--create:hover,
+.content2--create_app:hover {
     color: blue;
 }
 
