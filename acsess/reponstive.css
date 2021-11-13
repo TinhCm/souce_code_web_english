@@ -272,15 +272,23 @@
         width: 217px;
         border: none;
     }
-    .content--create,
     .content--create_app {
         margin-bottom: 25px !important;
     }
-    .content--create i,
+    .content--create {
+        margin-bottom: 25px !important;
+        padding-left: 20px !important;
+    }
+    .content2--create {
+        padding-left: 20px !important;
+    }
     .content2--create i {
         font-size: 25px;
         line-height: 50px;
-        padding-left: 20px;
+    }
+    .content--create i {
+        font-size: 25px;
+        line-height: 50px;
     }
     .content2--create_app {
         margin-bottom: 10px;
@@ -691,15 +699,19 @@
         padding-right: 20px !important;
         line-height: 50px !important;
     }
+    .header-hoc_bai3 a {
+        padding-left: 20px;
+    }
     .header-hoc_bai3 a i {
         font-size: 25px !important;
-        padding-left: 20px !important;
         line-height: 50px !important;
+    }
+    .hocBai_kiem_tra {
+        padding-left: 20px !important;
     }
     .hocBai_kiem_tra i {
         font-size: 25px !important;
         line-height: 50px !important;
-        padding-left: 20px !important;
     }
     .header-hoc_bai4 i,
     .hocBai_kiem_tra2 i,
