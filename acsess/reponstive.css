@@ -65,12 +65,10 @@
     /*Thông tin */
     .header {
         display: flex;
-        height: 40px;
         width: 100%;
     }
     .header-thong_tin {
         flex: 1;
-        line-height: 40px;
         box-sizing: border-box;
     }
     .thong_tin_user_admin_dang_xuat {
@@ -84,7 +82,6 @@
         text-decoration: none;
         margin: 0 10px;
         font-size: 20px;
-        line-height: 40px !important;
     }
     .header-thong_tin_1 {
         margin-left: 0px !important;
@@ -335,9 +332,10 @@
         display: none;
     }
     .header1-list a {
-        margin: 0 10px;
+        margin: 0 5px;
         font-size: 12px;
         line-height: 50px;
+        font-weight: 600;
     }
     .header_second--cmt {
         position: relative;
