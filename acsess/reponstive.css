@@ -351,6 +351,7 @@
         background-size: 100%;
     }
     .header_second {
+        margin-top: 49px;
         padding-top: 20px;
         text-align: center;
         height: 213px;
@@ -363,7 +364,7 @@
         background-color: yellow;
         font-size: 30px;
         padding: 0 10px;
-        margin-top: 60px;
+        margin-top: 40px;
         font-family: monospace;
     }
     .header_second>h3 {
