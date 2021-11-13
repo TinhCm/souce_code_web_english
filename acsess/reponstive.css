@@ -127,7 +127,7 @@
     /* Từ vựng */
     .content-folder_success {
         text-align: center;
-        padding-bottom: 150px;
+        padding-bottom: 140px;
         font-size: 18px;
     }
     .content {
@@ -277,13 +277,16 @@
     }
     .content--create,
     .content--create_app {
-        margin-bottom: 15px !important;
+        margin-bottom: 25px !important;
     }
     .content--create i,
     .content2--create i {
         font-size: 25px;
         line-height: 50px;
         padding-left: 20px;
+    }
+    .content2--create_app {
+        margin-bottom: 10px;
     }
     .pramas {
         margin-left: 10px;
