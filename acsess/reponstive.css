@@ -279,6 +279,12 @@
     .content--create_app {
         margin-bottom: 15px !important;
     }
+    .content--create i,
+    .content2--create i {
+        font-size: 25px;
+        line-height: 50px;
+        padding-left: 20px;
+    }
     .pramas {
         margin-left: 10px;
     }
@@ -582,6 +588,7 @@
         margin: 0px 0px !important;
     }
     .hoc_bai_header {
+        height: 50px !important;
         position: fixed;
         top: unset !important;
         bottom: 0 !important;
@@ -673,5 +680,28 @@
     }
     .header-hoc_bai2 {
         flex: 1;
+    }
+    .header-hoc_bai2 h3 {
+        line-height: 50px;
+    }
+    .hoc_bai_thoat1 i {
+        font-size: 25px !important;
+        padding-right: 20px !important;
+    }
+    .header-hoc_bai3 a i {
+        font-size: 25px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .hocBai_kiem_tra i {
+        font-size: 25px;
+        line-height: 50px;
+        padding-left: 20px;
+    }
+    .header-hoc_bai4 i,
+    .hocBai_kiem_tra2 i,
+    .hocBai_kiem_tra3 i {
+        font-size: 25px;
+        line-height: 50px;
     }
 }
