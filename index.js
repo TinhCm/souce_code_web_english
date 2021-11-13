@@ -36,6 +36,8 @@ function taoDuLieu_dang_nhap(data, callback) {
 }
 
 function xuLi_dang_nhap() {
+
+    //Nhấn phím Enter
     var dang_nhap1_password = $('.dang_nhap1_password');
     dang_nhap1_password.onkeypress = function(e) {
         var key = e.keyCode || e.which;
@@ -79,6 +81,8 @@ function xuLi_dang_nhap() {
             }
         }
     }
+
+    //Nhấn phím đăng nhập
     var dang_nhap = $('.create_dang_nhap')
     dang_nhap.onclick = function() {
         var dang_nhap_ten = $('.dang_nhap1_ten');
