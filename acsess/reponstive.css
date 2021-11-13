@@ -275,6 +275,10 @@
         width: 217px;
         border: none;
     }
+    .content--create,
+    .content--create_app {
+        margin-bottom: 15px !important;
+    }
     .pramas {
         margin-left: 10px;
     }
