@@ -1,5 +1,4 @@
 var API_hoc_bai = 'https://demo-apps-en.glitch.me/list';
-
 const $ = document.querySelector.bind(document);
 
 //Học bài

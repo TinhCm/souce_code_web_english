@@ -1,6 +1,4 @@
 var API_hoc_bai = 'https://demo-apps-en.glitch.me/list';
-// var API_hoc_bai = 'http://localhost:3000/list'
-
 const $ = document.querySelector.bind(document);
 
 //Học bài

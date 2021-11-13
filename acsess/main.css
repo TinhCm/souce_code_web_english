@@ -207,6 +207,8 @@ body {
 }
 
 .header-hoc_bai2 button {
+    height: 100%;
+    width: 100%;
     font-size: 20px;
     border: none;
     color: white;
@@ -348,6 +350,8 @@ body {
 }
 
 .hoc_bai_thoat button {
+    height: 100%;
+    width: 100%;
     color: black;
     border: none;
     background-color: rgb(69, 202, 255);
@@ -369,9 +373,32 @@ body {
 }
 
 .header-hoc_bai3 a {
-    line-height: 40px;
-    text-decoration: none;
+    display: flex;
     width: 100%;
+    text-decoration: none;
+}
+
+.header-hoc_bai3 a i {
+    color: black;
+    cursor: pointer;
+    line-height: 40px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.content--create {
+    background-color: rgb(69, 202, 255) !important;
+    box-shadow: none !important;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.content2--create {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(69, 202, 255) !important;
+    box-shadow: none !important;
+    margin-bottom: 0px;
 }
 
 .header-hoc_bai3 i {

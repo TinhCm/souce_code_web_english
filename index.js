@@ -301,7 +301,6 @@ var dang_ki_chuyenXL = $('.dang_ki_chuyen');
 var dang_nhap_chuyenXL = $('.dang_nhap_chuyen');
 
 //Thoát
-
 dang_nhap_thoat.onclick = function() {
     location.reload();
 }
@@ -311,7 +310,6 @@ dang_ki_thoat.onclick = function() {
 }
 
 //Chuyển
-
 dang_ki_chuyenXL.onclick = function() {
     dang_kiXL.classList.add('Display');
     dang_nhapXL.classList.remove('Display')

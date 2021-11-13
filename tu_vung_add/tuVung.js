@@ -1,5 +1,4 @@
 var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
-    //Phần API_tu_vung từ vựng
 const $ = document.querySelector.bind(document);
 
 function batDau_tu_vung() {
