@@ -149,6 +149,11 @@ body {
     color: black;
 }
 
+
+/* .header-thong_tin_menu2_ul a li {
+    border-bottom: 1px solid rgb(214, 214, 218);
+} */
+
 .header-thong_tin_menu2_ul a:hover {
     color: blue;
 }
