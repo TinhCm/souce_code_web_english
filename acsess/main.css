@@ -124,7 +124,7 @@ body {
 }
 
 .header-thong_tin_menu1b i {
-    font-size: 24px;
+    font-size: 22.9px;
 }
 
 .header-thong_tin_menu2_ul {
@@ -138,7 +138,7 @@ body {
     padding-left: 20px;
     font-size: 20px;
     background-color: #f1eeee;
-    width: 250px;
+    width: 300px;
     position: absolute;
     right: 0px !important;
     border-right: 1px solid rgb(214, 214, 218);
