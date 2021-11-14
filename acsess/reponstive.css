@@ -80,7 +80,7 @@
         width: 100%;
     }
     .header-thong_tin {
-        flex: 1;
+        flex: 0;
         box-sizing: border-box;
     }
     .thong_tin_user_admin_dang_xuat {
