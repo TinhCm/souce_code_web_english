@@ -56,7 +56,7 @@ body {
 
 .header1-list a {
     text-decoration: none;
-    margin: 0 10px;
+    margin: auto;
     font-size: 20px;
     line-height: 50px;
     color: black;
@@ -68,7 +68,7 @@ body {
 
 .header-thong_tin {
     flex: 1;
-    color: white;
+    color: blue;
     line-height: 50px;
     box-sizing: border-box;
 }
@@ -106,7 +106,6 @@ body {
 #header-thong_tin_user_1 {
     display: inline-block;
     flex: 2;
-    padding: 0 10px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -116,12 +115,12 @@ body {
 }
 
 .header-thong_tin_menu {
-    padding-right: 40px;
+    margin: auto;
 }
 
 .header-thong_tin_menu1b {
     display: none;
-    padding-right: 40px;
+    margin: auto;
 }
 
 .header-thong_tin_menu1b i {

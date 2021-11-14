@@ -50,10 +50,10 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
     .header-logo {
-        display: none;
+        flex: 1;
     }
     .header1 {
-        flex: 1;
+        display: none;
     }
     .header-thong_tin {
         flex: 1;
@@ -119,11 +119,18 @@
         height: 50px;
         border-right: none !important;
     }
+    #header-thong_tin_user_1 {
+        padding: 0px;
+    }
     .header-thong_tin_menu {
         padding-right: 20px;
+        position: absolute;
+        right: 0;
     }
     .header-thong_tin_menu1b {
         padding-right: 20px;
+        position: absolute;
+        right: 0;
     }
     .header-thong_tin_menu2 {
         height: 700px !important;
@@ -362,8 +369,14 @@
         display: flex;
         margin-left: 70px;
     }
-    .header-logo {
+    .header1 {
         display: none;
+    }
+    .header-logo h2 {
+        font-size: 18px;
+    }
+    .header-logo a i {
+        margin-left: 20px;
     }
     .header1-list a {
         margin: 0 5px;
