@@ -116,7 +116,13 @@
         border-right: none !important;
     }
     .header-thong_tin_menu {
-        padding-right: 10px;
+        padding-right: 20px;
+    }
+    .header-thong_tin_menu1b {
+        padding-right: 20px;
+    }
+    .header-thong_tin_menu2 {
+        height: 700px !important;
     }
     .fa-sign-out-alt {
         color: white !important;

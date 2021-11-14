@@ -486,8 +486,17 @@ if (document.cookie != "") {
 
 //Tab menu
 var header_thong_tin_menu = $('.header-thong_tin_menu');
+var header_thong_tin_menu1b = $('.header-thong_tin_menu1b');
 var header_thong_tin_menu2_ul = $('.header-thong_tin_menu2_ul');
 
 header_thong_tin_menu.onclick = function() {
-    header_thong_tin_menu2_ul.classList.toggle('Display');
+    header_thong_tin_menu2_ul.classList.add('Display');
+    header_thong_tin_menu.classList.add('noneDisplay');
+    header_thong_tin_menu1b.classList.add('Display');
+}
+
+header_thong_tin_menu1b.onclick = function() {
+    header_thong_tin_menu2_ul.classList.add('noneDisplay');
+    header_thong_tin_menu1b.classList.add('noneDisplay');
+    location.reload();
 }
