@@ -124,6 +124,9 @@
     .header-thong_tin_menu2 {
         height: 700px !important;
     }
+    .header-thong_tin_menu2_ul {
+        font-size: 18px;
+    }
     .fa-sign-out-alt {
         color: white !important;
         text-align: center;
