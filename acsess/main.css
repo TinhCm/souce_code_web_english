@@ -112,6 +112,7 @@ body {
 
 .header-thong_tin_user_1 i {
     color: black !important;
+    font-weight: 600!important;
 }
 
 .header-thong_tin_menu {
@@ -156,6 +157,7 @@ body {
 #header-thong_tin_user_1>p {
     display: inline-block;
     margin: 0;
+    font-weight: 600;
 }
 
 .thong_tin_user_admin {
