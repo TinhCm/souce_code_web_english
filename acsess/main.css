@@ -106,12 +106,40 @@ body {
     flex: 2;
     padding: 0 10px;
     text-align: center;
-    border-right: white solid 1px;
     box-sizing: border-box;
 }
 
 .header-thong_tin_user_1 i {
     color: black !important;
+}
+
+.header-thong_tin_menu {
+    padding-right: 40px;
+}
+
+.header-thong_tin_menu2_ul {
+    display: none;
+    height: 600px!important;
+    min-height: 100%!important;
+    margin: 0!important;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: #f1eeee;
+    width: 250px;
+    position: absolute;
+    right: 0px !important;
+    border-right: 1px solid rgb(214, 214, 218);
+}
+
+.header-thong_tin_menu2_ul a {
+    text-decoration: none;
+}
+
+.header-thong_tin_menu2_ul a:hover {
+    color: blue;
 }
 
 #header-thong_tin_user_1>p {

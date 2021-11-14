@@ -7,6 +7,14 @@
     box-sizing: border-box;
 }
 
+.opacity {
+    opacity: 0.6;
+}
+
+.noneOpacity {
+    opacity: none;
+}
+
 .nonePoiter {
     cursor: no-drop !important;
 }
@@ -104,6 +112,11 @@
         margin-left: 0px !important;
         font-size: 12px !important;
         text-align: center;
+        height: 50px;
+        border-right: none !important;
+    }
+    .header-thong_tin_menu {
+        padding-right: 10px;
     }
     .fa-sign-out-alt {
         color: white !important;

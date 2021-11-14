@@ -371,7 +371,7 @@ dang_ki1_xemMK.addEventListener('click', function() {
 })
 
 //Đăng xuất
-var dang_xuat = $('.fa-sign-out-alt');
+var dang_xuat = $('.dang_xuat');
 dang_xuat.onclick = function() {
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
@@ -482,4 +482,12 @@ if (document.cookie != "") {
             xuLi_gop_y.disabled = false;
         }
     }
+}
+
+//Tab menu
+var header_thong_tin_menu = $('.header-thong_tin_menu');
+var header_thong_tin_menu2_ul = $('.header-thong_tin_menu2_ul');
+
+header_thong_tin_menu.onclick = function() {
+    header_thong_tin_menu2_ul.classList.toggle('Display');
 }
