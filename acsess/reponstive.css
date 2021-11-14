@@ -144,9 +144,13 @@
         text-align: center;
         font-size: 12px;
     }
+    #header-thong_tin_user_1 i {
+        padding-right: 5px;
+    }
     .header-thong_tin_user_1>p {
         display: inline-block;
         margin: 0;
+        padding-left: 10px !important;
     }
     /* Content_update */
     .content_update li {
