@@ -124,12 +124,15 @@
         padding: 0px;
     }
     .header-thong_tin_menu {
-        padding-right: 20px;
         position: absolute;
         right: 0;
     }
+    .header-thong_tin_menu i,
+    .header-thong_tin_menu1b i {
+        padding-right: 20px !important;
+        padding-left: 100px !important;
+    }
     .header-thong_tin_menu1b {
-        padding-right: 20px;
         position: absolute;
         right: 0;
     }
