@@ -992,6 +992,7 @@ body {
     width: 380px;
     word-wrap: break-word;
     border-right: 1px solid #ebe8e8;
+    text-align: justify;
 }
 
 .pramas {
