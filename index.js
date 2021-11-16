@@ -493,6 +493,7 @@ var header_thong_tin_menu1b = $('.header-thong_tin_menu1b');
 var header_thong_tin_menu2_ul = $('.header-thong_tin_menu2_ul');
 var header_thong_tin_menu2 = $('.header-thong_tin_menu2');
 var thoat_menu = $('.thoat_menu');
+var nhan_cau_hoi = $('.nhan_cau_hoi');
 
 header_thong_tin_menu.onclick = function() {
     header_thong_tin_menu2_ul.classList.remove('noneDisplay');
@@ -517,4 +518,13 @@ thoat_menu.onclick = function() {
     header_thong_tin_menu.classList.remove('noneDisplay');
     header_thong_tin_menu.classList.add('Display');
     thoat_menu.classList.remove('opacity');
+}
+
+nhan_cau_hoi.onclick = function() {
+    header_thong_tin_menu2_ul.classList.add('noneDisplay');
+    header_thong_tin_menu1b.classList.add('noneDisplay');
+    header_thong_tin_menu.classList.remove('noneDisplay');
+    header_thong_tin_menu.classList.add('Display');
+    thoat_menu.classList.remove('opacity');
+    window.localStorage.href = '/index.html#cau_hoi'
 }
