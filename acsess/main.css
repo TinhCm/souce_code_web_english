@@ -113,6 +113,8 @@ body {
 .header-thong_tin_user_1 i {
     color: black !important;
     font-weight: 600!important;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header-thong_tin_menu {
