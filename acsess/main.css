@@ -545,10 +545,13 @@ body {
 
 .content_update {
     margin: 20px 20px;
+    padding-bottom: 20px;
 }
 
 .content_update li {
     font-size: 20px;
+    text-align: justify;
+    padding-bottom: 10px;
 }
 
 .content_update li a {
@@ -558,6 +561,7 @@ body {
 .content_update1 i {
     color: blue;
     font-size: 22px;
+    padding-right: 5px;
 }
 
 .content_update1 h2 {
@@ -1469,7 +1473,6 @@ i:hover {
 
 .danhGia {
     padding: 20px 20px;
-    margin-top: 100px;
 }
 
 .danhGia_button {
