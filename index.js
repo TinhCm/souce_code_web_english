@@ -288,6 +288,7 @@ dang_ki_pass.oninput = function() {
 var headerXL = $('.header');
 var header_secondXL = $('.header_second');
 var content_update = $('.content_update');
+var cau_hoi = $('.cau_hoi');
 var body_cmtXL = $('.body_cmt');
 var footerXL = $('.footer');
 var danhGiaXL = $('#danhGia');
@@ -332,6 +333,7 @@ nut_dang_nhap.onclick = function() {
     dang_nhapXL.classList.add('Display');
     danhGiaXL.classList.add('noneDisplay')
     content_update.classList.add('noneDisplay');
+    cau_hoi.classList.add('noneDisplay');
 }
 
 const dang_nhap1_password = $('.dang_nhap1_password')
@@ -355,6 +357,7 @@ nut_dang_ki.onclick = function() {
     dang_kiXL.classList.add('Display');
     danhGiaXL.classList.add('noneDisplay');
     content_update.classList.add('noneDisplay');
+    cau_hoi.classList.add('noneDisplay');
 }
 
 const dang_ki1_password = $('.dang_ki1_password')
