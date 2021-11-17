@@ -1,4 +1,4 @@
-var API_hoc_bai = 'https://demo-apps-en.glitch.me/list';
+var API_hoc_bai = 'https://learning-english.glitch.me/list';
 const $ = document.querySelector.bind(document);
 
 //Học bài

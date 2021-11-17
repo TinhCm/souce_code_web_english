@@ -1,7 +1,7 @@
-var API_gop_y = "https://demo-apps-en.glitch.me/gop_y"
-var API_dang_nhap = 'https://demo-apps-en.glitch.me/user'
-var API_dang_ki = 'https://demo-apps-en.glitch.me/user'
-var API_hoc_bai = 'https://demo-apps-en.glitch.me/list'
+var API_gop_y = "https://learning-english.glitch.me/gop_y"
+var API_dang_nhap = 'https://learning-english.glitch.me/user'
+var API_dang_ki = 'https://learning-english.glitch.me/user'
+var API_hoc_bai = 'https://learning-english.glitch.me/list'
 
 const $ = document.querySelector.bind(document);
 

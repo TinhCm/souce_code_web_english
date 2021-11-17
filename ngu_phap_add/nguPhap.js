@@ -1,4 +1,4 @@
-var API_ngu_phap = 'https://demo-apps-en.glitch.me/ngu_phap'
+var API_ngu_phap = 'https://learning-english.glitch.me/ngu_phap'
 const $ = document.querySelector.bind(document);
 
 function batDau_ngu_phap() {

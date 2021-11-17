@@ -1,4 +1,4 @@
-var API_tu_vung = 'https://demo-apps-en.glitch.me/list'
+var API_tu_vung = 'https://learning-english.glitch.me/list'
 const $ = document.querySelector.bind(document);
 
 function batDau_tu_vung() {
