@@ -12,7 +12,8 @@
 }
 
 .opacity {
-    opacity: 0.7;
+    opacity: 0.6;
+    background-color: #6e6e6e;
 }
 
 .noneOpacity {
