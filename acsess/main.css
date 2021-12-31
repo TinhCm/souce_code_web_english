@@ -191,7 +191,7 @@ body {
     padding-top: 150px;
     text-align: center;
     height: 490px;
-    background-image: url(./img/header.png);
+    background-image: url(./img/header_nam_moi.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -205,8 +205,10 @@ body {
 }
 
 .header_second>h3 {
-    color: white;
+    /* color: white; */
     font-size: 26px;
+    color: #f8f8ff;
+    text-shadow: 5px 2px 4px rgb(224, 103, 23);
 }
 
 .header_second--cmt {
