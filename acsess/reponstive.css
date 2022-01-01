@@ -158,11 +158,13 @@
     }
     /* Content_update */
     .content_update li,
-    .cau_hoi li {
+    .cau_hoi li,
+    .tai_lieu li {
         font-size: 16px;
     }
     .content_update1 h2,
-    .cau_hoi h2 {
+    .cau_hoi h2,
+    .tai_lieu h2 {
         font-size: 20px;
     }
     /* Từ vựng */
