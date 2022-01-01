@@ -546,32 +546,37 @@ body {
 /* Phần content_update */
 
 .content_update,
-.cau_hoi {
+.cau_hoi,
+.tai_lieu {
     margin: 20px 20px;
-    padding-bottom: 20px;
+    border-bottom: 1px solid blue;
 }
 
 .content_update li,
-.cau_hoi li {
+.cau_hoi li,
+.tai_lieu li {
     font-size: 20px;
     text-align: justify;
     padding-bottom: 10px;
 }
 
 .content_update li a,
-.cau_hoi li a {
+.cau_hoi li a,
+.tai_lieu li a {
     text-decoration: none;
 }
 
 .content_update1 i,
-.cau_hoi1 i {
+.cau_hoi1 i,
+.tai_lieu i {
     color: blue;
     font-size: 22px;
     padding-right: 5px;
 }
 
 .content_update1 h2,
-.cau_hoi h2 {
+.cau_hoi h2,
+.tai_lieu h2 {
     display: inline;
 }
 
@@ -1480,6 +1485,7 @@ i:hover {
 
 .danhGia {
     padding: 20px 20px;
+    padding-top: 0px;
 }
 
 .danhGia_button {
