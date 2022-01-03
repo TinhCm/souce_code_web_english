@@ -107,6 +107,7 @@ body {
     flex: 2;
     text-align: center;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .header-thong_tin_user_1 i {
@@ -1485,11 +1486,13 @@ i:hover {
 
 .danhGia {
     padding: 20px 20px;
-    padding-top: 0px;
+    padding-right: 0px;
+    flex: 1;
+    color: blue;
+    text-align: center;
 }
 
 .danhGia_button {
-    width: 350px;
     display: flex;
 }
 
@@ -1505,6 +1508,7 @@ i:hover {
 
 .gop_y h2 {
     margin-top: 0;
+    text-align: center;
 }
 
 .gop_y--create {
@@ -1517,7 +1521,6 @@ i:hover {
     border-width: 0.5px;
     font-size: 20px;
     margin-top: 10px;
-    /* border: none; */
 }
 
 .gop_y--create:hover {
@@ -1527,4 +1530,32 @@ i:hover {
 .fa-edit {
     color: blue;
     font-size: 22px;
+}
+
+.gop_y-input1 {
+    margin-top: 260px;
+}
+
+
+/* Thong tin */
+
+.thong_tin {
+    margin-top: 39px;
+    height: 590px;
+    display: flex;
+    padding: 0 20px;
+    padding-left: 40px;
+    background-image: url(https://html.sammy-codes.com/images/background.jpg);
+}
+
+.thong_tin1 {
+    flex: 1;
+    text-align: left;
+    border-right: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.thong_tin1 h2 {
+    text-align: center;
+    color: blue;
 }

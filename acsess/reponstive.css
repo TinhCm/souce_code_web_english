@@ -358,13 +358,14 @@
     }
     /* Đánh giá */
     .gop_y h2 {
-        font-size: 20px;
+        font-size: 1.5em !important;
     }
     .gop_y2_cmt {
         width: 100%;
-        padding: 10 20px;
+        padding: 10 0px !important;
         box-sizing: border-box;
         font-size: 16px !important;
+        width: 100% !important;
     }
     .danhGia_button {
         width: 100%;
@@ -373,6 +374,30 @@
     }
     .danhGia {
         margin-top: 0px;
+        padding-right: 0px!important;
+        padding-left: 0px !important;
+    }
+    .gop_y-input1 {
+        margin-top: 0px !important;
+    }
+    /* Thong tin */
+    .thong_tin {
+        margin-top: -20px !important;
+        height: 740px !important;
+        display: block !important;
+        padding: 0 20px;
+        padding-left: 20px !important;
+    }
+    .thong_tin1 {
+        flex: 1;
+        text-align: left;
+        border-right: none !important;
+        box-sizing: border-box;
+    }
+    .thong_tin1 h2 {
+        text-align: center;
+        color: blue;
+        padding-top: 20px;
     }
     /* Header */
     body {
