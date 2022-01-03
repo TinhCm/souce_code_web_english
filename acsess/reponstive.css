@@ -399,6 +399,9 @@
         color: blue;
         padding-top: 20px;
     }
+    .thong_tin1 h3 {
+        font-size: 16px !important;
+    }
     /* Header */
     body {
         margin: 0 !important;
