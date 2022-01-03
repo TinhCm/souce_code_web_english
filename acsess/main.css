@@ -105,9 +105,9 @@ body {
 #header-thong_tin_user_1 {
     display: inline-block;
     flex: 2;
-    text-align: center;
     box-sizing: border-box;
     cursor: pointer;
+    width: 100%;
 }
 
 .header-thong_tin_user_1 i {
@@ -160,6 +160,14 @@ body {
     display: inline-block;
     margin: 0;
     font-weight: 600;
+}
+
+#header-thong_tin_user_1>span {
+    display: block;
+    font-size: 18px;
+    margin-left: 35px;
+    color: #333;
+    margin-top: -15px;
 }
 
 .thong_tin_user_admin {
