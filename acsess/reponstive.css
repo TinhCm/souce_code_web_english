@@ -387,6 +387,7 @@
         display: block !important;
         padding: 0 20px;
         padding-left: 20px !important;
+        line-height: 50px !important;
     }
     .thong_tin1 {
         flex: 1;
